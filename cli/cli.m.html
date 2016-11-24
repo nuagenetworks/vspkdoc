@@ -851,73 +851,6 @@ table {
 
   </style>
 
-  <style type="text/css">
-  .codehilite .hll { background-color: #ffffcc }
-.codehilite  { background: #f8f8f8; }
-.codehilite .c { color: #408080; font-style: italic } /* Comment */
-.codehilite .err { border: 1px solid #FF0000 } /* Error */
-.codehilite .k { color: #008000; font-weight: bold } /* Keyword */
-.codehilite .o { color: #666666 } /* Operator */
-.codehilite .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
-.codehilite .cm { color: #408080; font-style: italic } /* Comment.Multiline */
-.codehilite .cp { color: #BC7A00 } /* Comment.Preproc */
-.codehilite .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
-.codehilite .c1 { color: #408080; font-style: italic } /* Comment.Single */
-.codehilite .cs { color: #408080; font-style: italic } /* Comment.Special */
-.codehilite .gd { color: #A00000 } /* Generic.Deleted */
-.codehilite .ge { font-style: italic } /* Generic.Emph */
-.codehilite .gr { color: #FF0000 } /* Generic.Error */
-.codehilite .gh { color: #000080; font-weight: bold } /* Generic.Heading */
-.codehilite .gi { color: #00A000 } /* Generic.Inserted */
-.codehilite .go { color: #888888 } /* Generic.Output */
-.codehilite .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-.codehilite .gs { font-weight: bold } /* Generic.Strong */
-.codehilite .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.codehilite .gt { color: #0044DD } /* Generic.Traceback */
-.codehilite .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-.codehilite .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-.codehilite .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-.codehilite .kp { color: #008000 } /* Keyword.Pseudo */
-.codehilite .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-.codehilite .kt { color: #B00040 } /* Keyword.Type */
-.codehilite .m { color: #666666 } /* Literal.Number */
-.codehilite .s { color: #BA2121 } /* Literal.String */
-.codehilite .na { color: #7D9029 } /* Name.Attribute */
-.codehilite .nb { color: #008000 } /* Name.Builtin */
-.codehilite .nc { color: #0000FF; font-weight: bold } /* Name.Class */
-.codehilite .no { color: #880000 } /* Name.Constant */
-.codehilite .nd { color: #AA22FF } /* Name.Decorator */
-.codehilite .ni { color: #999999; font-weight: bold } /* Name.Entity */
-.codehilite .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.codehilite .nf { color: #0000FF } /* Name.Function */
-.codehilite .nl { color: #A0A000 } /* Name.Label */
-.codehilite .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-.codehilite .nt { color: #008000; font-weight: bold } /* Name.Tag */
-.codehilite .nv { color: #19177C } /* Name.Variable */
-.codehilite .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-.codehilite .w { color: #bbbbbb } /* Text.Whitespace */
-.codehilite .mb { color: #666666 } /* Literal.Number.Bin */
-.codehilite .mf { color: #666666 } /* Literal.Number.Float */
-.codehilite .mh { color: #666666 } /* Literal.Number.Hex */
-.codehilite .mi { color: #666666 } /* Literal.Number.Integer */
-.codehilite .mo { color: #666666 } /* Literal.Number.Oct */
-.codehilite .sb { color: #BA2121 } /* Literal.String.Backtick */
-.codehilite .sc { color: #BA2121 } /* Literal.String.Char */
-.codehilite .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-.codehilite .s2 { color: #BA2121 } /* Literal.String.Double */
-.codehilite .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.codehilite .sh { color: #BA2121 } /* Literal.String.Heredoc */
-.codehilite .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
-.codehilite .sx { color: #008000 } /* Literal.String.Other */
-.codehilite .sr { color: #BB6688 } /* Literal.String.Regex */
-.codehilite .s1 { color: #BA2121 } /* Literal.String.Single */
-.codehilite .ss { color: #19177C } /* Literal.String.Symbol */
-.codehilite .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.codehilite .vc { color: #19177C } /* Name.Variable.Class */
-.codehilite .vg { color: #19177C } /* Name.Variable.Global */
-.codehilite .vi { color: #19177C } /* Name.Variable.Instance */
-.codehilite .il { color: #666666 } /* Literal.Number.Integer.Long */
-  </style>
 
   <style type="text/css">
   
@@ -1062,146 +995,145 @@ table {
   
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-vspk.cli.cli', this);">Show source &equiv;</a></p>
   <div id="source-vspk.cli.cli" class="source">
-    <div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
-<span class="c1">#</span>
-<span class="c1"># Copyright (c) 2015, Alcatel-Lucent Inc</span>
-<span class="c1"># All rights reserved.</span>
-<span class="c1">#</span>
-<span class="c1"># Redistribution and use in source and binary forms, with or without</span>
-<span class="c1"># modification, are permitted provided that the following conditions are met:</span>
-<span class="c1">#     * Redistributions of source code must retain the above copyright</span>
-<span class="c1">#       notice, this list of conditions and the following disclaimer.</span>
-<span class="c1">#     * Redistributions in binary form must reproduce the above copyright</span>
-<span class="c1">#       notice, this list of conditions and the following disclaimer in the</span>
-<span class="c1">#       documentation and/or other materials provided with the distribution.</span>
-<span class="c1">#     * Neither the name of the copyright holder nor the names of its contributors</span>
-<span class="c1">#       may be used to endorse or promote products derived from this software without</span>
-<span class="c1">#       specific prior written permission.</span>
-<span class="c1">#</span>
-<span class="c1"># THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND</span>
-<span class="c1"># ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</span>
-<span class="c1"># WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
-<span class="c1"># DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY</span>
-<span class="c1"># DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</span>
-<span class="c1"># (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
-<span class="c1"># LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND</span>
-<span class="c1"># ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span>
-<span class="c1"># (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span>
-<span class="c1"># SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+    <pre><code>#!/usr/bin/env python
+#
+# Copyright (c) 2015, Alcatel-Lucent Inc
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of the copyright holder nor the names of its contributors
+#       may be used to endorse or promote products derived from this software without
+#       specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY
+# DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-<span class="kn">import</span> <span class="nn">argparse</span>
-<span class="kn">import</span> <span class="nn">sys</span>
+import argparse
+import sys
 
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;../&quot;</span><span class="p">)</span>
+sys.path.append("../")
 
-<span class="k">class</span> <span class="nc">_HelpAction</span><span class="p">(</span><span class="n">argparse</span><span class="o">.</span><span class="n">_HelpAction</span><span class="p">):</span>
+class _HelpAction(argparse._HelpAction):
 
-    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">,</span> <span class="n">namespace</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">option_string</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="n">parser</span><span class="o">.</span><span class="n">print_help</span><span class="p">()</span>
+    def __call__(self, parser, namespace, values, option_string=None):
+        parser.print_help()
 
-        <span class="n">subparsers_actions</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="n">action</span> <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">_actions</span>
-            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">argparse</span><span class="o">.</span><span class="n">_SubParsersAction</span><span class="p">)]</span>
+        subparsers_actions = [
+            action for action in parser._actions
+            if isinstance(action, argparse._SubParsersAction)]
 
-        <span class="k">for</span> <span class="n">subparsers_action</span> <span class="ow">in</span> <span class="n">subparsers_actions</span><span class="p">:</span>
+        for subparsers_action in subparsers_actions:
 
-            <span class="k">for</span> <span class="n">choice</span><span class="p">,</span> <span class="n">subparser</span> <span class="ow">in</span> <span class="n">subparsers_action</span><span class="o">.</span><span class="n">choices</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">{}:</span><span class="se">\n</span><span class="s2">{}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">choice</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">choice</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
-                <span class="k">print</span><span class="p">(</span><span class="n">subparser</span><span class="o">.</span><span class="n">format_help</span><span class="p">())</span>
+            for choice, subparser in subparsers_action.choices.items():
+                print("\n{}:\n{}".format(choice.upper(), "-" * (len(choice) + 1)))
+                print(subparser.format_help())
 
-        <span class="n">parser</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
-
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">):</span>
-
-    <span class="n">default_parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;CLI for VSD&quot;</span><span class="p">,</span> <span class="n">add_help</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-v&quot;</span><span class="p">,</span> <span class="s2">&quot;--verbose&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Activate verbose mode&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--username&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Username to get an api key or set &#39;VSD_USERNAME&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--password&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Password to get an api key or set &#39;VSD_PASSWORD&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--api&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;URL of the API endpoint or set &#39;VSD_API_URL&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--version&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Version of the API or set &#39;VSD_API_VERSION&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--enterprise&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the enterprise to connect or set &#39;VSD_ENTERPRISE&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--json&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Add this option get a JSON output or set VSD_JSON_OUTPUT=True&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">)</span>
-
-    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;CLI for VSD Software Development Kit&quot;</span><span class="p">,</span> <span class="n">add_help</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-h&quot;</span><span class="p">,</span> <span class="s2">&quot;--help&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="n">_HelpAction</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;help for help if you need some help&quot;</span><span class="p">)</span>
-
-    <span class="n">subparsers</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_subparsers</span><span class="p">(</span><span class="n">dest</span><span class="o">=</span><span class="s2">&quot;command&quot;</span><span class="p">,</span>
-                                       <span class="n">title</span><span class="o">=</span><span class="s2">&quot;All available commands&quot;</span><span class="p">)</span>
-
-    <span class="c1"># List Command</span>
-    <span class="n">list_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;list&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;List all objects&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;list&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--in&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent_infos&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the PARENT_NAME and PARENT_UUID&quot;</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;--filter&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify a filter predicate&quot;</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-x&quot;</span><span class="p">,</span> <span class="s2">&quot;--fields&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;fields&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify output fields&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="s2">&quot;--query&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;query_parameters&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value that will be sent as query parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-
-    <span class="c1"># Count Command</span>
-    <span class="n">count_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Count all objects&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--in&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent_infos&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the parent name and its uuid&quot;</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;--filter&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify a filter predicate&quot;</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-x&quot;</span><span class="p">,</span> <span class="s2">&quot;--fields&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;fields&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify output fields&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="s2">&quot;--query&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;query_parameters&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value that will be sent as query parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-
-    <span class="c1"># Show Command</span>
-    <span class="n">show_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;show&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Show a specific object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">show_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;show&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to show (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">show_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="s2">&quot;--id&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Identifier of the object to show&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">show_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-x&quot;</span><span class="p">,</span> <span class="s2">&quot;--fields&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;fields&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify output fields&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
-
-    <span class="c1"># Create Command</span>
-    <span class="n">create_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Create a new object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">create_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to create (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">create_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--in&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent_infos&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the parent name and its uuid&quot;</span><span class="p">)</span>
-    <span class="n">create_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-p&quot;</span><span class="p">,</span> <span class="s2">&quot;--params&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;params&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-    <span class="c1"># Update Command</span>
-    <span class="n">update_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;update&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Update an existing object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">update_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;update&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to update (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">update_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="s2">&quot;--id&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Identifier of the object to show&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">update_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-p&quot;</span><span class="p">,</span> <span class="s2">&quot;--params&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;params&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-    <span class="c1"># Delete Command</span>
-    <span class="n">delete_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;delete&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Delete an existing object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">delete_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;delete&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to update (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">delete_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="s2">&quot;--id&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Identifier of the object to show&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-    <span class="c1"># Assign Command</span>
-    <span class="n">assign_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s1">&#39;assign&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Assign a set of new objects according to their identifier&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">assign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;assign&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of the object to assign (See command `objects` to list all objects name)&#39;</span><span class="p">)</span>
-    <span class="n">assign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--ids&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;ids&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Identifier of the object to assign&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">assign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--to&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;parent_infos&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the resource name and its uuid&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-    <span class="c1"># Unassign Command</span>
-    <span class="n">unassign_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s1">&#39;unassign&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Unassign a set of new objects according to their identifier&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">unassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;unassign&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of the object to unassign (See command `objects` to list all objects name)&#39;</span><span class="p">)</span>
-    <span class="n">unassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--ids&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;ids&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Identifier of the object to unassign&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">unassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--from&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;parent_infos&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the resource name and its uuid&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-    <span class="c1"># Reassign Command</span>
-    <span class="n">reassign_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s1">&#39;reassign&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Reassign all objects according to their identifier&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">reassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;reassign&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of the object to reassign (See command `objects` to list all objects name)&#39;</span><span class="p">)</span>
-    <span class="n">reassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--ids&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;ids&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Identifier of the object to reassign. If --ids is not specified, it will remove all assigned objects&#39;</span><span class="p">)</span>
-    <span class="n">reassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--to&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;parent_infos&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the resource name and its uuid&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-    <span class="c1"># Resources Command</span>
-    <span class="n">objects_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Explore all objects&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">objects_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;--filter&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Filter by name (ex: -f nsg)&quot;</span><span class="p">)</span>
-    <span class="n">objects_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-p&quot;</span><span class="p">,</span> <span class="s2">&quot;--parent&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Filter by parent (ex -p enterprise)&quot;</span><span class="p">)</span>
-    <span class="n">objects_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-c&quot;</span><span class="p">,</span> <span class="s2">&quot;--child&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;child&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Filter by children (ex: -c domain)&quot;</span><span class="p">)</span>
-
-    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
-
-    <span class="kn">from</span> <span class="nn">commands</span> <span class="kn">import</span> <span class="n">CLICommand</span>
-    <span class="n">CLICommand</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+        parser.exit()
 
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
-</pre></div>
+def main(argv=sys.argv):
 
+    default_parser = argparse.ArgumentParser(description="CLI for VSD", add_help=False)
+    default_parser.add_argument("-v", "--verbose", help="Activate verbose mode", action="store_true")
+    default_parser.add_argument("--username", help="Username to get an api key or set 'VSD_USERNAME' in your variable environment")
+    default_parser.add_argument("--password", help="Password to get an api key or set 'VSD_PASSWORD' in your variable environment")
+    default_parser.add_argument("--api", help="URL of the API endpoint or set 'VSD_API_URL' in your variable environment")
+    default_parser.add_argument("--version", help="Version of the API or set 'VSD_API_VERSION' in your variable environment")
+    default_parser.add_argument("--enterprise", help="Name of the enterprise to connect or set 'VSD_ENTERPRISE' in your variable environment")
+    default_parser.add_argument("--json", help="Add this option get a JSON output or set VSD_JSON_OUTPUT=True", action="store_true")
+
+    parser = argparse.ArgumentParser(description="CLI for VSD Software Development Kit", add_help=False)
+    parser.add_argument("-h", "--help", action=_HelpAction, help="help for help if you need some help")
+
+    subparsers = parser.add_subparsers(dest="command",
+                                       title="All available commands")
+
+    # List Command
+    list_parser = subparsers.add_parser("list", description="List all objects", parents=[default_parser])
+    list_parser.add_argument("list", help="Name of the object (See command 'objects' to list all objects name)")
+    list_parser.add_argument("--in", dest="parent_infos", nargs=2, help="Specify the PARENT_NAME and PARENT_UUID")
+    list_parser.add_argument("-f", "--filter", dest="filter", help="Specify a filter predicate")
+    list_parser.add_argument("-x", "--fields", dest="fields", help="Specify output fields", nargs="+", type=str)
+    list_parser.add_argument("-q", "--query", dest="query_parameters", nargs="*", help="List of Key=Value that will be sent as query parameters", required=False)
+
+    # Count Command
+    count_parser = subparsers.add_parser("count", description="Count all objects", parents=[default_parser])
+    count_parser.add_argument("count", help="Name of the object (See command 'objects' to list all objects name)")
+    count_parser.add_argument("--in", dest="parent_infos", nargs=2, help="Specify the parent name and its uuid")
+    count_parser.add_argument("-f", "--filter", dest="filter", help="Specify a filter predicate")
+    count_parser.add_argument("-x", "--fields", dest="fields", help="Specify output fields", nargs="+", type=str)
+    count_parser.add_argument("-q", "--query", dest="query_parameters", nargs="*", help="List of Key=Value that will be sent as query parameters", required=False)
+
+    # Show Command
+    show_parser = subparsers.add_parser("show", description="Show a specific object", parents=[default_parser])
+    show_parser.add_argument("show", help="Name of the object to show (See command 'objects' to list all objects name)")
+    show_parser.add_argument("-i", "--id", dest="id", help="Identifier of the object to show", required=True)
+    show_parser.add_argument("-x", "--fields", dest="fields", help="Specify output fields", nargs="+", type=str)
+
+    # Create Command
+    create_parser = subparsers.add_parser("create", description="Create a new object", parents=[default_parser])
+    create_parser.add_argument("create", help="Name of the object to create (See command 'objects' to list all objects name)")
+    create_parser.add_argument("--in", dest="parent_infos", nargs=2, help="Specify the parent name and its uuid")
+    create_parser.add_argument("-p", "--params", dest="params", nargs="*", help="List of Key=Value parameters", required=True)
+
+    # Update Command
+    update_parser = subparsers.add_parser("update", description="Update an existing object", parents=[default_parser])
+    update_parser.add_argument("update", help="Name of the object to update (See command 'objects' to list all objects name)")
+    update_parser.add_argument("-i", "--id", dest="id", help="Identifier of the object to show", required=True)
+    update_parser.add_argument("-p", "--params", dest="params", nargs="*", help="List of Key=Value parameters", required=True)
+
+    # Delete Command
+    delete_parser = subparsers.add_parser("delete", description="Delete an existing object", parents=[default_parser])
+    delete_parser.add_argument("delete", help="Name of the object to update (See command 'objects' to list all objects name)")
+    delete_parser.add_argument("-i", "--id", dest="id", help="Identifier of the object to show", required=True)
+
+    # Assign Command
+    assign_parser = subparsers.add_parser('assign', description="Assign a set of new objects according to their identifier", parents=[default_parser])
+    assign_parser.add_argument('assign', help='Name of the object to assign (See command `objects` to list all objects name)')
+    assign_parser.add_argument('--ids', dest='ids', nargs='*', help='Identifier of the object to assign', required=True)
+    assign_parser.add_argument('--to', dest='parent_infos', nargs=2, help="Specify the resource name and its uuid", required=True)
+
+    # Unassign Command
+    unassign_parser = subparsers.add_parser('unassign', description="Unassign a set of new objects according to their identifier", parents=[default_parser])
+    unassign_parser.add_argument('unassign', help='Name of the object to unassign (See command `objects` to list all objects name)')
+    unassign_parser.add_argument('--ids', dest='ids', nargs='*', help='Identifier of the object to unassign', required=True)
+    unassign_parser.add_argument('--from', dest='parent_infos', nargs=2, help="Specify the resource name and its uuid", required=True)
+
+    # Reassign Command
+    reassign_parser = subparsers.add_parser('reassign', description="Reassign all objects according to their identifier", parents=[default_parser])
+    reassign_parser.add_argument('reassign', help='Name of the object to reassign (See command `objects` to list all objects name)')
+    reassign_parser.add_argument('--ids', dest='ids', nargs='*', help='Identifier of the object to reassign. If --ids is not specified, it will remove all assigned objects')
+    reassign_parser.add_argument('--to', dest='parent_infos', nargs=2, help="Specify the resource name and its uuid", required=True)
+
+    # Resources Command
+    objects_parser = subparsers.add_parser("objects", description="Explore all objects", parents=[default_parser])
+    objects_parser.add_argument("-f", "--filter", dest="filter", help="Filter by name (ex: -f nsg)")
+    objects_parser.add_argument("-p", "--parent", dest="parent", help="Filter by parent (ex -p enterprise)")
+    objects_parser.add_argument("-c", "--child", dest="child", help="Filter by children (ex: -c domain)")
+
+    args = parser.parse_args()
+
+    from commands import CLICommand
+    CLICommand.execute(args)
+
+
+if __name__ == "__main__":
+    main()
+</code></pre>
   </div>
 
   </header>
@@ -1212,7 +1144,7 @@ table {
       
   <div class="item">
     <div class="name def" id="vspk.cli.cli.main">
-    <p>def <span class="ident">main</span>(</p><p>argv=[&#39;/home/corentih/python/env/bin/pdoc&#39;, &#39;vspk&#39;, &#39;--html-dir&#39;, &#39;vspkdoc&#39;, &#39;--html&#39;])</p>
+    <p>def <span class="ident">main</span>(</p><p>argv=[&#39;/home/corentih/vvv/bin/pdoc&#39;, &#39;--html&#39;, &#39;--html-dir&#39;, &#39;doc&#39;, &#39;vspk&#39;])</p>
     </div>
     
 
@@ -1221,92 +1153,91 @@ table {
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-vspk.cli.cli.main', this);">Show source &equiv;</a></p>
   <div id="source-vspk.cli.cli.main" class="source">
-    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">):</span>
+    <pre><code>def main(argv=sys.argv):
 
-    <span class="n">default_parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;CLI for VSD&quot;</span><span class="p">,</span> <span class="n">add_help</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-v&quot;</span><span class="p">,</span> <span class="s2">&quot;--verbose&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Activate verbose mode&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--username&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Username to get an api key or set &#39;VSD_USERNAME&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--password&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Password to get an api key or set &#39;VSD_PASSWORD&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--api&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;URL of the API endpoint or set &#39;VSD_API_URL&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--version&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Version of the API or set &#39;VSD_API_VERSION&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--enterprise&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the enterprise to connect or set &#39;VSD_ENTERPRISE&#39; in your variable environment&quot;</span><span class="p">)</span>
-    <span class="n">default_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--json&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Add this option get a JSON output or set VSD_JSON_OUTPUT=True&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">)</span>
+    default_parser = argparse.ArgumentParser(description="CLI for VSD", add_help=False)
+    default_parser.add_argument("-v", "--verbose", help="Activate verbose mode", action="store_true")
+    default_parser.add_argument("--username", help="Username to get an api key or set 'VSD_USERNAME' in your variable environment")
+    default_parser.add_argument("--password", help="Password to get an api key or set 'VSD_PASSWORD' in your variable environment")
+    default_parser.add_argument("--api", help="URL of the API endpoint or set 'VSD_API_URL' in your variable environment")
+    default_parser.add_argument("--version", help="Version of the API or set 'VSD_API_VERSION' in your variable environment")
+    default_parser.add_argument("--enterprise", help="Name of the enterprise to connect or set 'VSD_ENTERPRISE' in your variable environment")
+    default_parser.add_argument("--json", help="Add this option get a JSON output or set VSD_JSON_OUTPUT=True", action="store_true")
 
-    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;CLI for VSD Software Development Kit&quot;</span><span class="p">,</span> <span class="n">add_help</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-h&quot;</span><span class="p">,</span> <span class="s2">&quot;--help&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="n">_HelpAction</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;help for help if you need some help&quot;</span><span class="p">)</span>
+    parser = argparse.ArgumentParser(description="CLI for VSD Software Development Kit", add_help=False)
+    parser.add_argument("-h", "--help", action=_HelpAction, help="help for help if you need some help")
 
-    <span class="n">subparsers</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_subparsers</span><span class="p">(</span><span class="n">dest</span><span class="o">=</span><span class="s2">&quot;command&quot;</span><span class="p">,</span>
-                                       <span class="n">title</span><span class="o">=</span><span class="s2">&quot;All available commands&quot;</span><span class="p">)</span>
+    subparsers = parser.add_subparsers(dest="command",
+                                       title="All available commands")
 
-    <span class="c1"># List Command</span>
-    <span class="n">list_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;list&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;List all objects&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;list&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--in&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent_infos&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the PARENT_NAME and PARENT_UUID&quot;</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;--filter&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify a filter predicate&quot;</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-x&quot;</span><span class="p">,</span> <span class="s2">&quot;--fields&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;fields&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify output fields&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
-    <span class="n">list_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="s2">&quot;--query&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;query_parameters&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value that will be sent as query parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    # List Command
+    list_parser = subparsers.add_parser("list", description="List all objects", parents=[default_parser])
+    list_parser.add_argument("list", help="Name of the object (See command 'objects' to list all objects name)")
+    list_parser.add_argument("--in", dest="parent_infos", nargs=2, help="Specify the PARENT_NAME and PARENT_UUID")
+    list_parser.add_argument("-f", "--filter", dest="filter", help="Specify a filter predicate")
+    list_parser.add_argument("-x", "--fields", dest="fields", help="Specify output fields", nargs="+", type=str)
+    list_parser.add_argument("-q", "--query", dest="query_parameters", nargs="*", help="List of Key=Value that will be sent as query parameters", required=False)
 
-    <span class="c1"># Count Command</span>
-    <span class="n">count_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Count all objects&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--in&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent_infos&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the parent name and its uuid&quot;</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;--filter&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify a filter predicate&quot;</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-x&quot;</span><span class="p">,</span> <span class="s2">&quot;--fields&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;fields&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify output fields&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
-    <span class="n">count_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="s2">&quot;--query&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;query_parameters&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value that will be sent as query parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    # Count Command
+    count_parser = subparsers.add_parser("count", description="Count all objects", parents=[default_parser])
+    count_parser.add_argument("count", help="Name of the object (See command 'objects' to list all objects name)")
+    count_parser.add_argument("--in", dest="parent_infos", nargs=2, help="Specify the parent name and its uuid")
+    count_parser.add_argument("-f", "--filter", dest="filter", help="Specify a filter predicate")
+    count_parser.add_argument("-x", "--fields", dest="fields", help="Specify output fields", nargs="+", type=str)
+    count_parser.add_argument("-q", "--query", dest="query_parameters", nargs="*", help="List of Key=Value that will be sent as query parameters", required=False)
 
-    <span class="c1"># Show Command</span>
-    <span class="n">show_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;show&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Show a specific object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">show_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;show&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to show (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">show_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="s2">&quot;--id&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Identifier of the object to show&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">show_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-x&quot;</span><span class="p">,</span> <span class="s2">&quot;--fields&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;fields&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify output fields&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
+    # Show Command
+    show_parser = subparsers.add_parser("show", description="Show a specific object", parents=[default_parser])
+    show_parser.add_argument("show", help="Name of the object to show (See command 'objects' to list all objects name)")
+    show_parser.add_argument("-i", "--id", dest="id", help="Identifier of the object to show", required=True)
+    show_parser.add_argument("-x", "--fields", dest="fields", help="Specify output fields", nargs="+", type=str)
 
-    <span class="c1"># Create Command</span>
-    <span class="n">create_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Create a new object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">create_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to create (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">create_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--in&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent_infos&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the parent name and its uuid&quot;</span><span class="p">)</span>
-    <span class="n">create_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-p&quot;</span><span class="p">,</span> <span class="s2">&quot;--params&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;params&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    # Create Command
+    create_parser = subparsers.add_parser("create", description="Create a new object", parents=[default_parser])
+    create_parser.add_argument("create", help="Name of the object to create (See command 'objects' to list all objects name)")
+    create_parser.add_argument("--in", dest="parent_infos", nargs=2, help="Specify the parent name and its uuid")
+    create_parser.add_argument("-p", "--params", dest="params", nargs="*", help="List of Key=Value parameters", required=True)
 
-    <span class="c1"># Update Command</span>
-    <span class="n">update_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;update&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Update an existing object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">update_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;update&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to update (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">update_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="s2">&quot;--id&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Identifier of the object to show&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">update_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-p&quot;</span><span class="p">,</span> <span class="s2">&quot;--params&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;params&quot;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List of Key=Value parameters&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    # Update Command
+    update_parser = subparsers.add_parser("update", description="Update an existing object", parents=[default_parser])
+    update_parser.add_argument("update", help="Name of the object to update (See command 'objects' to list all objects name)")
+    update_parser.add_argument("-i", "--id", dest="id", help="Identifier of the object to show", required=True)
+    update_parser.add_argument("-p", "--params", dest="params", nargs="*", help="List of Key=Value parameters", required=True)
 
-    <span class="c1"># Delete Command</span>
-    <span class="n">delete_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;delete&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Delete an existing object&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">delete_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;delete&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Name of the object to update (See command &#39;objects&#39; to list all objects name)&quot;</span><span class="p">)</span>
-    <span class="n">delete_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="s2">&quot;--id&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Identifier of the object to show&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    # Delete Command
+    delete_parser = subparsers.add_parser("delete", description="Delete an existing object", parents=[default_parser])
+    delete_parser.add_argument("delete", help="Name of the object to update (See command 'objects' to list all objects name)")
+    delete_parser.add_argument("-i", "--id", dest="id", help="Identifier of the object to show", required=True)
 
-    <span class="c1"># Assign Command</span>
-    <span class="n">assign_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s1">&#39;assign&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Assign a set of new objects according to their identifier&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">assign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;assign&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of the object to assign (See command `objects` to list all objects name)&#39;</span><span class="p">)</span>
-    <span class="n">assign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--ids&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;ids&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Identifier of the object to assign&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">assign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--to&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;parent_infos&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the resource name and its uuid&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    # Assign Command
+    assign_parser = subparsers.add_parser('assign', description="Assign a set of new objects according to their identifier", parents=[default_parser])
+    assign_parser.add_argument('assign', help='Name of the object to assign (See command `objects` to list all objects name)')
+    assign_parser.add_argument('--ids', dest='ids', nargs='*', help='Identifier of the object to assign', required=True)
+    assign_parser.add_argument('--to', dest='parent_infos', nargs=2, help="Specify the resource name and its uuid", required=True)
 
-    <span class="c1"># Unassign Command</span>
-    <span class="n">unassign_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s1">&#39;unassign&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Unassign a set of new objects according to their identifier&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">unassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;unassign&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of the object to unassign (See command `objects` to list all objects name)&#39;</span><span class="p">)</span>
-    <span class="n">unassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--ids&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;ids&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Identifier of the object to unassign&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-    <span class="n">unassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--from&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;parent_infos&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the resource name and its uuid&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    # Unassign Command
+    unassign_parser = subparsers.add_parser('unassign', description="Unassign a set of new objects according to their identifier", parents=[default_parser])
+    unassign_parser.add_argument('unassign', help='Name of the object to unassign (See command `objects` to list all objects name)')
+    unassign_parser.add_argument('--ids', dest='ids', nargs='*', help='Identifier of the object to unassign', required=True)
+    unassign_parser.add_argument('--from', dest='parent_infos', nargs=2, help="Specify the resource name and its uuid", required=True)
 
-    <span class="c1"># Reassign Command</span>
-    <span class="n">reassign_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s1">&#39;reassign&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Reassign all objects according to their identifier&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">reassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;reassign&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of the object to reassign (See command `objects` to list all objects name)&#39;</span><span class="p">)</span>
-    <span class="n">reassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--ids&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;ids&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Identifier of the object to reassign. If --ids is not specified, it will remove all assigned objects&#39;</span><span class="p">)</span>
-    <span class="n">reassign_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--to&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;parent_infos&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Specify the resource name and its uuid&quot;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    # Reassign Command
+    reassign_parser = subparsers.add_parser('reassign', description="Reassign all objects according to their identifier", parents=[default_parser])
+    reassign_parser.add_argument('reassign', help='Name of the object to reassign (See command `objects` to list all objects name)')
+    reassign_parser.add_argument('--ids', dest='ids', nargs='*', help='Identifier of the object to reassign. If --ids is not specified, it will remove all assigned objects')
+    reassign_parser.add_argument('--to', dest='parent_infos', nargs=2, help="Specify the resource name and its uuid", required=True)
 
-    <span class="c1"># Resources Command</span>
-    <span class="n">objects_parser</span> <span class="o">=</span> <span class="n">subparsers</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Explore all objects&quot;</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="p">[</span><span class="n">default_parser</span><span class="p">])</span>
-    <span class="n">objects_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;--filter&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Filter by name (ex: -f nsg)&quot;</span><span class="p">)</span>
-    <span class="n">objects_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-p&quot;</span><span class="p">,</span> <span class="s2">&quot;--parent&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;parent&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Filter by parent (ex -p enterprise)&quot;</span><span class="p">)</span>
-    <span class="n">objects_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-c&quot;</span><span class="p">,</span> <span class="s2">&quot;--child&quot;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;child&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Filter by children (ex: -c domain)&quot;</span><span class="p">)</span>
+    # Resources Command
+    objects_parser = subparsers.add_parser("objects", description="Explore all objects", parents=[default_parser])
+    objects_parser.add_argument("-f", "--filter", dest="filter", help="Filter by name (ex: -f nsg)")
+    objects_parser.add_argument("-p", "--parent", dest="parent", help="Filter by parent (ex -p enterprise)")
+    objects_parser.add_argument("-c", "--child", dest="child", help="Filter by children (ex: -c domain)")
 
-    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+    args = parser.parse_args()
 
-    <span class="kn">from</span> <span class="nn">commands</span> <span class="kn">import</span> <span class="n">CLICommand</span>
-    <span class="n">CLICommand</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-</pre></div>
-
+    from commands import CLICommand
+    CLICommand.execute(args)
+</code></pre>
   </div>
 </div>
 
