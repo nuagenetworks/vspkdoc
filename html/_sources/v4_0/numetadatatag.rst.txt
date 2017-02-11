@@ -52,7 +52,7 @@ Parents
 
 - :ref:`nuexternalservice.NUExternalService<nuexternalservice>`
 
-- :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`
-
 - :ref:`nuenterprise.NUEnterprise<nuenterprise>`
+
+- :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`
 

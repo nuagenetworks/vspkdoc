@@ -43,7 +43,7 @@ Parents
 --------
 
 
-- :ref:`nunsporttemplate.NUNSPortTemplate<nunsporttemplate>`
-
 - :ref:`nuporttemplate.NUPortTemplate<nuporttemplate>`
+
+- :ref:`nunsporttemplate.NUNSPortTemplate<nunsporttemplate>`
 

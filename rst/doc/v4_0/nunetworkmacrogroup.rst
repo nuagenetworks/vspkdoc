@@ -18,6 +18,8 @@ Attributes
 
 - ``description``: Description of the macro group
 
+- ``network_macros``: None
+
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
 - ``external_id``: External object ID. Used for integration with third party systems

@@ -69,6 +69,7 @@ Children
 :ref:`nuenterprisepermission.NUEnterprisePermission<nuenterprisepermission>`                                                                                     ``enterprise_permissions`` 
 :ref:`nuuplinkconnection.NUUplinkConnection<nuuplinkconnection>`                                                                                                 ``uplink_connections`` 
 :ref:`nubrconnection.NUBRConnection<nubrconnection>`                                                                                                             ``br_connections`` 
+:ref:`nultestatistics.NULtestatistics<nultestatistics>`                                                                                                          ``ltestatistics`` 
 :ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
 ================================================================================================================================================               ==========================================================================================
 
@@ -78,11 +79,11 @@ Parents
 --------
 
 
-- :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`
-
 - :ref:`nuredundantport.NURedundantPort<nuredundantport>`
 
 - :ref:`nuport.NUPort<nuport>`
+
+- :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`
 
 - :ref:`nunsport.NUNSPort<nunsport>`
 

@@ -69,9 +69,9 @@ Parents
 
 - :ref:`nugroup.NUGroup<nugroup>`
 
-- :ref:`nuzone.NUZone<nuzone>`
+- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
 
-- :ref:`nupolicygrouptemplate.NUPolicyGroupTemplate<nupolicygrouptemplate>`
+- :ref:`nuzone.NUZone<nuzone>`
 
 - :ref:`nuflowsecuritypolicy.NUFlowSecurityPolicy<nuflowsecuritypolicy>`
 
@@ -89,13 +89,11 @@ Parents
 
 - :ref:`nuredirectiontarget.NURedirectionTarget<nuredirectiontarget>`
 
-- :ref:`numetadata.NUMetadata<numetadata>`
-
 - :ref:`nuvsp.NUVSP<nuvsp>`
 
 - :ref:`nudomain.NUDomain<nudomain>`
 
-- :ref:`nuwanservice.NUWANService<nuwanservice>`
+- :ref:`nuvsc.NUVSC<nuvsc>`
 
 - :ref:`nuvsd.NUVSD<nuvsd>`
 
@@ -109,7 +107,7 @@ Parents
 
 - :ref:`nucontainer.NUContainer<nucontainer>`
 
-- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
+- :ref:`numetadata.NUMetadata<numetadata>`
 
 - :ref:`nuvrs.NUVRS<nuvrs>`
 
@@ -121,6 +119,8 @@ Parents
 
 - :ref:`nuvminterface.NUVMInterface<nuvminterface>`
 
+- :ref:`nuwanservice.NUWANService<nuwanservice>`
+
 - :ref:`nulicense.NULicense<nulicense>`
 
 - :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
@@ -128,10 +128,6 @@ Parents
 - :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`
 
 - :ref:`numulticastrange.NUMultiCastRange<numulticastrange>`
-
-- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
-
-- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`nugateway.NUGateway<nugateway>`
 
@@ -149,17 +145,15 @@ Parents
 
 - :ref:`nunsgateway.NUNSGateway<nunsgateway>`
 
-- :ref:`nuvsc.NUVSC<nuvsc>`
-
-- :ref:`nuvm.NUVM<nuvm>`
-
-- :ref:`nunsport.NUNSPort<nunsport>`
+- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
 
 - :ref:`nupublicnetworkmacro.NUPublicNetworkMacro<nupublicnetworkmacro>`
 
 - :ref:`nuaddressrange.NUAddressRange<nuaddressrange>`
 
 - :ref:`nudomaintemplate.NUDomainTemplate<nudomaintemplate>`
+
+- :ref:`nuvm.NUVM<nuvm>`
 
 - :ref:`nufloatingip.NUFloatingIp<nufloatingip>`
 
@@ -169,13 +163,19 @@ Parents
 
 - :ref:`nuexternalservice.NUExternalService<nuexternalservice>`
 
+- :ref:`nuenterprise.NUEnterprise<nuenterprise>`
+
+- :ref:`nupolicygrouptemplate.NUPolicyGroupTemplate<nupolicygrouptemplate>`
+
 - :ref:`nuuser.NUUser<nuuser>`
+
+- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`nupolicygroup.NUPolicyGroup<nupolicygroup>`
 
-- :ref:`nuflow.NUFlow<nuflow>`
+- :ref:`nunsport.NUNSPort<nunsport>`
 
-- :ref:`nuenterprise.NUEnterprise<nuenterprise>`
+- :ref:`nuflow.NUFlow<nuflow>`
 
 - :ref:`nuingressacltemplate.NUIngressACLTemplate<nuingressacltemplate>`
 

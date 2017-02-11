@@ -120,11 +120,11 @@ Parents
 --------
 
 
+- :ref:`nuvsc.NUVSC<nuvsc>`
+
 - :ref:`nuvport.NUVPort<nuvport>`
 
 - :ref:`nuhsc.NUHSC<nuhsc>`
-
-- :ref:`nuvsc.NUVSC<nuvsc>`
 
 - :ref:`nuvm.NUVM<nuvm>`
 

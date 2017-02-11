@@ -67,6 +67,8 @@ Parents
 
 - :ref:`nugroup.NUGroup<nugroup>`
 
+- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
+
 - :ref:`nuzone.NUZone<nuzone>`
 
 - :ref:`nuapp.NUApp<nuapp>`
@@ -87,13 +89,9 @@ Parents
 
 - :ref:`nuredirectiontarget.NURedirectionTarget<nuredirectiontarget>`
 
-- :ref:`numetadata.NUMetadata<numetadata>`
-
 - :ref:`nuvsp.NUVSP<nuvsp>`
 
-- :ref:`nudomain.NUDomain<nudomain>`
-
-- :ref:`nuwanservice.NUWANService<nuwanservice>`
+- :ref:`nuvsc.NUVSC<nuvsc>`
 
 - :ref:`nuvsd.NUVSD<nuvsd>`
 
@@ -109,31 +107,31 @@ Parents
 
 - :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
 
+- :ref:`numetadata.NUMetadata<numetadata>`
+
 - :ref:`nuvrs.NUVRS<nuvrs>`
 
 - :ref:`nuhsc.NUHSC<nuhsc>`
+
+- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
 
 - :ref:`nustaticroute.NUStaticRoute<nustaticroute>`
 
 - :ref:`nuvminterface.NUVMInterface<nuvminterface>`
 
+- :ref:`nuwanservice.NUWANService<nuwanservice>`
+
 - :ref:`nulicense.NULicense<nulicense>`
 
 - :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
-
-- :ref:`nupolicygrouptemplate.NUPolicyGroupTemplate<nupolicygrouptemplate>`
 
 - :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`
 
 - :ref:`numulticastrange.NUMultiCastRange<numulticastrange>`
 
-- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
-
-- :ref:`nutier.NUTier<nutier>`
+- :ref:`nudomain.NUDomain<nudomain>`
 
 - :ref:`nugateway.NUGateway<nugateway>`
-
-- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
 
 - :ref:`nuapplicationservice.NUApplicationService<nuapplicationservice>`
 
@@ -147,17 +145,13 @@ Parents
 
 - :ref:`nunsgateway.NUNSGateway<nunsgateway>`
 
-- :ref:`nuvsc.NUVSC<nuvsc>`
-
-- :ref:`nuvm.NUVM<nuvm>`
-
-- :ref:`nunsport.NUNSPort<nunsport>`
-
 - :ref:`nupublicnetworkmacro.NUPublicNetworkMacro<nupublicnetworkmacro>`
 
 - :ref:`nuaddressrange.NUAddressRange<nuaddressrange>`
 
 - :ref:`nudomaintemplate.NUDomainTemplate<nudomaintemplate>`
+
+- :ref:`nuvm.NUVM<nuvm>`
 
 - :ref:`nufloatingip.NUFloatingIp<nufloatingip>`
 
@@ -169,7 +163,13 @@ Parents
 
 - :ref:`nuvlan.NUVLAN<nuvlan>`
 
+- :ref:`nupolicygrouptemplate.NUPolicyGroupTemplate<nupolicygrouptemplate>`
+
 - :ref:`nuuser.NUUser<nuuser>`
+
+- :ref:`nutier.NUTier<nutier>`
+
+- :ref:`nunsport.NUNSPort<nunsport>`
 
 - :ref:`nuflow.NUFlow<nuflow>`
 

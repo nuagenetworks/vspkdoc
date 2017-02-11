@@ -91,17 +91,17 @@ Parents
 
 - :ref:`nusubnettemplate.NUSubnetTemplate<nusubnettemplate>`
 
-- :ref:`nudomain.NUDomain<nudomain>`
-
 - :ref:`nuvport.NUVPort<nuvport>`
 
 - :ref:`nusubnet.NUSubnet<nusubnet>`
 
 - :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
 
+- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
+
 - :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`
 
-- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
+- :ref:`nudomain.NUDomain<nudomain>`
 
 - :ref:`nul2domain.NUL2Domain<nul2domain>`
 

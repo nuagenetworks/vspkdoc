@@ -45,15 +45,15 @@ Parents
 
 - :ref:`nuzone.NUZone<nuzone>`
 
-- :ref:`nudomain.NUDomain<nudomain>`
-
 - :ref:`nuvport.NUVPort<nuvport>`
 
 - :ref:`nusubnet.NUSubnet<nusubnet>`
 
-- :ref:`nutier.NUTier<nutier>`
+- :ref:`nudomain.NUDomain<nudomain>`
 
 - :ref:`nul2domain.NUL2Domain<nul2domain>`
+
+- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`nunsport.NUNSPort<nunsport>`
 
