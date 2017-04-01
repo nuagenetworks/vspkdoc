@@ -24,6 +24,8 @@ Attributes
 
 - ``gateway_peer2_autodiscovered_gateway_id``: The Auto Discovered Gateway  peer in this Redundant Group
 
+- ``gateway_peer2_id``: The gateway configuration owner in this Redundant Group. when Redundant Group is deleted this gateway will recieve vport associations 
+
 - ``gateway_peer2_name``: The gateway peer name in this Redundant Group
 
 - ``redundant_gateway_status``: The status of  Redundant Group, possible values are FAILED, SUCCESS Possible values are FAILED, SUCCESS, .
@@ -59,7 +61,6 @@ Children
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 :ref:`nuenterprisepermission.NUEnterprisePermission<nuenterprisepermission>`                                                                                     ``enterprise_permissions`` 
 :ref:`nuport.NUPort<nuport>`                                                                                                                                     ``ports`` 
-:ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`                                                                                                 ``vsg_redundant_ports`` 
 :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`                                                                                                 ``vsg_redundant_ports`` 
 :ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
 ================================================================================================================================================               ==========================================================================================

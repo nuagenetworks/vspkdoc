@@ -67,7 +67,7 @@ Parents
 
 - :ref:`nugroup.NUGroup<nugroup>`
 
-- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
+- :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`
 
 - :ref:`nuzone.NUZone<nuzone>`
 
@@ -87,11 +87,15 @@ Parents
 
 - :ref:`numetadatatag.NUMetadataTag<numetadatatag>`
 
+- :ref:`nupublicnetworkmacro.NUPublicNetworkMacro<nupublicnetworkmacro>`
+
 - :ref:`nuredirectiontarget.NURedirectionTarget<nuredirectiontarget>`
+
+- :ref:`numetadata.NUMetadata<numetadata>`
 
 - :ref:`nuvsp.NUVSP<nuvsp>`
 
-- :ref:`nuvsc.NUVSC<nuvsc>`
+- :ref:`nuwanservice.NUWANService<nuwanservice>`
 
 - :ref:`nuvsd.NUVSD<nuvsd>`
 
@@ -105,31 +109,25 @@ Parents
 
 - :ref:`nupolicygroup.NUPolicyGroup<nupolicygroup>`
 
-- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
-
-- :ref:`numetadata.NUMetadata<numetadata>`
-
 - :ref:`nuvrs.NUVRS<nuvrs>`
 
 - :ref:`nuhsc.NUHSC<nuhsc>`
-
-- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
 
 - :ref:`nustaticroute.NUStaticRoute<nustaticroute>`
 
 - :ref:`nuvminterface.NUVMInterface<nuvminterface>`
 
-- :ref:`nuwanservice.NUWANService<nuwanservice>`
-
 - :ref:`nulicense.NULicense<nulicense>`
-
-- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
 
 - :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`
 
 - :ref:`numulticastrange.NUMultiCastRange<numulticastrange>`
 
+- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
+
 - :ref:`nudomain.NUDomain<nudomain>`
+
+- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`nugateway.NUGateway<nugateway>`
 
@@ -145,7 +143,13 @@ Parents
 
 - :ref:`nunsgateway.NUNSGateway<nunsgateway>`
 
-- :ref:`nupublicnetworkmacro.NUPublicNetworkMacro<nupublicnetworkmacro>`
+- :ref:`nuvsc.NUVSC<nuvsc>`
+
+- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
+
+- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
+
+- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
 
 - :ref:`nuaddressrange.NUAddressRange<nuaddressrange>`
 
@@ -166,8 +170,6 @@ Parents
 - :ref:`nupolicygrouptemplate.NUPolicyGroupTemplate<nupolicygrouptemplate>`
 
 - :ref:`nuuser.NUUser<nuuser>`
-
-- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`nunsport.NUNSPort<nunsport>`
 

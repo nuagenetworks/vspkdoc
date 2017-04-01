@@ -24,8 +24,6 @@ Attributes
 
 - ``address_spoofing`` (**Mandatory**): Indicates if address spoofing is ENABLED/DISABLED/INHERITED for this vport Possible values are INHERITED, ENABLED, DISABLED, .
 
-- ``peer_operational_state``: Operational State of the VPort - RUNNING/SHUTDOWN for peer in mc lag scenarios.
-
 - ``description``: Description for this vport
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
@@ -88,8 +86,6 @@ Parents
 --------
 
 
-- :ref:`nuzone.NUZone<nuzone>`
-
 - :ref:`nuredirectiontarget.NURedirectionTarget<nuredirectiontarget>`
 
 - :ref:`nusubnet.NUSubnet<nusubnet>`
@@ -100,11 +96,11 @@ Parents
 
 - :ref:`nudomain.NUDomain<nudomain>`
 
+- :ref:`nutier.NUTier<nutier>`
+
 - :ref:`numultinicvport.NUMultiNICVPort<numultinicvport>`
 
 - :ref:`nul2domain.NUL2Domain<nul2domain>`
 
 - :ref:`nufloatingip.NUFloatingIp<nufloatingip>`
-
-- :ref:`nutier.NUTier<nutier>`
 

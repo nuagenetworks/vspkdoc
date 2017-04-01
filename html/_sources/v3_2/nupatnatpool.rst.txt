@@ -28,7 +28,7 @@ Attributes
 
 - ``associated_gateway_id``: Default PAT IP Address, must belong to the pool above
 
-- ``associated_gateway_type``: None
+- ``associated_gateway_type``: 
 
 - ``external_id``: External object ID. Used for integration with third party systems
 

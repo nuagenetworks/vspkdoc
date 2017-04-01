@@ -51,9 +51,7 @@ Parents
 
 - :ref:`nudomain.NUDomain<nudomain>`
 
-- :ref:`nul2domain.NUL2Domain<nul2domain>`
-
 - :ref:`nutier.NUTier<nutier>`
 
-- :ref:`nunsport.NUNSPort<nunsport>`
+- :ref:`nul2domain.NUL2Domain<nul2domain>`
 

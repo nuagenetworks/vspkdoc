@@ -39,6 +39,7 @@ Children
 
 :ref:`numetadata.NUMetadata<numetadata>`                                                                                                                         ``metadatas`` 
 :ref:`nukeyservermonitorencryptedseed.NUKeyServerMonitorEncryptedSeed<nukeyservermonitorencryptedseed>`                                                          ``key_server_monitor_encrypted_seeds`` 
+:ref:`nukeyservermonitorencryptedsek.NUKeyServerMonitorEncryptedSEK<nukeyservermonitorencryptedsek>`                                                             ``key_server_monitor_encrypted_seks`` 
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 ================================================================================================================================================               ==========================================================================================
 

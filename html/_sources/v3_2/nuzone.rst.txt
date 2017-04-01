@@ -67,7 +67,6 @@ Children
 :ref:`nuvm.NUVM<nuvm>`                                                                                                                                           ``vms`` 
 :ref:`nuvminterface.NUVMInterface<nuvminterface>`                                                                                                                ``vm_interfaces`` 
 :ref:`nuqos.NUQOS<nuqos>`                                                                                                                                        ``qoss`` 
-:ref:`nuvport.NUVPort<nuvport>`                                                                                                                                  ``vports`` 
 :ref:`nugroup.NUGroup<nugroup>`                                                                                                                                  ``groups`` 
 :ref:`nustatistics.NUStatistics<nustatistics>`                                                                                                                   ``statistics`` 
 :ref:`nustatisticspolicy.NUStatisticsPolicy<nustatisticspolicy>`                                                                                                 ``statistics_policies`` 

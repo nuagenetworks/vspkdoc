@@ -84,12 +84,10 @@ Children
 :ref:`nuegressqospolicy.NUEgressQOSPolicy<nuegressqospolicy>`                                                                                                    ``egress_qos_policies`` 
 :ref:`nusharednetworkresource.NUSharedNetworkResource<nusharednetworkresource>`                                                                                  ``shared_network_resources`` 
 :ref:`nualarm.NUAlarm<nualarm>`                                                                                                                                  ``alarms`` 
-:ref:`nualarm.NUAlarm<nualarm>`                                                                                                                                  ``alarms`` 
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 :ref:`nuvm.NUVM<nuvm>`                                                                                                                                           ``vms`` 
 :ref:`nuinfrastructureportprofile.NUInfrastructurePortProfile<nuinfrastructureportprofile>`                                                                      ``infrastructure_port_profiles`` 
 :ref:`nuenterprisenetwork.NUEnterpriseNetwork<nuenterprisenetwork>`                                                                                              ``enterprise_networks`` 
-:ref:`nuenterprisesecurity.NUEnterpriseSecurity<nuenterprisesecurity>`                                                                                           ``enterprise_securities`` 
 :ref:`nujob.NUJob<nujob>`                                                                                                                                        ``jobs`` 
 :ref:`nudomain.NUDomain<nudomain>`                                                                                                                               ``domains`` 
 :ref:`nudomaintemplate.NUDomainTemplate<nudomaintemplate>`                                                                                                       ``domain_templates`` 
@@ -102,7 +100,6 @@ Children
 :ref:`nunsgateway.NUNSGateway<nunsgateway>`                                                                                                                      ``ns_gateways`` 
 :ref:`nunsgatewaytemplate.NUNSGatewayTemplate<nunsgatewaytemplate>`                                                                                              ``ns_gateway_templates`` 
 :ref:`nunsredundantgatewaygroup.NUNSRedundantGatewayGroup<nunsredundantgatewaygroup>`                                                                            ``ns_redundant_gateway_groups`` 
-:ref:`nupublicnetworkmacro.NUPublicNetworkMacro<nupublicnetworkmacro>`                                                                                           ``public_network_macros`` 
 :ref:`numulticastlist.NUMultiCastList<numulticastlist>`                                                                                                          ``multi_cast_lists`` 
 :ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
 :ref:`nuexternalappservice.NUExternalAppService<nuexternalappservice>`                                                                                           ``external_app_services`` 
@@ -115,7 +112,7 @@ Parents
 --------
 
 
-- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
-
 - :ref:`nume.NUMe<nume>`
+
+- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
 

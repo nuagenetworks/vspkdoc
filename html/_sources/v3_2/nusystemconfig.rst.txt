@@ -116,8 +116,6 @@ Attributes
 
 - ``alarms_max_per_object``: Maximum alarms per object for example max distinct alarms for specific VM (min = 5, max =20)
 
-- ``elastic_cluster_name``: Specifies the name of the Elastic Search Cluster.
-
 - ``inactive_timeout``: Defines the inactive timeout for the client. If the client is inactive for more than timeout, server clears off all the cache/information regarding the client. This value should be greater than event processor max timeout
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
@@ -175,8 +173,6 @@ Attributes
 - ``stack_trace_enabled``: True to enable stacktrace in the REST call.
 
 - ``static_wan_service_purge_time``: Timers in sec for unreacheable static WAN Services to be deleted.
-
-- ``statistics_enabled``: This flag is used to indicate if statistics is enabled in the system. CSProot is expected to activate this through the enable statistics script.
 
 - ``stats_collector_address``: Specify the ip address(es) of the stats collector.
 

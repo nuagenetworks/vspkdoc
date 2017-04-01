@@ -1,26 +1,30 @@
-.. _nuenterprisesecurity:
+.. _nukeyservermonitorencryptedsek:
 
-nuenterprisesecurity
+nukeyservermonitorencryptedsek
 ===========================================
 
-.. class:: nuenterprisesecurity.NUEnterpriseSecurity(bambou.nurest_object.NUMetaRESTObject,):
+.. class:: nukeyservermonitorencryptedsek.NUKeyServerMonitorEncryptedSEK(bambou.nurest_object.NUMetaRESTObject,):
 
-This object represents the enterprise security
+Represents a Keyserver Monitor Encrypted Seed Snapshot
 
 
 Attributes
 ----------
 
 
+- ``nsg_certificate_serial_number``: NSG Certificate Serial Number
+
 - ``last_updated_by``: ID of the user who last updated the object.
 
-- ``gateway_security_revision``: change revision number for the gateway security data
+- ``gateway_secured_data_id``: Gateway Secured ID record this monitor represents
 
-- ``revision``: revision number for the enterprise security data
-
-- ``enterprise_id``: The enterprise associated with this object. This is a read only attribute
+- ``key_server_certificate_serial_number``: KeyServer Certificate Serial Number
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
+
+- ``associated_key_server_monitor_sek_creation_time``: The ID of the associated KeyServer Monitor Seed ID
+
+- ``associated_key_server_monitor_sekid``: The ID of the associated KeyServer Monitor SEK ID
 
 - ``external_id``: External object ID. Used for integration with third party systems
 
@@ -35,7 +39,6 @@ Children
 
 :ref:`numetadata.NUMetadata<numetadata>`                                                                                                                         ``metadatas`` 
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
-:ref:`nuenterprisesecureddata.NUEnterpriseSecuredData<nuenterprisesecureddata>`                                                                                  ``enterprise_secured_datas`` 
 ================================================================================================================================================               ==========================================================================================
 
 
@@ -44,5 +47,7 @@ Parents
 --------
 
 
-- :ref:`nuenterprise.NUEnterprise<nuenterprise>`
+- :ref:`nukeyservermonitor.NUKeyServerMonitor<nukeyservermonitor>`
+
+- :ref:`nukeyservermonitorsek.NUKeyServerMonitorSEK<nukeyservermonitorsek>`
 

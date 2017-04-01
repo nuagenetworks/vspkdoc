@@ -18,8 +18,6 @@ Attributes
 
 - ``vcenter_user``: Username for VCenter.
 
-- ``arp_reply``: Whether ARP Reply is enabled/disabled
-
 - ``v_require_nuage_metadata``: Whether split-activation or not (Openstack/CloudStack)
 
 - ``name`` (**Mandatory**): Name of the Hypervisor
@@ -41,8 +39,6 @@ Attributes
 - ``datapath_sync_timeout``: Datapath Sync Timeout
 
 - ``secondary_nuage_controller``: IP address of the secondary Controller (VSC)
-
-- ``generic_split_activation``: Split-activation is needed from VRO
 
 - ``separate_data_network``: Whether Data will use the management network or not
 
@@ -195,7 +191,7 @@ Parents
 --------
 
 
-- :ref:`nuvcentercluster.NUVCenterCluster<nuvcentercluster>`
-
 - :ref:`nume.NUMe<nume>`
+
+- :ref:`nuvcentercluster.NUVCenterCluster<nuvcentercluster>`
 

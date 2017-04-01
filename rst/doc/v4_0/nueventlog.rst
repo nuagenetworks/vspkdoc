@@ -69,8 +69,6 @@ Parents
 
 - :ref:`nugroup.NUGroup<nugroup>`
 
-- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
-
 - :ref:`nuzone.NUZone<nuzone>`
 
 - :ref:`nuflowsecuritypolicy.NUFlowSecurityPolicy<nuflowsecuritypolicy>`
@@ -90,8 +88,6 @@ Parents
 - :ref:`nuredirectiontarget.NURedirectionTarget<nuredirectiontarget>`
 
 - :ref:`nuvsp.NUVSP<nuvsp>`
-
-- :ref:`nudomain.NUDomain<nudomain>`
 
 - :ref:`nuvsc.NUVSC<nuvsc>`
 
@@ -123,15 +119,19 @@ Parents
 
 - :ref:`nulicense.NULicense<nulicense>`
 
-- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
-
 - :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`
 
 - :ref:`numulticastrange.NUMultiCastRange<numulticastrange>`
 
-- :ref:`nugateway.NUGateway<nugateway>`
+- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
 
-- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
+- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
+
+- :ref:`nudomain.NUDomain<nudomain>`
+
+- :ref:`nutier.NUTier<nutier>`
+
+- :ref:`nugateway.NUGateway<nugateway>`
 
 - :ref:`nuapplicationservice.NUApplicationService<nuapplicationservice>`
 
@@ -145,9 +145,11 @@ Parents
 
 - :ref:`nunsgateway.NUNSGateway<nunsgateway>`
 
-- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
+- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
 
 - :ref:`nupublicnetworkmacro.NUPublicNetworkMacro<nupublicnetworkmacro>`
+
+- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
 
 - :ref:`nuaddressrange.NUAddressRange<nuaddressrange>`
 
@@ -168,8 +170,6 @@ Parents
 - :ref:`nupolicygrouptemplate.NUPolicyGroupTemplate<nupolicygrouptemplate>`
 
 - :ref:`nuuser.NUUser<nuuser>`
-
-- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`nupolicygroup.NUPolicyGroup<nupolicygroup>`
 

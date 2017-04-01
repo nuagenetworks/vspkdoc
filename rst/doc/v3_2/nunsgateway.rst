@@ -65,8 +65,6 @@ Children
 ================================================================================================================================================               ==========================================================================================
 **class**                                                                                                                                                      **fetcher**
 
-:ref:`nugatewaysecurity.NUGatewaySecurity<nugatewaysecurity>`                                                                                                    ``gateway_securities`` 
-:ref:`nugatewaysecurityprofile.NUGatewaySecurityProfile<nugatewaysecurityprofile>`                                                                               ``gateway_security_profiles`` 
 :ref:`nupatnatpool.NUPATNATPool<nupatnatpool>`                                                                                                                   ``patnat_pools`` 
 :ref:`nupermission.NUPermission<nupermission>`                                                                                                                   ``permissions`` 
 :ref:`numetadata.NUMetadata<numetadata>`                                                                                                                         ``metadatas`` 

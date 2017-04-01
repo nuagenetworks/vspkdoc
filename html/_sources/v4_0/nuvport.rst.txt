@@ -96,19 +96,19 @@ Parents
 
 - :ref:`nuredirectiontarget.NURedirectionTarget<nuredirectiontarget>`
 
-- :ref:`nudomain.NUDomain<nudomain>`
-
 - :ref:`nusubnet.NUSubnet<nusubnet>`
 
 - :ref:`nuvrs.NUVRS<nuvrs>`
+
+- :ref:`nudomain.NUDomain<nudomain>`
+
+- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`numultinicvport.NUMultiNICVPort<numultinicvport>`
 
 - :ref:`nul2domain.NUL2Domain<nul2domain>`
 
 - :ref:`nufloatingip.NUFloatingIp<nufloatingip>`
-
-- :ref:`nutier.NUTier<nutier>`
 
 - :ref:`nupolicygroup.NUPolicyGroup<nupolicygroup>`
 

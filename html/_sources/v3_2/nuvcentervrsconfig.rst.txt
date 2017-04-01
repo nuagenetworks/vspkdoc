@@ -12,8 +12,6 @@ Attributes
 ----------
 
 
-- ``arp_reply``: Whether ARP Reply is enabled/disabled
-
 - ``v_require_nuage_metadata``: Whether split-activation or not (Openstack/CloudStack)
 
 - ``last_updated_by``: ID of the user who last updated the object.
@@ -29,8 +27,6 @@ Attributes
 - ``datapath_sync_timeout``: Datapath Sync Timeout
 
 - ``secondary_nuage_controller``: IP address of the secondary Controller (VSC)
-
-- ``generic_split_activation``: Whether split-activation is needed from VRO
 
 - ``separate_data_network``: Whether Data will use the management network or not
 

@@ -42,7 +42,7 @@ Attributes
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
-- ``policy_change_status``: None
+- ``policy_change_status``: 
 
 - ``route_distinguisher``: The Route Distinguisher value assigned by VSD for this subnet that is used by the BGP-EVPN protocol in VSC
 
@@ -105,9 +105,9 @@ Parents
 --------
 
 
-- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
-
 - :ref:`nume.NUMe<nume>`
+
+- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
 
 - :ref:`nuenterprise.NUEnterprise<nuenterprise>`
 

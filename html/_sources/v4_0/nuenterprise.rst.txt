@@ -139,7 +139,7 @@ Parents
 --------
 
 
-- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
-
 - :ref:`nume.NUMe<nume>`
+
+- :ref:`nuenterpriseprofile.NUEnterpriseProfile<nuenterpriseprofile>`
 

@@ -12,8 +12,6 @@ Attributes
 ----------
 
 
-- ``arp_reply``: Whether ARP Reply is enabled/disabled
-
 - ``v_require_nuage_metadata``: Whether split-activation or not (Openstack/CloudStack)
 
 - ``name`` (**Mandatory**): Name of the VCenter
@@ -33,8 +31,6 @@ Attributes
 - ``datapath_sync_timeout``: Datapath Sync Timeout
 
 - ``secondary_nuage_controller``: IP address of the secondary Controller (VSC)
-
-- ``generic_split_activation``: Split-activation is needed from VRO
 
 - ``separate_data_network``: Whether Data will use the management network or not
 
@@ -170,7 +166,6 @@ Children
 :ref:`nuvcenterdatacenter.NUVCenterDataCenter<nuvcenterdatacenter>`                                                                                              ``vcenter_data_centers`` 
 :ref:`numetadata.NUMetadata<numetadata>`                                                                                                                         ``metadatas`` 
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
-:ref:`nujob.NUJob<nujob>`                                                                                                                                        ``jobs`` 
 :ref:`nuvrsaddressrange.NUVRSAddressRange<nuvrsaddressrange>`                                                                                                    ``vrs_address_ranges`` 
 ================================================================================================================================================               ==========================================================================================
 

@@ -14,6 +14,8 @@ Attributes
 
 - ``dscp`` (**Mandatory**): DSCP match condition to be set in the rule. It is either * or from 0-63
 
+- ``name`` (**Mandatory**): Name of the entity.
+
 - ``last_updated_by``: ID of the user who last updated the object.
 
 - ``action`` (**Mandatory**): The action of the ACL entry DROP or FORWARD or REDIRECT. Action REDIRECT is allowed only for IngressAdvancedForwardingEntry

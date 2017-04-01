@@ -61,6 +61,8 @@ Parents
 
 - :ref:`nutca.NUTCA<nutca>`
 
+- :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`
+
 - :ref:`nuvsc.NUVSC<nuvsc>`
 
 - :ref:`nuvsd.NUVSD<nuvsd>`
@@ -78,8 +80,6 @@ Parents
 - :ref:`nuvlan.NUVLAN<nuvlan>`
 
 - :ref:`nuwanservice.NUWANService<nuwanservice>`
-
-- :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`
 
 - :ref:`nugateway.NUGateway<nugateway>`
 

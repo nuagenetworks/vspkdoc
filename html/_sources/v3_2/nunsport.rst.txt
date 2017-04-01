@@ -62,8 +62,6 @@ Children
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 :ref:`nuenterprisepermission.NUEnterprisePermission<nuenterprisepermission>`                                                                                     ``enterprise_permissions`` 
 :ref:`nunsportstaticconfiguration.NUNSPortStaticConfiguration<nunsportstaticconfiguration>`                                                                      ``ns_port_static_configurations`` 
-:ref:`nustatistics.NUStatistics<nustatistics>`                                                                                                                   ``statistics`` 
-:ref:`nustatisticspolicy.NUStatisticsPolicy<nustatisticspolicy>`                                                                                                 ``statistics_policies`` 
 :ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
 ================================================================================================================================================               ==========================================================================================
 
@@ -73,9 +71,9 @@ Parents
 --------
 
 
-- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
-
 - :ref:`nuredundantport.NURedundantPort<nuredundantport>`
+
+- :ref:`nuautodiscoveredgateway.NUAutoDiscoveredGateway<nuautodiscoveredgateway>`
 
 - :ref:`nunsgateway.NUNSGateway<nunsgateway>`
 

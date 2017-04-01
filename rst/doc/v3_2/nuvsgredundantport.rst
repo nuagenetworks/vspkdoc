@@ -26,9 +26,9 @@ Attributes
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
-- ``port_peer1_id``: The master gateway peer port id.
+- ``port_peer1_id``: The master gateway peer port ID.
 
-- ``port_peer2_id``: The slave gateway peer port id.
+- ``port_peer2_id``: The slave gateway peer port ID.
 
 - ``port_type`` (**Mandatory**): Type of the Port.
 
@@ -57,6 +57,7 @@ Children
 :ref:`nualarm.NUAlarm<nualarm>`                                                                                                                                  ``alarms`` 
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 :ref:`nuenterprisepermission.NUEnterprisePermission<nuenterprisepermission>`                                                                                     ``enterprise_permissions`` 
+:ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
 ================================================================================================================================================               ==========================================================================================
 
 
@@ -64,8 +65,6 @@ Children
 Parents
 --------
 
-
-- :ref:`nuredundancygroup.NURedundancyGroup<nuredundancygroup>`
 
 - :ref:`nuredundancygroup.NURedundancyGroup<nuredundancygroup>`
 
