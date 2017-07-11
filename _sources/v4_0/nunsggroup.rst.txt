@@ -16,8 +16,6 @@ Attributes
 
 - ``description``: Description of the NSG Group
 
-- ``associated_nsgs``: List of NSGs that belong to NSG Group
-
 
 
 
@@ -37,7 +35,7 @@ Parents
 --------
 
 
-- :ref:`nume.NUMe<nume>`
-
 - :ref:`nuenterprise.NUEnterprise<nuenterprise>`
+
+- :ref:`nume.NUMe<nume>`
 
