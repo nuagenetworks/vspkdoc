@@ -88,6 +88,8 @@ Attributes
 
 - ``vsd_upgrade_is_complete``: This flag is used to indicate that whether VSD upgrade is complete,it is expected that csproot will set to true,after VSD upgrade is complete and also making sure that all VSC's audits and Gateway audits with VSD are done
 
+- ``nsg_uplink_hold_down_timer``: In case of a dual-uplink NSG, the hold down time in seconds, after which an uplink connection that recovered from failure is re-used.
+
 - ``as_number``:  Autonomous System Number,Used for RT/RD auto-generation
 
 - ``vss_stats_interval``: VSS statistics collection frequency
@@ -118,6 +120,8 @@ Attributes
 
 - ``accumulate_licenses_enabled``: Whether the various VRS license flavours be merged in one pool
 
+- ``vcin_load_balancer_ip``: If VCIN Active/Standby is enabled, this needs to be the load-balancer IP which sits in front of the Active and Standby VCIN nodes. The VRS will make its API calls to this load-balancer
+
 - ``per_domain_vlan_id_enabled``: None
 
 - ``performance_path_selection_vnid``: performance Path Selection Virtual Network ID
@@ -131,6 +135,8 @@ Attributes
 - ``offset_customer_id``: Customer id offset, this value has to be set before jboss starts , after that any change of value is ignored (minexclusive = 0, max = 20000) system wide value
 
 - ``offset_service_id``: Service id offset, this value has to be set before jboss starts during install time, after that any change of value is ignored (minexclusive = 0, max = 40000) system wide value
+
+- ``virtual_firewall_rules_enabled``: Enable Virtual Firewall Rule creation and management. This will be available only with VSS license
 
 - ``ejbca_nsg_certificate_profile``: EJBCA NSG Certificate Profile
 
@@ -150,9 +156,11 @@ Attributes
 
 - ``global_mac_address``: the MAC Address to use for those subnets that have the useGlobalMAC flag enabled.
 
-- ``flow_collection_enabled``: Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires "statisticsEnabled".
+- ``flow_collection_enabled``: Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires 'statisticsEnabled'.
 
 - ``inactive_timeout``: Defines the inactive timeout for the client. If the client is inactive for more than timeout, server clears off all the cache/information regarding the client. This value should be greater than event processor max timeout
+
+- ``infrastructure_bgpas_number``: Autonomous System Number, Used for Infrastructure BGP PE_CE.
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 

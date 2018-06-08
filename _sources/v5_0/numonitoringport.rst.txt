@@ -20,7 +20,7 @@ Attributes
 
 - ``description``: Optional port description.
 
-- ``resiliency_state``: 
+- ``resiliency_state``: None
 
 - ``resilient``: Flag to indicate if an ACCESS port is resilient or not.
 
@@ -51,9 +51,9 @@ Parents
 --------
 
 
-- :ref:`nuvsc.NUVSC<nuvsc>`
-
 - :ref:`nuvrs.NUVRS<nuvrs>`
 
 - :ref:`nuhsc.NUHSC<nuhsc>`
+
+- :ref:`nuvsc.NUVSC<nuvsc>`
 

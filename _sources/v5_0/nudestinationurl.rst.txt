@@ -1,24 +1,34 @@
-.. _nukeyservernotification:
+.. _nudestinationurl:
 
-nukeyservernotification
+nudestinationurl
 ===========================================
 
-.. class:: nukeyservernotification.NUKeyServerNotification(bambou.nurest_object.NUMetaRESTObject,):
+.. class:: nudestinationurl.NUDestinationurl(bambou.nurest_object.NUMetaRESTObject,):
 
-KeyServer Notification - Create one of these transient objects to push an event to the KeyServer
+destination URL under tier
 
 
 Attributes
 ----------
 
 
-- ``base64_json_string``: The base 64 encoded JSON String of the message object
+- ``url``: Uniform Resource Locator
 
-- ``message``: The message to send
+- ``http_method``: HTTP probe method (GET/HEAD)
+
+- ``packet_count``: packet count (part of rate along with probeInterval). Applicable only if this URL's parent is Tier1
+
+- ``last_updated_by``: ID of the user who last updated the object.
+
+- ``percentage_weight``: Weight of the URL in %. Applicable only when parent is Tier1
+
+- ``timeout``: number of milliseconds to wait until the probe is timed out. Applicable only if this URL's parent is Tier1
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
-- ``notification_type``: The notification type to trigger
+- ``down_threshold_count``: Successive Probe threshold. Applicable only if this URL's parent is Tier1
+
+- ``probe_interval``: probe interval (part of rate along with packetCount). Applicable only if this URL's parent is Tier1
 
 - ``external_id``: External object ID. Used for integration with third party systems
 
@@ -35,4 +45,11 @@ Children
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 ================================================================================================================================================               ==========================================================================================
 
+
+
+Parents
+--------
+
+
+- :ref:`nutier.NUTier<nutier>`
 

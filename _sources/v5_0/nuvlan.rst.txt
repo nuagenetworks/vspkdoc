@@ -16,7 +16,7 @@ Attributes
 
 - ``last_updated_by``: ID of the user who last updated the object.
 
-- ``gateway_id``: The Gateway associated with this  VLAN  . This is a read only attribute
+- ``gateway_id``: The Gateway associated with this  VLAN. This is a read only attribute
 
 - ``readonly``: Determines whether this entity is read only.  Read only objects cannot be modified or deleted.
 
@@ -24,23 +24,31 @@ Attributes
 
 - ``permitted_action``: The permitted  action to USE/EXTEND  this Gateway.
 
-- ``description``: A description of the Port
+- ``description``: A description of the VLAN instance.
 
 - ``restricted``: Determines whether this entity can be used in associations with other properties.
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
-- ``vport_id``: The Vport associated with this  VLAN  . This is a read only attribute
+- ``vport_id``: The Vport associated with this VLAN. This is a read only attribute
 
-- ``use_user_mnemonic``: determines whether to use user mnemonic of the Port
+- ``is_uplink``: Indicates if the VLAN is used as an uplink.
 
-- ``user_mnemonic``: user mnemonic of the Port
+- ``use_user_mnemonic``: Determines whether to use the defined mnemonic for this VLAN instance.
+
+- ``user_mnemonic``: User mnemonic of the VLAN instance.
 
 - ``associated_bgp_profile_id``: The ID of the associated BGP profile
 
+- ``associated_connection_type``: Specifies the type of Connection (uplink, BR) associated to this VLAN instance.
+
 - ``associated_egress_qos_policy_id``: ID of the Egress QOS Policy associated with this VLAN.
 
-- ``associated_ingress_qos_policy_id``: ID of the Ingress QOS Policy / Tunnel Shaper associated with this VLAN.
+- ``associated_ingress_overlay_qo_s_policer_id``: ID of the Ingress Overlay QoS Policer associated with this VLAN.
+
+- ``associated_ingress_qos_policy_id``: ID of the Ingress QoS Policy / Tunnel Shaper associated with this VLAN.
+
+- ``associated_ingress_underlay_qo_s_policer_id``: ID of the Ingress Underlay QoS Policer associated with this VLAN.
 
 - ``associated_uplink_connection_id``: Associated uplink connection ID
 
@@ -52,7 +60,7 @@ Attributes
 
 - ``external_id``: External object ID. Used for integration with third party systems
 
-- ``type``: This type marks a VLAN for it's utility.
+- ``type``: This type marks a VLAN for its utility.
 
 
 
@@ -73,6 +81,7 @@ Children
 :ref:`nuenterprisepermission.NUEnterprisePermission<nuenterprisepermission>`                                                                                     ``enterprise_permissions`` 
 :ref:`nuuplinkconnection.NUUplinkConnection<nuuplinkconnection>`                                                                                                 ``uplink_connections`` 
 :ref:`nubrconnection.NUBRConnection<nubrconnection>`                                                                                                             ``br_connections`` 
+:ref:`nustatistics.NUStatistics<nustatistics>`                                                                                                                   ``statistics`` 
 :ref:`nultestatistics.NULtestatistics<nultestatistics>`                                                                                                          ``ltestatistics`` 
 :ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
 ================================================================================================================================================               ==========================================================================================

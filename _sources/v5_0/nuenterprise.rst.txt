@@ -36,6 +36,8 @@ Attributes
 
 - ``dictionary_version``: L7 Application Type version
 
+- ``virtual_firewall_rules_enabled``: Read-only flag that indicates if virtual firewall rules are allowed.
+
 - ``allow_advanced_qos_configuration``: Controls whether this enterprise has access to advanced QoS settings
 
 - ``allow_gateway_management``: This flag indicates if the enterprise/organization can manage gateways. If yes then it can create gateway templates, instantiate them etc.
@@ -47,6 +49,8 @@ Attributes
 - ``floating_ips_quota``: Quota set for the number of floating IPs to be used by an enterprise.
 
 - ``floating_ips_used``: Number of floating IPs used by the enterprise from the assigned floatingIPsQuota
+
+- ``flow_collection_enabled``: Determines whether or not flow collection is enabled.
 
 - ``enable_application_performance_management``: This flag indicates if the DPI can be enabled for this enterpriseenterprise/organization.
 
@@ -64,7 +68,7 @@ Attributes
 
 - ``associated_key_server_monitor_id``: Readonly Id of the associated keyserver monitor
 
-- ``customer_id``: CustomerID that is used by VSC to identify this enterprise. This is a read only attribute.
+- ``customer_id``: CustomerID that is used by VSC to identify this enterprise. This can be configured by root user.
 
 - ``avatar_data``: URL to the avatar data associated with the enterprise. If the avatarType is URL then value of avatarData should an URL of the image. If the avatarType BASE64 then avatarData should be BASE64 encoded value of the image
 
@@ -115,6 +119,7 @@ Children
 :ref:`nuvm.NUVM<nuvm>`                                                                                                                                           ``vms`` 
 :ref:`nuvnf.NUVNF<nuvnf>`                                                                                                                                        ``vnfs`` 
 :ref:`nuvnfmetadata.NUVNFMetadata<nuvnfmetadata>`                                                                                                                ``vnf_metadatas`` 
+:ref:`nuvnfthresholdpolicy.NUVNFThresholdPolicy<nuvnfthresholdpolicy>`                                                                                           ``vnf_threshold_policies`` 
 :ref:`nuingressqospolicy.NUIngressQOSPolicy<nuingressqospolicy>`                                                                                                 ``ingress_qos_policies`` 
 :ref:`nuenterprisenetwork.NUEnterpriseNetwork<nuenterprisenetwork>`                                                                                              ``enterprise_networks`` 
 :ref:`nuenterprisesecurity.NUEnterpriseSecurity<nuenterprisesecurity>`                                                                                           ``enterprise_securities`` 

@@ -12,6 +12,8 @@ Attributes
 ----------
 
 
+- ``pat_enabled``: Indicates whether PAT is enabled on the underlay for this uplink connection.
+
 - ``dns_address``: DNS server address
 
 - ``password``: PPPoE password.
@@ -28,6 +30,12 @@ Attributes
 
 - ``vlan_id``: The tag of the uplink's parent VLAN
 
+- ``underlay_enabled``: Indicated whether route to underlay is enabled on this uplink connection.
+
+- ``inherited``: This flag will determine if the abstract connection is inherited from the instance template
+
+- ``installer_managed``: Boolean flag to indicate that connection parameters will be configured by the installer onsite. Limited to ConnectionMode: PPPoE
+
 - ``interface_connection_type``: The way the interface is connected via the NSG.  This value depends on if the interface internal or external to the NSG.
 
 - ``mode``: Specify how to connect to the network. Possible values: Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required), LTE (LTE configuration required). Default: Dynamic
@@ -40,7 +48,7 @@ Attributes
 
 - ``download_rate_limit``: Download rate limit for this uplink in Mbits/sec.
 
-- ``uplink_id``: ID that unqiuely identifies the uplink. 
+- ``uplink_id``: ID that unqiuely identifies the uplink.
 
 - ``username``: PPPoE username
 
@@ -72,9 +80,9 @@ Parents
 --------
 
 
-- :ref:`nunsgateway.NUNSGateway<nunsgateway>`
-
 - :ref:`nuvlan.NUVLAN<nuvlan>`
+
+- :ref:`nunsgateway.NUNSGateway<nunsgateway>`
 
 - :ref:`nuvlantemplate.NUVLANTemplate<nuvlantemplate>`
 
