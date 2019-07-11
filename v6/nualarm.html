@@ -1,0 +1,842 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>nualarm &mdash; VSPK 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="nuallalarm" href="nuallalarm.html" />
+    <link rel="prev" title="nuaggregatemetadata" href="nuaggregatemetadata.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> VSPK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Quickstart</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+</ul>
+<p class="caption"><span class="caption-text">v6 reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nuaddressmap.html">nuaddressmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuaddressrange.html">nuaddressrange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuaggregateddomain.html">nuaggregateddomain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuaggregatemetadata.html">nuaggregatemetadata</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">nualarm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#attributes">Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#children">Children</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parents">Parents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nuallalarm.html">nuallalarm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuallgateway.html">nuallgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuallredundancygroup.html">nuallredundancygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuapplication.html">nuapplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuapplicationbinding.html">nuapplicationbinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuapplicationperformancemanagement.html">nuapplicationperformancemanagement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuapplicationperformancemanagementbinding.html">nuapplicationperformancemanagementbinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuautodiscovercluster.html">nuautodiscovercluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuautodiscovereddatacenter.html">nuautodiscovereddatacenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuautodiscoveredgateway.html">nuautodiscoveredgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuautodiscoverhypervisorfromcluster.html">nuautodiscoverhypervisorfromcluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuavatar.html">nuavatar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuazurecloud.html">nuazurecloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubfdsession.html">nubfdsession</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubgpneighbor.html">nubgpneighbor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubgppeer.html">nubgppeer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubgpprofile.html">nubgpprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubootstrap.html">nubootstrap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubootstrapactivation.html">nubootstrapactivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubrconnection.html">nubrconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubridgeinterface.html">nubridgeinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nubulkstatistics.html">nubulkstatistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucaptiveportalprofile.html">nucaptiveportalprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucertificate.html">nucertificate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucloudmgmtsystem.html">nucloudmgmtsystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucommand.html">nucommand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuconnectionendpoint.html">nuconnectionendpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucontainer.html">nucontainer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucontainerinterface.html">nucontainerinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucontainerresync.html">nucontainerresync</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucontrollervrslink.html">nucontrollervrslink</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucosremarkingpolicy.html">nucosremarkingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucosremarkingpolicytable.html">nucosremarkingpolicytable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucsnatpool.html">nucsnatpool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuctranslationmap.html">nuctranslationmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nucustomproperty.html">nucustomproperty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudefaultgateway.html">nudefaultgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudemarcationservice.html">nudemarcationservice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudeploymentfailure.html">nudeploymentfailure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudestinationurl.html">nudestinationurl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudhcpoption.html">nudhcpoption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudhcpv6option.html">nudhcpv6option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudiskstat.html">nudiskstat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudomain.html">nudomain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudomainfipacltemplate.html">nudomainfipacltemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudomainfipacltemplateentry.html">nudomainfipacltemplateentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudomainkindsummary.html">nudomainkindsummary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudomaintemplate.html">nudomaintemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudownloadprogress.html">nudownloadprogress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudscpforwardingclassmapping.html">nudscpforwardingclassmapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudscpforwardingclasstable.html">nudscpforwardingclasstable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudscpremarkingpolicy.html">nudscpremarkingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudscpremarkingpolicytable.html">nudscpremarkingpolicytable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuducgroup.html">nuducgroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuducgroupbinding.html">nuducgroupbinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuegressaclentrytemplate.html">nuegressaclentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuegressacltemplate.html">nuegressacltemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuegressadvfwdentrytemplate.html">nuegressadvfwdentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuegressadvfwdtemplate.html">nuegressadvfwdtemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuegressprofile.html">nuegressprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuegressqospolicy.html">nuegressqospolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuenterprise.html">nuenterprise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuenterprisenetwork.html">nuenterprisenetwork</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuenterprisepermission.html">nuenterprisepermission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuenterpriseprofile.html">nuenterpriseprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuenterprisesecureddata.html">nuenterprisesecureddata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuenterprisesecurity.html">nuenterprisesecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nueventlog.html">nueventlog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nufirewallacl.html">nufirewallacl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nufirewallrule.html">nufirewallrule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuforwardingclass.html">nuforwardingclass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlist.html">nuforwardingpathlist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugateway.html">nugateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugatewayredundantport.html">nugatewayredundantport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugatewaysecureddata.html">nugatewaysecureddata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugatewaysecurity.html">nugatewaysecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugatewayslocation.html">nugatewayslocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugatewaytemplate.html">nugatewaytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuglobalmetadata.html">nuglobalmetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugroup.html">nugroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nugroupkeyencryptionprofile.html">nugroupkeyencryptionprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuhostinterface.html">nuhostinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuhsc.html">nuhsc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikecertificate.html">nuikecertificate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikeencryptionprofile.html">nuikeencryptionprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikegateway.html">nuikegateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikegatewayconfig.html">nuikegatewayconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikegatewayconnection.html">nuikegatewayconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikegatewayprofile.html">nuikegatewayprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikepsk.html">nuikepsk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuikesubnet.html">nuikesubnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuinfrastructureaccessprofile.html">nuinfrastructureaccessprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuinfrastructureconfig.html">nuinfrastructureconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuinfrastructureevdfprofile.html">nuinfrastructureevdfprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuinfrastructuregatewayprofile.html">nuinfrastructuregatewayprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuinfrastructurevscprofile.html">nuinfrastructurevscprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuingressaclentrytemplate.html">nuingressaclentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuingressacltemplate.html">nuingressacltemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuingressadvfwdentrytemplate.html">nuingressadvfwdentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuingressadvfwdtemplate.html">nuingressadvfwdtemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuingressprofile.html">nuingressprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuingressqospolicy.html">nuingressqospolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuipfilterprofile.html">nuipfilterprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuipreservation.html">nuipreservation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuipv6filterprofile.html">nuipv6filterprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nujob.html">nujob</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nukeyservermember.html">nukeyservermember</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nukeyservermonitor.html">nukeyservermonitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nukeyservermonitorencryptedseed.html">nukeyservermonitorencryptedseed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nukeyservermonitorseed.html">nukeyservermonitorseed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nukeyservermonitorsek.html">nukeyservermonitorsek</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nul2domain.html">nul2domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nul2domaintemplate.html">nul2domaintemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nul4service.html">nul4service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nul4servicegroup.html">nul4servicegroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nul7applicationsignature.html">nul7applicationsignature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuldapconfiguration.html">nuldapconfiguration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nulicense.html">nulicense</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nulicensestatus.html">nulicensestatus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nulink.html">nulink</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nulocation.html">nulocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nulteinformation.html">nulteinformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nultestatistics.html">nultestatistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numacfilterprofile.html">numacfilterprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nume.html">nume</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numetadata.html">numetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numirrordestination.html">numirrordestination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numirrordestinationgroup.html">numirrordestinationgroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numonitoringport.html">numonitoringport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numonitorscope.html">numonitorscope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numulticastchannelmap.html">numulticastchannelmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numulticastlist.html">numulticastlist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numulticastrange.html">numulticastrange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numultinicvport.html">numultinicvport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunatmapentry.html">nunatmapentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfgateway.html">nunetconfgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfmanager.html">nunetconfmanager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfprofile.html">nunetconfprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfsession.html">nunetconfsession</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetworklayout.html">nunetworklayout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetworkmacrogroup.html">nunetworkmacrogroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetworkperformancebinding.html">nunetworkperformancebinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetworkperformancemeasurement.html">nunetworkperformancemeasurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunexthop.html">nunexthop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgateway.html">nunsgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgatewaymonitor.html">nunsgatewaymonitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgatewayscount.html">nunsgatewayscount</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgatewaysummary.html">nunsgatewaysummary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgatewaytemplate.html">nunsgatewaytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsggroup.html">nunsggroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsginfo.html">nunsginfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgpatchprofile.html">nunsgpatchprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgroutingpolicybinding.html">nunsgroutingpolicybinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgupgradeprofile.html">nunsgupgradeprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsport.html">nunsport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsportinfo.html">nunsportinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsporttemplate.html">nunsporttemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsredundantgatewaygroup.html">nunsredundantgatewaygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuospfarea.html">nuospfarea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuospfinstance.html">nuospfinstance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuospfinterface.html">nuospfinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuoverlayaddresspool.html">nuoverlayaddresspool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuoverlaymanagementprofile.html">nuoverlaymanagementprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuoverlaymanagementsubnetprofile.html">nuoverlaymanagementsubnetprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuoverlaymirrordestination.html">nuoverlaymirrordestination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuoverlaymirrordestinationtemplate.html">nuoverlaymirrordestinationtemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuoverlaypatnatentry.html">nuoverlaypatnatentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupatch.html">nupatch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupatipentry.html">nupatipentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupatmapper.html">nupatmapper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupatnatpool.html">nupatnatpool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuperformancemonitor.html">nuperformancemonitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupermission.html">nupermission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupgexpression.html">nupgexpression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupgexpressiontemplate.html">nupgexpressiontemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupolicydecision.html">nupolicydecision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupolicyentry.html">nupolicyentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupolicygroup.html">nupolicygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupolicygroupcategory.html">nupolicygroupcategory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupolicygrouptemplate.html">nupolicygrouptemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupolicyobjectgroup.html">nupolicyobjectgroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupolicystatement.html">nupolicystatement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuport.html">nuport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuportmapping.html">nuportmapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuporttemplate.html">nuporttemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuproxyarpfilter.html">nuproxyarpfilter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupsnatpool.html">nupsnatpool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupspatmap.html">nupspatmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuptranslationmap.html">nuptranslationmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nupublicnetworkmacro.html">nupublicnetworkmacro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuqos.html">nuqos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuqospolicer.html">nuqospolicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuratelimiter.html">nuratelimiter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuredirectiontarget.html">nuredirectiontarget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuredirectiontargettemplate.html">nuredirectiontargettemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuredundancygroup.html">nuredundancygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuredundantport.html">nuredundantport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuremotevrsinfo.html">nuremotevrsinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuroutingpolicy.html">nuroutingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusaasapplicationgroup.html">nusaasapplicationgroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusaasapplicationtype.html">nusaasapplicationtype</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusapegressqosprofile.html">nusapegressqosprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusapingressqosprofile.html">nusapingressqosprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusharednetworkresource.html">nusharednetworkresource</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nushuntlink.html">nushuntlink</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusiteinfo.html">nusiteinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuspatsourcespool.html">nuspatsourcespool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusshkey.html">nusshkey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nussidconnection.html">nussidconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustaticroute.html">nustaticroute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatistics.html">nustatistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatscollectorinfo.html">nustatscollectorinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusubnet.html">nusubnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusubnettemplate.html">nusubnettemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusyslogdestination.html">nusyslogdestination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusysmonuplinkconnection.html">nusysmonuplinkconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nusystemconfig.html">nusystemconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutca.html">nutca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutest.html">nutest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutestdefinition.html">nutestdefinition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutestrun.html">nutestrun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutestsuite.html">nutestsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutestsuiterun.html">nutestsuiterun</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutier.html">nutier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutrunk.html">nutrunk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuunderlay.html">nuunderlay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuuplinkconnection.html">nuuplinkconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuuplinkrd.html">nuuplinkrd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuuser.html">nuuser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuusercontext.html">nuusercontext</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvcenter.html">nuvcenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvcentercluster.html">nuvcentercluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvcenterdatacenter.html">nuvcenterdatacenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvcentereamconfig.html">nuvcentereamconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvcenterhypervisor.html">nuvcenterhypervisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvcentervrsconfig.html">nuvcentervrsconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvirtualfirewallpolicy.html">nuvirtualfirewallpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvirtualfirewallrule.html">nuvirtualfirewallrule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvirtualip.html">nuvirtualip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvlan.html">nuvlan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvlantemplate.html">nuvlantemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvm.html">nuvm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvminterface.html">nuvminterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvmresync.html">nuvmresync</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnf.html">nuvnf</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnfcatalog.html">nuvnfcatalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnfdescriptor.html">nuvnfdescriptor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnfdomainmapping.html">nuvnfdomainmapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnfinterface.html">nuvnfinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnfinterfacedescriptor.html">nuvnfinterfacedescriptor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnfmetadata.html">nuvnfmetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvnfthresholdpolicy.html">nuvnfthresholdpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvpnconnection.html">nuvpnconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvport.html">nuvport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvportmirror.html">nuvportmirror</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvrs.html">nuvrs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvrsaddressrange.html">nuvrsaddressrange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvrsinfo.html">nuvrsinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvrsmetrics.html">nuvrsmetrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvrsredeploymentpolicy.html">nuvrsredeploymentpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvsc.html">nuvsc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvsd.html">nuvsd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvsdcomponent.html">nuvsdcomponent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvsgredundantport.html">nuvsgredundantport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuvsp.html">nuvsp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuwanservice.html">nuwanservice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuwebcategory.html">nuwebcategory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuwebdomainname.html">nuwebdomainname</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuwirelessport.html">nuwirelessport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuzfbautoassignment.html">nuzfbautoassignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuzfbrequest.html">nuzfbrequest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuzone.html">nuzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuzonetemplate.html">nuzonetemplate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">v5_0 reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuaddressmap.html">nuaddressmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuaddressrange.html">nuaddressrange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuaggregatemetadata.html">nuaggregatemetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nualarm.html">nualarm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuallalarm.html">nuallalarm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuallgateway.html">nuallgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuallredundancygroup.html">nuallredundancygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuapplication.html">nuapplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuapplicationbinding.html">nuapplicationbinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuapplicationperformancemanagement.html">nuapplicationperformancemanagement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuapplicationperformancemanagementbinding.html">nuapplicationperformancemanagementbinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuautodiscovercluster.html">nuautodiscovercluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuautodiscovereddatacenter.html">nuautodiscovereddatacenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuautodiscoveredgateway.html">nuautodiscoveredgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuautodiscoverhypervisorfromcluster.html">nuautodiscoverhypervisorfromcluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuavatar.html">nuavatar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubfdsession.html">nubfdsession</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubgpneighbor.html">nubgpneighbor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubgppeer.html">nubgppeer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubgpprofile.html">nubgpprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubootstrap.html">nubootstrap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubootstrapactivation.html">nubootstrapactivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubrconnection.html">nubrconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubridgeinterface.html">nubridgeinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nubulkstatistics.html">nubulkstatistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucaptiveportalprofile.html">nucaptiveportalprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucertificate.html">nucertificate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucloudmgmtsystem.html">nucloudmgmtsystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucommand.html">nucommand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuconnectionendpoint.html">nuconnectionendpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucontainer.html">nucontainer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucontainerinterface.html">nucontainerinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucontainerresync.html">nucontainerresync</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucosremarkingpolicy.html">nucosremarkingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucosremarkingpolicytable.html">nucosremarkingpolicytable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucsnatpool.html">nucsnatpool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuctranslationmap.html">nuctranslationmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nucustomproperty.html">nucustomproperty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudefaultgateway.html">nudefaultgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudemarcationservice.html">nudemarcationservice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudeploymentfailure.html">nudeploymentfailure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudestinationurl.html">nudestinationurl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudhcpoption.html">nudhcpoption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudiskstat.html">nudiskstat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudomain.html">nudomain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudomainfipacltemplate.html">nudomainfipacltemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudomainfipacltemplateentry.html">nudomainfipacltemplateentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudomaintemplate.html">nudomaintemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudownloadprogress.html">nudownloadprogress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudscpforwardingclassmapping.html">nudscpforwardingclassmapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudscpforwardingclasstable.html">nudscpforwardingclasstable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudscpremarkingpolicy.html">nudscpremarkingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nudscpremarkingpolicytable.html">nudscpremarkingpolicytable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuducgroup.html">nuducgroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuducgroupbinding.html">nuducgroupbinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuegressaclentrytemplate.html">nuegressaclentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuegressacltemplate.html">nuegressacltemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuegressadvfwdentrytemplate.html">nuegressadvfwdentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuegressadvfwdtemplate.html">nuegressadvfwdtemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuegressprofile.html">nuegressprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuegressqospolicy.html">nuegressqospolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuenterprise.html">nuenterprise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuenterprisenetwork.html">nuenterprisenetwork</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuenterprisepermission.html">nuenterprisepermission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuenterpriseprofile.html">nuenterpriseprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuenterprisesecureddata.html">nuenterprisesecureddata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuenterprisesecurity.html">nuenterprisesecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nueventlog.html">nueventlog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nufirewallacl.html">nufirewallacl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nufirewallrule.html">nufirewallrule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuforwardingpathlist.html">nuforwardingpathlist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugateway.html">nugateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugatewayredundantport.html">nugatewayredundantport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugatewaysecureddata.html">nugatewaysecureddata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugatewaysecurity.html">nugatewaysecurity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugatewayslocation.html">nugatewayslocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugatewaytemplate.html">nugatewaytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuglobalmetadata.html">nuglobalmetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugroup.html">nugroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nugroupkeyencryptionprofile.html">nugroupkeyencryptionprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuhostinterface.html">nuhostinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuhsc.html">nuhsc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikecertificate.html">nuikecertificate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikeencryptionprofile.html">nuikeencryptionprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikegateway.html">nuikegateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikegatewayconfig.html">nuikegatewayconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikegatewayconnection.html">nuikegatewayconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikegatewayprofile.html">nuikegatewayprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikepsk.html">nuikepsk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuikesubnet.html">nuikesubnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuinfrastructureaccessprofile.html">nuinfrastructureaccessprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuinfrastructureconfig.html">nuinfrastructureconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuinfrastructureevdfprofile.html">nuinfrastructureevdfprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuinfrastructuregatewayprofile.html">nuinfrastructuregatewayprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuinfrastructurevscprofile.html">nuinfrastructurevscprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuingressaclentrytemplate.html">nuingressaclentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuingressacltemplate.html">nuingressacltemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuingressadvfwdentrytemplate.html">nuingressadvfwdentrytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuingressadvfwdtemplate.html">nuingressadvfwdtemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuingressprofile.html">nuingressprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuingressqospolicy.html">nuingressqospolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuipfilterprofile.html">nuipfilterprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuipreservation.html">nuipreservation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuipv6filterprofile.html">nuipv6filterprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nujob.html">nujob</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nukeyservermember.html">nukeyservermember</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nukeyservermonitor.html">nukeyservermonitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nukeyservermonitorencryptedseed.html">nukeyservermonitorencryptedseed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nukeyservermonitorseed.html">nukeyservermonitorseed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nukeyservermonitorsek.html">nukeyservermonitorsek</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nul2domain.html">nul2domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nul2domaintemplate.html">nul2domaintemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nul4service.html">nul4service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nul4servicegroup.html">nul4servicegroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nul7applicationsignature.html">nul7applicationsignature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuldapconfiguration.html">nuldapconfiguration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nulicense.html">nulicense</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nulicensestatus.html">nulicensestatus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nulink.html">nulink</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nulocation.html">nulocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nulteinformation.html">nulteinformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nultestatistics.html">nultestatistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numacfilterprofile.html">numacfilterprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nume.html">nume</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numetadata.html">numetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numirrordestination.html">numirrordestination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numonitoringport.html">numonitoringport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numonitorscope.html">numonitorscope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numulticastchannelmap.html">numulticastchannelmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numulticastlist.html">numulticastlist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numulticastrange.html">numulticastrange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/numultinicvport.html">numultinicvport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunatmapentry.html">nunatmapentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunetconfmanager.html">nunetconfmanager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunetconfprofile.html">nunetconfprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunetconfsession.html">nunetconfsession</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunetworklayout.html">nunetworklayout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunetworkmacrogroup.html">nunetworkmacrogroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunetworkperformancebinding.html">nunetworkperformancebinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunetworkperformancemeasurement.html">nunetworkperformancemeasurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunexthop.html">nunexthop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgateway.html">nunsgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgatewaymonitor.html">nunsgatewaymonitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgatewayscount.html">nunsgatewayscount</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgatewaysummary.html">nunsgatewaysummary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgatewaytemplate.html">nunsgatewaytemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsggroup.html">nunsggroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsginfo.html">nunsginfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgpatchprofile.html">nunsgpatchprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgroutingpolicybinding.html">nunsgroutingpolicybinding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsgupgradeprofile.html">nunsgupgradeprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsport.html">nunsport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsportinfo.html">nunsportinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsporttemplate.html">nunsporttemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nunsredundantgatewaygroup.html">nunsredundantgatewaygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuospfarea.html">nuospfarea</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuospfinstance.html">nuospfinstance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuospfinterface.html">nuospfinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuoverlayaddresspool.html">nuoverlayaddresspool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuoverlaymanagementprofile.html">nuoverlaymanagementprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuoverlaymanagementsubnetprofile.html">nuoverlaymanagementsubnetprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuoverlaymirrordestination.html">nuoverlaymirrordestination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuoverlaymirrordestinationtemplate.html">nuoverlaymirrordestinationtemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuoverlaypatnatentry.html">nuoverlaypatnatentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupatch.html">nupatch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupatipentry.html">nupatipentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupatmapper.html">nupatmapper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupatnatpool.html">nupatnatpool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuperformancemonitor.html">nuperformancemonitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupermission.html">nupermission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupgexpression.html">nupgexpression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupgexpressiontemplate.html">nupgexpressiontemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupolicydecision.html">nupolicydecision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupolicyentry.html">nupolicyentry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupolicygroup.html">nupolicygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupolicygroupcategory.html">nupolicygroupcategory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupolicygrouptemplate.html">nupolicygrouptemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupolicyobjectgroup.html">nupolicyobjectgroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupolicystatement.html">nupolicystatement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuport.html">nuport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuportmapping.html">nuportmapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuporttemplate.html">nuporttemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuproxyarpfilter.html">nuproxyarpfilter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupsnatpool.html">nupsnatpool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupspatmap.html">nupspatmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuptranslationmap.html">nuptranslationmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nupublicnetworkmacro.html">nupublicnetworkmacro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuqos.html">nuqos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuqospolicer.html">nuqospolicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuratelimiter.html">nuratelimiter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuredirectiontarget.html">nuredirectiontarget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuredirectiontargettemplate.html">nuredirectiontargettemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuredundancygroup.html">nuredundancygroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuredundantport.html">nuredundantport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuroutingpolicy.html">nuroutingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusaasapplicationgroup.html">nusaasapplicationgroup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusaasapplicationtype.html">nusaasapplicationtype</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusapegressqosprofile.html">nusapegressqosprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusapingressqosprofile.html">nusapingressqosprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusharednetworkresource.html">nusharednetworkresource</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nushuntlink.html">nushuntlink</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusiteinfo.html">nusiteinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuspatsourcespool.html">nuspatsourcespool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusshkey.html">nusshkey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nussidconnection.html">nussidconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nustaticroute.html">nustaticroute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nustatistics.html">nustatistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nustatscollectorinfo.html">nustatscollectorinfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusubnet.html">nusubnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusubnettemplate.html">nusubnettemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusyslogdestination.html">nusyslogdestination</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nusystemconfig.html">nusystemconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nutca.html">nutca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nutier.html">nutier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nutrunk.html">nutrunk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuunderlay.html">nuunderlay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuuplinkconnection.html">nuuplinkconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuuplinkrd.html">nuuplinkrd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuuser.html">nuuser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuusercontext.html">nuusercontext</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvcenter.html">nuvcenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvcentercluster.html">nuvcentercluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvcenterdatacenter.html">nuvcenterdatacenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvcentereamconfig.html">nuvcentereamconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvcenterhypervisor.html">nuvcenterhypervisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvcentervrsconfig.html">nuvcentervrsconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvirtualfirewallpolicy.html">nuvirtualfirewallpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvirtualfirewallrule.html">nuvirtualfirewallrule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvirtualip.html">nuvirtualip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvlan.html">nuvlan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvlantemplate.html">nuvlantemplate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvm.html">nuvm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvminterface.html">nuvminterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvmresync.html">nuvmresync</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnf.html">nuvnf</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnfcatalog.html">nuvnfcatalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnfdescriptor.html">nuvnfdescriptor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnfdomainmapping.html">nuvnfdomainmapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnfinterface.html">nuvnfinterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnfinterfacedescriptor.html">nuvnfinterfacedescriptor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnfmetadata.html">nuvnfmetadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvnfthresholdpolicy.html">nuvnfthresholdpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvpnconnection.html">nuvpnconnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvport.html">nuvport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvportmirror.html">nuvportmirror</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvrs.html">nuvrs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvrsaddressrange.html">nuvrsaddressrange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvrsmetrics.html">nuvrsmetrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvrsredeploymentpolicy.html">nuvrsredeploymentpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvsc.html">nuvsc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvsd.html">nuvsd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvsdcomponent.html">nuvsdcomponent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvsgredundantport.html">nuvsgredundantport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuvsp.html">nuvsp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuwanservice.html">nuwanservice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuwebcategory.html">nuwebcategory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuwebdomainname.html">nuwebdomainname</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuwirelessport.html">nuwirelessport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuzfbautoassignment.html">nuzfbautoassignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuzfbrequest.html">nuzfbrequest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuzone.html">nuzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v5_0/nuzonetemplate.html">nuzonetemplate</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VSPK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>nualarm</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/v6/nualarm.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nualarm">
+<span id="id1"></span><h1>nualarm<a class="headerlink" href="#nualarm" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt>
+<code class="descname">nualarm.NUAlarm(bambou.nurest_object.NUMetaRESTObject,):</code></dt>
+<dd></dd></dl>
+
+<p>The alarm API allows the management of system alarms.</p>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">target_object</span></code>: Identifies affected Entity.  Example: Alarm generated by TCA for Domain domain1(Packets towards a VM, Breach)</li>
+<li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
+<li><code class="docutils literal notranslate"><span class="pre">acknowledged</span></code>: Flag to indicate if the alarm has been acknowledged already.</li>
+<li><code class="docutils literal notranslate"><span class="pre">remedy</span></code>: Remedial Actions for the alarm.</li>
+<li><code class="docutils literal notranslate"><span class="pre">description</span></code>: Description of the alarm</li>
+<li><code class="docutils literal notranslate"><span class="pre">severity</span></code>: Severity of the alarm.</li>
+<li><code class="docutils literal notranslate"><span class="pre">timestamp</span></code>: Indicates the time at which the alarm was triggered</li>
+<li><code class="docutils literal notranslate"><span class="pre">title</span></code> (<strong>Mandatory</strong>): The alarm title.  Each type of alarm will generate its own title</li>
+<li><code class="docutils literal notranslate"><span class="pre">alarmed_object_id</span></code>: Alarmed Object ID</li>
+<li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
+<li><code class="docutils literal notranslate"><span class="pre">enterprise_id</span></code>: Enterprise that this alarm belongs to</li>
+<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
+<li><code class="docutils literal notranslate"><span class="pre">error_condition</span></code>: Identifies the error condition</li>
+<li><code class="docutils literal notranslate"><span class="pre">number_of_occurances</span></code>: Number of times that the alarm was triggered</li>
+<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
+</ul>
+</div>
+<div class="section" id="children">
+<h2>Children<a class="headerlink" href="#children" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="62%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>class</strong></td>
+<td><strong>fetcher</strong></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="parents">
+<h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="nuredundancygroup.html#nuredundancygroup"><span class="std std-ref">nuredundancygroup.NURedundancyGroup</span></a></li>
+<li><a class="reference internal" href="nutca.html#nutca"><span class="std std-ref">nutca.NUTCA</span></a></li>
+<li><a class="reference internal" href="nuwanservice.html#nuwanservice"><span class="std std-ref">nuwanservice.NUWANService</span></a></li>
+<li><a class="reference internal" href="nuikegatewayconnection.html#nuikegatewayconnection"><span class="std std-ref">nuikegatewayconnection.NUIKEGatewayConnection</span></a></li>
+<li><a class="reference internal" href="nugatewayredundantport.html#nugatewayredundantport"><span class="std std-ref">nugatewayredundantport.NUGatewayRedundantPort</span></a></li>
+<li><a class="reference internal" href="nussidconnection.html#nussidconnection"><span class="std std-ref">nussidconnection.NUSSIDConnection</span></a></li>
+<li><a class="reference internal" href="nuvsc.html#nuvsc"><span class="std std-ref">nuvsc.NUVSC</span></a></li>
+<li><a class="reference internal" href="nuvport.html#nuvport"><span class="std std-ref">nuvport.NUVPort</span></a></li>
+<li><a class="reference internal" href="nuport.html#nuport"><span class="std std-ref">nuport.NUPort</span></a></li>
+<li><a class="reference internal" href="nucontainer.html#nucontainer"><span class="std std-ref">nucontainer.NUContainer</span></a></li>
+<li><a class="reference internal" href="nuvrs.html#nuvrs"><span class="std std-ref">nuvrs.NUVRS</span></a></li>
+<li><a class="reference internal" href="nuhsc.html#nuhsc"><span class="std std-ref">nuhsc.NUHSC</span></a></li>
+<li><a class="reference internal" href="nuvlan.html#nuvlan"><span class="std std-ref">nuvlan.NUVLAN</span></a></li>
+<li><a class="reference internal" href="nunetconfgateway.html#nunetconfgateway"><span class="std std-ref">nunetconfgateway.NUNetconfGateway</span></a></li>
+<li><a class="reference internal" href="nunetconfmanager.html#nunetconfmanager"><span class="std std-ref">nunetconfmanager.NUNetconfManager</span></a></li>
+<li><a class="reference internal" href="nuvsgredundantport.html#nuvsgredundantport"><span class="std std-ref">nuvsgredundantport.NUVsgRedundantPort</span></a></li>
+<li><a class="reference internal" href="nudomain.html#nudomain"><span class="std std-ref">nudomain.NUDomain</span></a></li>
+<li><a class="reference internal" href="nugateway.html#nugateway"><span class="std std-ref">nugateway.NUGateway</span></a></li>
+<li><a class="reference internal" href="nushuntlink.html#nushuntlink"><span class="std std-ref">nushuntlink.NUShuntLink</span></a></li>
+<li><a class="reference internal" href="nul2domain.html#nul2domain"><span class="std std-ref">nul2domain.NUL2Domain</span></a></li>
+<li><a class="reference internal" href="nunsgateway.html#nunsgateway"><span class="std std-ref">nunsgateway.NUNSGateway</span></a></li>
+<li><a class="reference internal" href="nuvm.html#nuvm"><span class="std std-ref">nuvm.NUVM</span></a></li>
+<li><a class="reference internal" href="nuvsd.html#nuvsd"><span class="std std-ref">nuvsd.NUVSD</span></a></li>
+<li><a class="reference internal" href="nunsredundantgatewaygroup.html#nunsredundantgatewaygroup"><span class="std std-ref">nunsredundantgatewaygroup.NUNSRedundantGatewayGroup</span></a></li>
+<li><a class="reference internal" href="nuwirelessport.html#nuwirelessport"><span class="std std-ref">nuwirelessport.NUWirelessPort</span></a></li>
+<li><a class="reference internal" href="nunsport.html#nunsport"><span class="std std-ref">nunsport.NUNSPort</span></a></li>
+<li><a class="reference internal" href="nuaggregateddomain.html#nuaggregateddomain"><span class="std std-ref">nuaggregateddomain.NUAggregatedDomain</span></a></li>
+<li><a class="reference internal" href="nuenterprise.html#nuenterprise"><span class="std std-ref">nuenterprise.NUEnterprise</span></a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="nuallalarm.html" class="btn btn-neutral float-right" title="nuallalarm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="nuaggregatemetadata.html" class="btn btn-neutral float-left" title="nuaggregatemetadata" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Nuage Networks
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

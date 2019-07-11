@@ -22,6 +22,8 @@ Attributes
 
 - ``address``: The IP of the VRS entity
 
+- ``addresses``: The Control IPv4 or IPv6 addresses of the VSC. Example: [10.10.18.10, 2001:10:10:18::10].
+
 - ``peak_cpuusage``: Peek CPU usage percentage.
 
 - ``peak_memory_usage``: Peek memory usage percentage.
@@ -72,6 +74,7 @@ Children
 :ref:`nujob.NUJob<nujob>`                                                                                                                                        ``jobs`` 
 :ref:`numonitoringport.NUMonitoringPort<numonitoringport>`                                                                                                       ``monitoring_ports`` 
 :ref:`nuvrs.NUVRS<nuvrs>`                                                                                                                                        ``vrss`` 
+:ref:`nustatistics.NUStatistics<nustatistics>`                                                                                                                   ``statistics`` 
 :ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
 ================================================================================================================================================               ==========================================================================================
 

@@ -5,7 +5,7 @@ nusystemconfig
 
 .. class:: nusystemconfig.NUSystemConfig(bambou.nurest_object.NUMetaRESTObject,):
 
-The system configuration which can be dynamically managed using rest api.
+The System Configuration which can be dynamically managed using REST Api.
 
 
 Attributes
@@ -48,9 +48,9 @@ Attributes
 
 - ``dhcp_option_size``: Defines total DHCP options that can be set on a domain.
 
-- ``vlanid_lower_limit``: None
+- ``vlanid_lower_limit``: Offset for the Per domain vlan id for gateways of type HWVTEP
 
-- ``vlanid_upper_limit``: None
+- ``vlanid_upper_limit``: Upper limit for the Per domain vlan id for gateways of type HWVTEP
 
 - ``vm_cache_size``: LRU Map size for vm, this value has to set based on memory given to VSD jvm not finalized.
 
@@ -80,11 +80,15 @@ Attributes
 
 - ``vport_init_stateful_timer``: Defines the timeout in seconds for vport initialization to stateful. Default value is 300 secs and the timeout should be between 0 to 86400 seconds.
 
-- ``lru_cache_size_per_subnet``: LRU Map size per subnet (to hold the deleted vm's ip addresses).
+- ``lru_cache_size_per_subnet``: LRU Map size per subnet (to hold the deleted vm's IP addresses).
 
 - ``vsc_on_same_version_as_vsd``: This flag is used to indicate that whether VSC is on the same version as VSD or not.
 
-- ``vsd_read_only_mode``: True means VSD readonly mode enabled. False means VSD readonly mode disabled
+- ``vsdaar_application_version``: Version of the current imported Application Signatures.
+
+- ``vsdaar_application_version_publish_date``: Determines the time that Application Signatures were published and added in the VSD.
+
+- ``vsd_read_only_mode``: True means VSD readonly mode enabled. False means VSD readonly mode disabled.
 
 - ``vsd_upgrade_is_complete``: This flag is used to indicate that whether VSD upgrade is complete,it is expected that csproot will set to true,after VSD upgrade is complete and also making sure that all VSC's audits and Gateway audits with VSD are done
 
@@ -108,11 +112,19 @@ Attributes
 
 - ``evpnbgp_community_tag_upper_limit``: EVPNBGPCommunityTag upper limit
 
+- ``saa_s_applications_publish_date``: Determines the time that saas applications were imported in VSD.
+
 - ``page_max_size``: Defines upper bound for the page size. Configured or input page size should be less than this max page size.
 
 - ``page_size``: Defines the page size for the results returned by the REST call.
 
 - ``last_updated_by``: ID of the user who last updated the object.
+
+- ``gateway_probe_interval``: Gateway probe interval in seconds.
+
+- ``gateway_probe_window``: Gateway probe window in seconds.
+
+- ``gateway_rebalancing_interval``: Gateway rebalancing interval in seconds.
 
 - ``max_failed_logins``: Maximum failed login attempts before the account is locked (min = 5, max = 10). 0 = not enforced (unlimited attempts). This is not enforced if LDAP is used for authorization
 
@@ -122,9 +134,7 @@ Attributes
 
 - ``vcin_load_balancer_ip``: If VCIN Active/Standby is enabled, this needs to be the load-balancer IP which sits in front of the Active and Standby VCIN nodes. The VRS will make its API calls to this load-balancer
 
-- ``per_domain_vlan_id_enabled``: None
-
-- ``performance_path_selection_vnid``: performance Path Selection Virtual Network ID
+- ``per_domain_vlan_id_enabled``: Determines whether per domain vlan id generation is required
 
 - ``service_id_upper_limit``: Service id upper limit system wide value
 
@@ -158,13 +168,17 @@ Attributes
 
 - ``flow_collection_enabled``: Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires 'statisticsEnabled'.
 
+- ``imported_saa_s_applications_version``: Version of the current imported SaaS Application Type Master List.
+
 - ``inactive_timeout``: Defines the inactive timeout for the client. If the client is inactive for more than timeout, server clears off all the cache/information regarding the client. This value should be greater than event processor max timeout
 
 - ``infrastructure_bgpas_number``: Autonomous System Number, Used for Infrastructure BGP PE_CE.
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
-- ``domain_tunnel_type``: Default Domain Tunnel Type .Possible values are VXLAN,GRE Possible values are DC_DEFAULT, GRE, VXLAN, .
+- ``domain_tunnel_type``: Default Domain Tunnel Type.
+
+- ``google_maps_api_key``: Google Maps API Key used to display maps on Nuage UI applications
 
 - ``post_processor_threads_count``: Post processor thread count.
 
@@ -226,11 +240,13 @@ Attributes
 
 - ``statistics_enabled``: This flag is used to indicate if statistics is enabled in the system. CSProot is expected to activate this through the enable statistics script.
 
-- ``stats_collector_address``: Specify the ip address(es) of the stats collector.
+- ``stats_collector_address``: Specify the IP address(es) of the stats collector.
 
 - ``stats_collector_port``: Specify the port number(s) of the stats collector.
 
 - ``stats_collector_proto_buf_port``: Specify the protobuf port number(s) of the stats collector.
+
+- ``stats_database_proxy``: The location of a public proxy to statistics database server in <FQDN>:<PORT> format.
 
 - ``stats_max_data_points``: Specifies the maximum number of data points to support.
 
@@ -238,7 +254,7 @@ Attributes
 
 - ``stats_number_of_data_points``: Specifies number of data points.
 
-- ``stats_tsdb_server_address``: Specifies the TSDB server location.
+- ``stats_tsdb_server_address``: Specifies the Elastic Search server location.
 
 - ``sticky_ecmp_idle_timeout``: sticky ECMP Idle Timeout in seconds
 
@@ -268,11 +284,11 @@ Attributes
 
 - ``event_processor_timeout``: Defines the maximum time period in milliseconds for the Rest server to wait before sending the events from the system.
 
-- ``two_factor_code_expiry``: Two Factor Code Expiry in Seconds
+- ``two_factor_code_expiry``: Two Factor Code Expiry in Seconds (min = 60, max = 604800)
 
-- ``two_factor_code_length``: Two Factor Code Length
+- ``two_factor_code_length``: Two Factor Code Length (min = 4, max = 10)
 
-- ``two_factor_code_seed_length``: Two Factor Seed length in bytes
+- ``two_factor_code_seed_length``: Two Factor Seed length in bytes (min = 0, max = 255)
 
 - ``external_id``: External object ID. Used for integration with third party systems
 
@@ -290,7 +306,7 @@ Attributes
 
 - ``system_avatar_data``: CSP Avatar Data
 
-- ``system_avatar_type``: None
+- ``system_avatar_type``: Avatar type - URL or BASE64
 
 
 

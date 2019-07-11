@@ -5,7 +5,7 @@ nuvlan
 
 .. class:: nuvlan.NUVLAN(bambou.nurest_object.NUMetaRESTObject,):
 
-Represents VLAN object under a given Port object.
+VLANs are Virtual Local Area Networks. They allow to differentiate several traffic flows inside a single Port. A VLAN with a value set to 0 can be used to tell the system to not use any tagging.
 
 
 Attributes
@@ -27,6 +27,8 @@ Attributes
 - ``description``: A description of the VLAN instance.
 
 - ``restricted``: Determines whether this entity can be used in associations with other properties.
+
+- ``shunt_vlan``: A flag to mark this instance of a VLAN as a candidate to be a termination point of a Shunt Link.  Only VLANs residing on a Network Port can have this attribute set to true.
 
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
@@ -92,11 +94,13 @@ Parents
 --------
 
 
-- :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`
+- :ref:`nugatewayredundantport.NUGatewayRedundantPort<nugatewayredundantport>`
 
 - :ref:`nuredundantport.NURedundantPort<nuredundantport>`
 
 - :ref:`nuport.NUPort<nuport>`
+
+- :ref:`nuvsgredundantport.NUVsgRedundantPort<nuvsgredundantport>`
 
 - :ref:`nunsport.NUNSPort<nunsport>`
 

@@ -5,7 +5,7 @@ nudomaintemplate
 
 .. class:: nudomaintemplate.NUDomainTemplate(bambou.nurest_object.NUMetaRESTObject,):
 
-Domains in VSD are created from domain templates. This object provides the definition of the Domain Template.
+A domain is a distributed logical router that enables L2 and L3 communication. A domain template is a model that can be instantiated as often as required, thereby creating real, functioning domains.
 
 
 Attributes
@@ -52,12 +52,10 @@ Children
 :ref:`nuegressacltemplate.NUEgressACLTemplate<nuegressacltemplate>`                                                                                              ``egress_acl_templates`` 
 :ref:`nuegressadvfwdtemplate.NUEgressAdvFwdTemplate<nuegressadvfwdtemplate>`                                                                                     ``egress_adv_fwd_templates`` 
 :ref:`nudomainfipacltemplate.NUDomainFIPAclTemplate<nudomainfipacltemplate>`                                                                                     ``domain_fip_acl_templates`` 
-:ref:`nufloatingipacltemplate.NUFloatingIPACLTemplate<nufloatingipacltemplate>`                                                                                  ``floating_ipacl_templates`` 
 :ref:`nuvirtualfirewallpolicy.NUVirtualFirewallPolicy<nuvirtualfirewallpolicy>`                                                                                  ``virtual_firewall_policies`` 
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 :ref:`nuingressacltemplate.NUIngressACLTemplate<nuingressacltemplate>`                                                                                           ``ingress_acl_templates`` 
 :ref:`nuingressadvfwdtemplate.NUIngressAdvFwdTemplate<nuingressadvfwdtemplate>`                                                                                  ``ingress_adv_fwd_templates`` 
-:ref:`nuingressexternalservicetemplate.NUIngressExternalServiceTemplate<nuingressexternalservicetemplate>`                                                       ``ingress_external_service_templates`` 
 :ref:`nujob.NUJob<nujob>`                                                                                                                                        ``jobs`` 
 :ref:`nupolicygrouptemplate.NUPolicyGroupTemplate<nupolicygrouptemplate>`                                                                                        ``policy_group_templates`` 
 :ref:`nudomain.NUDomain<nudomain>`                                                                                                                               ``domains`` 

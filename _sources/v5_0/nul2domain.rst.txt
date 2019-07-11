@@ -22,6 +22,8 @@ Attributes
 
 - ``ipv6_gateway``: The IPv6 address of the gateway of this subnet
 
+- ``vxlanecmp_enabled``: Determines whether VXLAN-ECMP are enabled on this domain.
+
 - ``maintenance_mode``: maintenanceMode is an enum that indicates if the L2Domain is accepting VM activation requests. Possible values are DISABLED, ENABLED and ENABLED_INHERITED Possible values are .
 
 - ``name`` (**Mandatory**): Name of the L2Domain / L2Domain template,has to be unique within a Enterprise. Valid characters are alphabets, numbers, space and hyphen( - ).
@@ -48,6 +50,8 @@ Attributes
 
 - ``encryption``: Determines whether IPSEC is enabled Possible values are ENABLED, DISABLED, .
 
+- ``ingress_replication_enabled``: Enables ingress replication for the VNI.
+
 - ``entity_scope``: Specify if scope of entity is Data center or Enterprise level
 
 - ``entity_state``: Intermediate State of L2 Domain.
@@ -57,6 +61,8 @@ Attributes
 - ``route_distinguisher``: Route distinguisher that is used by the BGP-EVPN protocol in VSC. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]
 
 - ``route_target``: Route target that is used by the BGP-EVPN protocol in VSC. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]
+
+- ``routed_vpls_enabled``: Determines whether routed VPLS services are enabled on this domain.
 
 - ``uplink_preference``: Indicates the preferencial path selection for network traffic in this domain - Default is Primary 1 and Secondary 2. Possible values are PRIMARY_SECONDARY, SECONDARY_PRIMARY, PRIMARY, SECONDARY, SYMMETRIC, .
 
@@ -72,6 +78,8 @@ Attributes
 
 - ``multicast``: Indicates multicast policy on L2Domain.
 
+- ``customer_id``: CustomerID that is used by NETCONF MANAGER to identify this enterprise. This can be configured by root user.
+
 - ``external_id``: External object ID. Used for integration with third party systems
 
 - ``dynamic_ipv6_address``: Turn on or off dynamic allocation of IPV6 address
@@ -85,9 +93,12 @@ Children
 ================================================================================================================================================               ==========================================================================================
 **class**                                                                                                                                                      **fetcher**
 
+:ref:`nugateway.NUGateway<nugateway>`                                                                                                                            ``gateways`` 
 :ref:`nutca.NUTCA<nutca>`                                                                                                                                        ``tcas`` 
 :ref:`nuaddressrange.NUAddressRange<nuaddressrange>`                                                                                                             ``address_ranges`` 
 :ref:`nuredirectiontarget.NURedirectionTarget<nuredirectiontarget>`                                                                                              ``redirection_targets`` 
+:ref:`nuredundancygroup.NURedundancyGroup<nuredundancygroup>`                                                                                                    ``redundancy_groups`` 
+:ref:`nudeploymentfailure.NUDeploymentFailure<nudeploymentfailure>`                                                                                              ``deployment_failures`` 
 :ref:`nupermission.NUPermission<nupermission>`                                                                                                                   ``permissions`` 
 :ref:`numetadata.NUMetadata<numetadata>`                                                                                                                         ``metadatas`` 
 :ref:`nunetworkperformancebinding.NUNetworkPerformanceBinding<nunetworkperformancebinding>`                                                                      ``network_performance_bindings`` 
@@ -97,13 +108,14 @@ Children
 :ref:`nuegressadvfwdtemplate.NUEgressAdvFwdTemplate<nuegressadvfwdtemplate>`                                                                                     ``egress_adv_fwd_templates`` 
 :ref:`nudhcpoption.NUDHCPOption<nudhcpoption>`                                                                                                                   ``dhcp_options`` 
 :ref:`nuvirtualfirewallpolicy.NUVirtualFirewallPolicy<nuvirtualfirewallpolicy>`                                                                                  ``virtual_firewall_policies`` 
+:ref:`nuvirtualfirewallrule.NUVirtualFirewallRule<nuvirtualfirewallrule>`                                                                                        ``virtual_firewall_rules`` 
+:ref:`nualarm.NUAlarm<nualarm>`                                                                                                                                  ``alarms`` 
 :ref:`nuglobalmetadata.NUGlobalMetadata<nuglobalmetadata>`                                                                                                       ``global_metadatas`` 
 :ref:`nuvm.NUVM<nuvm>`                                                                                                                                           ``vms`` 
 :ref:`nuvminterface.NUVMInterface<nuvminterface>`                                                                                                                ``vm_interfaces`` 
 :ref:`nuingressaclentrytemplate.NUIngressACLEntryTemplate<nuingressaclentrytemplate>`                                                                            ``ingress_acl_entry_templates`` 
 :ref:`nuingressacltemplate.NUIngressACLTemplate<nuingressacltemplate>`                                                                                           ``ingress_acl_templates`` 
 :ref:`nuingressadvfwdtemplate.NUIngressAdvFwdTemplate<nuingressadvfwdtemplate>`                                                                                  ``ingress_adv_fwd_templates`` 
-:ref:`nuingressexternalservicetemplate.NUIngressExternalServiceTemplate<nuingressexternalservicetemplate>`                                                       ``ingress_external_service_templates`` 
 :ref:`nujob.NUJob<nujob>`                                                                                                                                        ``jobs`` 
 :ref:`nupolicygroup.NUPolicyGroup<nupolicygroup>`                                                                                                                ``policy_groups`` 
 :ref:`nucontainer.NUContainer<nucontainer>`                                                                                                                      ``containers`` 
@@ -113,8 +125,13 @@ Children
 :ref:`nuuplinkrd.NUUplinkRD<nuuplinkrd>`                                                                                                                         ``uplink_rds`` 
 :ref:`nuvpnconnection.NUVPNConnection<nuvpnconnection>`                                                                                                          ``vpn_connections`` 
 :ref:`nuvport.NUVPort<nuvport>`                                                                                                                                  ``vports`` 
+:ref:`nuapplication.NUApplication<nuapplication>`                                                                                                                ``applications`` 
+:ref:`nuapplicationperformancemanagementbinding.NUApplicationperformancemanagementbinding<nuapplicationperformancemanagementbinding>`                            ``applicationperformancemanagementbindings`` 
 :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`                                                                                                    ``bridge_interfaces`` 
 :ref:`nugroup.NUGroup<nugroup>`                                                                                                                                  ``groups`` 
+:ref:`nuproxyarpfilter.NUProxyARPFilter<nuproxyarpfilter>`                                                                                                       ``proxy_arp_filters`` 
+:ref:`nunsgatewaysummary.NUNSGatewaySummary<nunsgatewaysummary>`                                                                                                 ``ns_gateway_summaries`` 
+:ref:`nustaticroute.NUStaticRoute<nustaticroute>`                                                                                                                ``static_routes`` 
 :ref:`nustatistics.NUStatistics<nustatistics>`                                                                                                                   ``statistics`` 
 :ref:`nustatisticspolicy.NUStatisticsPolicy<nustatisticspolicy>`                                                                                                 ``statistics_policies`` 
 :ref:`nueventlog.NUEventLog<nueventlog>`                                                                                                                         ``event_logs`` 
@@ -127,9 +144,13 @@ Parents
 --------
 
 
+- :ref:`nuredundancygroup.NURedundancyGroup<nuredundancygroup>`
+
 - :ref:`nume.NUMe<nume>`
 
 - :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
+
+- :ref:`nugateway.NUGateway<nugateway>`
 
 - :ref:`nuenterprise.NUEnterprise<nuenterprise>`
 

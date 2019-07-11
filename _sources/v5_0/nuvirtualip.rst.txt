@@ -5,7 +5,7 @@ nuvirtualip
 
 .. class:: nuvirtualip.NUVirtualIP(bambou.nurest_object.NUMetaRESTObject,):
 
-Virtual IP address.
+Virtual IPs are IP addresses owned by one or more vports that can move among those vports. VSP will track the owner of a virtual IP and steer traffic accordingly. Virtual IPs can be used as next-hops for static routes and other re-direction purposes.
 
 
 Attributes
@@ -24,7 +24,7 @@ Attributes
 
 - ``associated_floating_ip_id``: Id of Floating IP address associated to this virtual ip
 
-- ``subnet_id``: Id of subnet to which this ip address belongs
+- ``subnet_id``: ID of subnet to which this IP address belongs
 
 - ``external_id``: External object ID. Used for integration with third party systems
 
