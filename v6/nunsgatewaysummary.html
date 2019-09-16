@@ -727,6 +727,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">gateway_type</span></code>: Details on the type of gateway for which the summary is given.  For NSGs, the value would be NSGateway.</li>
 <li><code class="docutils literal notranslate"><span class="pre">latitude</span></code>: The latitude of the location of the NSG</li>
 <li><code class="docutils literal notranslate"><span class="pre">address</span></code>: Formatted address including property number, street name, suite or office number of the NSG</li>
+<li><code class="docutils literal notranslate"><span class="pre">redundant_group_id</span></code>: The ID of the Redundant Group which has this gateway</li>
 <li><code class="docutils literal notranslate"><span class="pre">timezone_id</span></code>: Time zone in which the Gateway is located.  This can be in the form of a UTC/GMT offset, continent/city location, or country/region.  The available time zones can be found in /usr/share/zoneinfo on a Linux machine or retrieved with TimeZone.getAvailableIDs() in Java.  Refer to the IANA (Internet Assigned Numbers Authority) for a list of time zones.  URL :  <a class="reference external" href="http://www.iana.org/time-zones">http://www.iana.org/time-zones</a>  Default value is UTC (translating to Etc/Zulu)</li>
 <li><code class="docutils literal notranslate"><span class="pre">minor_alarms_count</span></code>: Total number of alarms with MINOR severity</li>
 <li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
@@ -766,10 +767,10 @@
 <div class="section" id="parents">
 <h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><a class="reference internal" href="nuaggregateddomain.html#nuaggregateddomain"><span class="std std-ref">nuaggregateddomain.NUAggregatedDomain</span></a></li>
 <li><a class="reference internal" href="nudomain.html#nudomain"><span class="std std-ref">nudomain.NUDomain</span></a></li>
 <li><a class="reference internal" href="nul2domain.html#nul2domain"><span class="std std-ref">nul2domain.NUL2Domain</span></a></li>
 <li><a class="reference internal" href="nunsgateway.html#nunsgateway"><span class="std std-ref">nunsgateway.NUNSGateway</span></a></li>
-<li><a class="reference internal" href="nuaggregateddomain.html#nuaggregateddomain"><span class="std std-ref">nuaggregateddomain.NUAggregatedDomain</span></a></li>
 <li><a class="reference internal" href="nuenterprise.html#nuenterprise"><span class="std std-ref">nuenterprise.NUEnterprise</span></a></li>
 </ul>
 </div>
