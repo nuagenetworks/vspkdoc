@@ -715,7 +715,7 @@
 <code class="descname">nuzfbrequest.NUZFBRequest(bambou.nurest_object.NUMetaRESTObject,):</code></dt>
 <dd></dd></dl>
 
-<p>Pending requests reflect Network Services Gateways that have initiated request for bootstrapping. Requests can be assigned or matched to continue the bootstrapping process</p>
+<p>Pending requests reflect Network Services Gateways that have initiated request for bootstrapping. Requests can be assigned, or matched, to continue the bootstrapping process.  If a request is rejected, the NSG will terminate the auto-bootstrapping attempts.</p>
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -733,10 +733,15 @@
 <li><code class="docutils literal notranslate"><span class="pre">last_connected_time</span></code>: The time in which the last GET was made from the gateway.</li>
 <li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
 <li><code class="docutils literal notranslate"><span class="pre">registration_url</span></code>: Registration URL to be used for a gateway to be bootstrapped using ZFB.</li>
+<li><code class="docutils literal notranslate"><span class="pre">request_type</span></code>: Value that serves in indicating if the Auto-Bootstrapping request is made in the context of a new NSG instance being bootstrapped or an NSG going through a self-rebootstrapping phase following a revocation triggered by entering quarantine.</li>
 <li><code class="docutils literal notranslate"><span class="pre">serial_number</span></code>: The gateway’s Serial Number.</li>
 <li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
 <li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
 <li><code class="docutils literal notranslate"><span class="pre">hostname</span></code>: Hostname of the gateway bootstrapped using ZFB.</li>
+<li><code class="docutils literal notranslate"><span class="pre">original_enterprise_name</span></code>: For an NSG that is self-rebootstrapping following a quarantine action, this field represents the original name of the enterprise/organisation to which the NSG belonged.</li>
+<li><code class="docutils literal notranslate"><span class="pre">original_gateway_datapath_id</span></code>: For an NSG that is self-rebootstrapping following a quarantine action, this field represents the original datapath ID that it had before revoking.</li>
+<li><code class="docutils literal notranslate"><span class="pre">original_gateway_name</span></code>: For an NSG that is self-rebootstrapping following a quarantine action, this field represents the original name the gateway had before revoking.</li>
+<li><code class="docutils literal notranslate"><span class="pre">original_uplink_connection_info</span></code>: For an NSG that is self-rebootstrapping following a quarantine action, this field represents an information blob of the original uplink connection information that applied to this NSG.</li>
 <li><code class="docutils literal notranslate"><span class="pre">associated_enterprise_id</span></code>: the ID of the associated enteprise</li>
 <li><code class="docutils literal notranslate"><span class="pre">associated_enterprise_name</span></code>: Name of the associated enterprise</li>
 <li><code class="docutils literal notranslate"><span class="pre">associated_entity_type</span></code>: Associated Entity Type: NSGATEWAY or GATEWAY</li>
