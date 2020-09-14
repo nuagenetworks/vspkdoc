@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.5.2
+                20.5.3
               </div>
             
           
@@ -743,7 +743,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
 <li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
 <li><code class="docutils literal notranslate"><span class="pre">route_distinguisher</span></code>: The next-hop’s route distinguisher. A unique 8 byte long. If not provided one will be generated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">ip</span></code>: This is the /32 or /128 next-hop IP address. Currently we support only IPv4 address family.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ip</span></code> (<strong>Mandatory</strong>): This is the /32 or /128 next-hop IP address. Currently we support only IPv4 address family.</li>
 <li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 <li><code class="docutils literal notranslate"><span class="pre">type</span></code>: Next hop type: IP only supported for service chaining</li>
 </ul>
@@ -759,10 +759,13 @@
 <tr class="row-odd"><td><strong>class</strong></td>
 <td><strong>fetcher</strong></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="nupermission.html#nupermission"><span class="std std-ref">nupermission.NUPermission</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">permissions</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
 <td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
 <td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
 </tr>
 </tbody>
@@ -796,7 +799,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Nuage Networks
+        &copy; Copyright 2020, Nuage Networks
 
     </p>
   </div> 

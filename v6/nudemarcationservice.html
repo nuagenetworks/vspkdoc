@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.5.2
+                20.5.3
               </div>
             
           
@@ -743,7 +743,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
 <li><code class="docutils literal notranslate"><span class="pre">route_distinguisher</span></code>: The route distinguisher associated with the next hop. This is a read only property automatically created by VSD.</li>
 <li><code class="docutils literal notranslate"><span class="pre">priority</span></code>: Next hop priority assigned by the user.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_gateway_id</span></code>: The ID of the NSGBR Gateway used as next hop in the untrusted domain.</li>
+<li><code class="docutils literal notranslate"><span class="pre">associated_gateway_id</span></code> (<strong>Mandatory</strong>): The ID of the NSGBR Gateway used as next hop in the untrusted domain.</li>
 <li><code class="docutils literal notranslate"><span class="pre">associated_vlanid</span></code>: The VLAN ID of the BR VLAN used as next hop in the trusted domain.</li>
 <li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 <li><code class="docutils literal notranslate"><span class="pre">type</span></code>: The type of next hop determines linking direction for a demarcation service, possible values: BR_PORT, GATEWAY</li>
@@ -760,10 +760,13 @@
 <tr class="row-odd"><td><strong>class</strong></td>
 <td><strong>fetcher</strong></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="nupermission.html#nupermission"><span class="std std-ref">nupermission.NUPermission</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">permissions</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
 <td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
 <td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
 </tr>
 </tbody>
@@ -797,7 +800,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Nuage Networks
+        &copy; Copyright 2020, Nuage Networks
 
     </p>
   </div> 
