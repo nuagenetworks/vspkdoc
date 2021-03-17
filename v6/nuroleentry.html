@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.2
+                20.10.3
               </div>
             
           
@@ -315,6 +315,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nurole.html">nurole</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">nuroleentry</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#attributes">Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#children">Children</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#parents">Parents</a></li>
 </ul>
 </li>
@@ -749,9 +750,35 @@
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
 <li><code class="docutils literal notranslate"><span class="pre">end_point_type</span></code> (<strong>Mandatory</strong>): Managed Object Type or end point</li>
+<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
 <li><code class="docutils literal notranslate"><span class="pre">role_access_type_list</span></code> (<strong>Mandatory</strong>): List of Access like READ, READ_CHILDREN, CREATE, MODIFY, DELETE, CUD_CHILDREN, NO_ACCESS, NO_ACCESS_CHILDREN</li>
+<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 </ul>
+</div>
+<div class="section" id="children">
+<h2>Children<a class="headerlink" href="#children" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="62%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>class</strong></td>
+<td><strong>fetcher</strong></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="nupermission.html#nupermission"><span class="std std-ref">nupermission.NUPermission</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">permissions</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="parents">
 <h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
@@ -781,7 +808,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Nuage Networks
+        &copy; Copyright 2021, Nuage Networks
 
     </p>
   </div> 
