@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.3
+                20.10.4
               </div>
             
           
@@ -804,6 +804,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">saa_s_applications_publish_date</span></code>: Determines the time that SaaS applications were imported in VSD or if they are the ones that came with this version of VSD (built-in).</li>
 <li><code class="docutils literal notranslate"><span class="pre">page_max_size</span></code>: Defines upper bound for the page size. Configured or input page size should be less than this max page size.</li>
 <li><code class="docutils literal notranslate"><span class="pre">page_size</span></code>: Defines the page size for the results returned by the ReST call. This value can not exceed what has been defined in ‘pageMaxSize’.</li>
+<li><code class="docutils literal notranslate"><span class="pre">maintenance_mode_enabled</span></code>: Indicates if the VSD is configured in maintenance mode. This is typically enabled during the VSD upgrade window and when enabled the VSD would support only a subset of functionality.</li>
 <li><code class="docutils literal notranslate"><span class="pre">last_executed_migration_phase</span></code>: Indicates the last successfully executed phase of online schema migration. This value is set automatically upon execution of online schema migration scripts.</li>
 <li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
 <li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
@@ -815,6 +816,8 @@
 <li><code class="docutils literal notranslate"><span class="pre">rbac_enabled</span></code>: Enables the advanced granular permissions feature. This should not be enabled without prior discussion and agreement with the Nuage Product team, as this feature is only qualified for a limited set of use cases.</li>
 <li><code class="docutils literal notranslate"><span class="pre">accumulate_licenses_enabled</span></code>: Whether the various VRS license flavours be merged in one pool.</li>
 <li><code class="docutils literal notranslate"><span class="pre">vcin_load_balancer_ip</span></code>: If VCIN Active/Standby is enabled, this needs to be the load-balancer IP which sits in front of the Active and Standby VCIN nodes. The VRS will make its API calls to this load-balancer</li>
+<li><code class="docutils literal notranslate"><span class="pre">web_cat_srv_url</span></code>: Indicates web categorization service url. Applicable only for web filtering type CLOUD_SERVICE</li>
+<li><code class="docutils literal notranslate"><span class="pre">web_filtering_type</span></code>: Indicates the type of web filtering. Possible values are CLOUD_SERVICE, VM</li>
 <li><code class="docutils literal notranslate"><span class="pre">fec_feedback_timer</span></code>: Forward Error Correction feedback timer in seconds. Possible values are 1, 2, 3, 4 or 5.</li>
 <li><code class="docutils literal notranslate"><span class="pre">secondary_as_number</span></code>: Autonomous System Number, used for secondary RT auto-generation.</li>
 <li><code class="docutils literal notranslate"><span class="pre">secondary_rt_lower_limit</span></code>: Secondary route target lower limit.</li>
@@ -977,7 +980,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks
 
     </p>
   </div> 
