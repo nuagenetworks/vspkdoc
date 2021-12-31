@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.4
+                20.10.7
               </div>
             
           
@@ -191,6 +191,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nugroupkeyencryptionprofile.html">nugroupkeyencryptionprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuhostinterface.html">nuhostinterface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuhsc.html">nuhsc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuicmpechotestdefinition.html">nuicmpechotestdefinition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuidpprofile.html">nuidpprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuidpprofileaction.html">nuidpprofileaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuidpsignature.html">nuidpsignature</a></li>
@@ -265,6 +266,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nunsgatewaytemplate.html">nunsgatewaytemplate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsggroup.html">nunsggroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsginfo.html">nunsginfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgmigrationprofile.html">nunsgmigrationprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsgpatchprofile.html">nunsgpatchprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsgroutingpolicybinding.html">nunsgroutingpolicybinding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsgupgradeprofile.html">nunsgupgradeprofile</a></li>
@@ -320,6 +322,8 @@
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationtype.html">nusaasapplicationtype</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusapegressqosprofile.html">nusapegressqosprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusapingressqosprofile.html">nusapingressqosprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuscheduledtestsuite.html">nuscheduledtestsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuscheduledtestsuiterun.html">nuscheduledtestsuiterun</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusharednetworkresource.html">nusharednetworkresource</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nushuntlink.html">nushuntlink</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusiteinfo.html">nusiteinfo</a></li>
@@ -752,6 +756,7 @@
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
 <li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
+<li><code class="docutils literal notranslate"><span class="pre">additional_test_run_details</span></code>: Additional details for this Test Run.</li>
 <li><code class="docutils literal notranslate"><span class="pre">test_result</span></code>: The result of the test</li>
 <li><code class="docutils literal notranslate"><span class="pre">test_result_data</span></code>: The test result data</li>
 <li><code class="docutils literal notranslate"><span class="pre">test_result_data_type</span></code>: The type of the data embedded in the testResultData attribute</li>
@@ -769,6 +774,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
 <li><code class="docutils literal notranslate"><span class="pre">associated_test_id</span></code>: The ID of the Test instance to which this Test Run is bound.</li>
 <li><code class="docutils literal notranslate"><span class="pre">associated_test_suite_run_id</span></code>: Test Run instances are part of a Test Suite Run.  This is the ID of the Test Suite Run object to which this Test Run belongs.</li>
+<li><code class="docutils literal notranslate"><span class="pre">associated_test_suite_run_type</span></code>: The type of Test Suite Run to which this Test Run belongs.</li>
 <li><code class="docutils literal notranslate"><span class="pre">start_date_time</span></code>: The start date and time of the test in milliseconds since Epoch.</li>
 <li><code class="docutils literal notranslate"><span class="pre">stop_date_time</span></code>: The stop date and time of the test in milliseconds since Epoch.</li>
 <li><code class="docutils literal notranslate"><span class="pre">duration</span></code>: The duration of execution of the Test in milliseconds.</li>
@@ -803,6 +809,7 @@
 <h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="nutestsuiterun.html#nutestsuiterun"><span class="std std-ref">nutestsuiterun.NUTestSuiteRun</span></a></li>
+<li><a class="reference internal" href="nuscheduledtestsuiterun.html#nuscheduledtestsuiterun"><span class="std std-ref">nuscheduledtestsuiterun.NUScheduledtestsuiterun</span></a></li>
 </ul>
 </div>
 </div>

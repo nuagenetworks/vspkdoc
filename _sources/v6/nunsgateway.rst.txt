@@ -5,7 +5,7 @@ nunsgateway
 
 .. class:: nunsgateway.NUNSGateway(bambou.nurest_object.NUMetaRESTObject,):
 
-Network Services Gateways are a policy enforcement end-points responsible for the delivery of networking services. NSG access ports/VLANs may be attached to existing host or bridge VPorts.
+Network Services Gateways are a policy enforcement end-points responsible for the delivery of networking services. NSG access ports/VLANs may be attached to existing host or bridge vPorts.
 
 
 Attributes
@@ -130,6 +130,8 @@ Attributes
 
 - ``associated_nsg_info_id``: Read only ID of the associated NSG info object
 
+- ``associated_nsg_migration_profile_id``: The ID of the migration profile associated to this NSG.
+
 - ``associated_nsg_upgrade_profile_id``: The UUID of the NSG Upgrade Profile associated to this NSG instance.
 
 - ``associated_overlay_management_profile_id``: The ID of the associated Overlay Management Profile
@@ -195,15 +197,15 @@ Parents
 --------
 
 
+- :ref:`nuenterprise.NUEnterprise<nuenterprise>`
+
 - :ref:`nunsredundantgatewaygroup.NUNSRedundantGatewayGroup<nunsredundantgatewaygroup>`
 
 - :ref:`nuducgroup.NUDUCGroup<nuducgroup>`
 
-- :ref:`nume.NUMe<nume>`
+- :ref:`nunsggroup.NUNSGGroup<nunsggroup>`
 
 - :ref:`nupolicyobjectgroup.NUPolicyObjectGroup<nupolicyobjectgroup>`
 
-- :ref:`nunsggroup.NUNSGGroup<nunsggroup>`
-
-- :ref:`nuenterprise.NUEnterprise<nuenterprise>`
+- :ref:`nume.NUMe<nume>`
 

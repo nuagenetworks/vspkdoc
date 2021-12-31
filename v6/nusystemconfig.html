@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.4
+                20.10.7
               </div>
             
           
@@ -191,6 +191,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nugroupkeyencryptionprofile.html">nugroupkeyencryptionprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuhostinterface.html">nuhostinterface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuhsc.html">nuhsc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuicmpechotestdefinition.html">nuicmpechotestdefinition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuidpprofile.html">nuidpprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuidpprofileaction.html">nuidpprofileaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuidpsignature.html">nuidpsignature</a></li>
@@ -265,6 +266,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nunsgatewaytemplate.html">nunsgatewaytemplate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsggroup.html">nunsggroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsginfo.html">nunsginfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunsgmigrationprofile.html">nunsgmigrationprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsgpatchprofile.html">nunsgpatchprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsgroutingpolicybinding.html">nunsgroutingpolicybinding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunsgupgradeprofile.html">nunsgupgradeprofile</a></li>
@@ -320,6 +322,8 @@
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationtype.html">nusaasapplicationtype</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusapegressqosprofile.html">nusapegressqosprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusapingressqosprofile.html">nusapingressqosprofile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuscheduledtestsuite.html">nuscheduledtestsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuscheduledtestsuiterun.html">nuscheduledtestsuiterun</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusharednetworkresource.html">nusharednetworkresource</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nushuntlink.html">nushuntlink</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusiteinfo.html">nusiteinfo</a></li>
@@ -801,6 +805,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">evpnbgp_community_tag_as_number</span></code>: Autonomous System Number used for ‘EVPNBGPCommunityTag’ generation.</li>
 <li><code class="docutils literal notranslate"><span class="pre">evpnbgp_community_tag_lower_limit</span></code>: EVPNBGPCommunityTag lower limit</li>
 <li><code class="docutils literal notranslate"><span class="pre">evpnbgp_community_tag_upper_limit</span></code>: EVPNBGPCommunityTag upper limit</li>
+<li><code class="docutils literal notranslate"><span class="pre">ca_certificates_expiry_time</span></code>: CA Certificates expiry date with time</li>
 <li><code class="docutils literal notranslate"><span class="pre">saa_s_applications_publish_date</span></code>: Determines the time that SaaS applications were imported in VSD or if they are the ones that came with this version of VSD (built-in).</li>
 <li><code class="docutils literal notranslate"><span class="pre">page_max_size</span></code>: Defines upper bound for the page size. Configured or input page size should be less than this max page size.</li>
 <li><code class="docutils literal notranslate"><span class="pre">page_size</span></code>: Defines the page size for the results returned by the ReST call. This value can not exceed what has been defined in ‘pageMaxSize’.</li>
@@ -825,6 +830,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">denied_flow_collection_enabled</span></code>: When this option is selected, VSS will only store flows that are denied by security policy (implicit or explicit ACLs). This requires a valid VSS license and Flow Collection enabled.</li>
 <li><code class="docutils literal notranslate"><span class="pre">per_domain_vlan_id_enabled</span></code>: Determines whether per domain VLAN ID generation is required.</li>
 <li><code class="docutils literal notranslate"><span class="pre">service_id_upper_limit</span></code>: Service ID upper limit system wide value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">netconf7x50_routing_policy_validation_enabled</span></code>: Indicates if Routing Policy Definition validation is enabled for Netconf 7x50.</li>
 <li><code class="docutils literal notranslate"><span class="pre">key_server_monitor_enabled</span></code>: Enable the keyserver debug monitor (ie. ksmon command)</li>
 <li><code class="docutils literal notranslate"><span class="pre">key_server_vsd_data_synchronization_interval</span></code>: KeyServer time in seconds between full resyncs of VSD data (just in case of missed events)</li>
 <li><code class="docutils literal notranslate"><span class="pre">offset_customer_id</span></code>: Customer ID offset, this value has to be set before JBoss starts, following its starting, any change of value will be ignored. This is a system wide value.</li>
@@ -836,7 +842,9 @@
 <li><code class="docutils literal notranslate"><span class="pre">threat_prevention_server_proxy_port</span></code>: Destination TCP Port on the Proxy to connect to the Threat Prevention Management Server</li>
 <li><code class="docutils literal notranslate"><span class="pre">threat_prevention_server_username</span></code>: Username to accessThreat Prevention management Server.</li>
 <li><code class="docutils literal notranslate"><span class="pre">threat_prevention_syslog_proxy_port</span></code>: Syslog server port for Threat Prevention Service</li>
+<li><code class="docutils literal notranslate"><span class="pre">signature_update_through_cloud_enabled</span></code>: Indicates if Threat Prevention Signature updates are enabled through Cloud.</li>
 <li><code class="docutils literal notranslate"><span class="pre">virtual_firewall_rules_enabled</span></code>: Enable Virtual Firewall Rule creation and management. This will be available only with VSS license</li>
+<li><code class="docutils literal notranslate"><span class="pre">ejabberd_license_expiry_time</span></code>: Ejabberd License expiry date with time</li>
 <li><code class="docutils literal notranslate"><span class="pre">ejbca_nsg_certificate_profile</span></code>: EJBCA NSG Certificate Profile</li>
 <li><code class="docutils literal notranslate"><span class="pre">ejbca_nsg_end_entity_profile</span></code>: EJBCA NSG End Entity Profile</li>
 <li><code class="docutils literal notranslate"><span class="pre">ejbca_ocsp_responder_cn</span></code>: EJBCA OCSP Responder CommonName</li>
@@ -844,6 +852,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">ejbca_vsp_root_ca</span></code>: EJBCA VSP CA</li>
 <li><code class="docutils literal notranslate"><span class="pre">alarms_max_per_object</span></code>: Maximum alarms per object for example max distinct alarms for specific VM (min = 5, max =20)</li>
 <li><code class="docutils literal notranslate"><span class="pre">elastic_cluster_name</span></code>: Specifies the name of the Elastic Search Cluster.</li>
+<li><code class="docutils literal notranslate"><span class="pre">elastic_search_license_expiry_time</span></code>: Elastic Search License expiry date with time</li>
 <li><code class="docutils literal notranslate"><span class="pre">allow_enterprise_avatar_on_nsg</span></code>: When enabled, it allows Enterprise Avatar (image) to be populated on the NSGateway bootstrapping portal and blocked page notification.</li>
 <li><code class="docutils literal notranslate"><span class="pre">global_mac_address</span></code>: the MAC Address to use for those subnets that have the useGlobalMAC flag enabled.</li>
 <li><code class="docutils literal notranslate"><span class="pre">flow_collection_enabled</span></code>: Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires ‘statisticsEnabled’.</li>
@@ -885,6 +894,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">esi_id</span></code>: ESI ID offset</li>
 <li><code class="docutils literal notranslate"><span class="pre">csproot_authentication_method</span></code>: Authentication method for csproot when local authentication is not used for CSP organization</li>
 <li><code class="docutils literal notranslate"><span class="pre">stack_trace_enabled</span></code>: Set value to TRUE to enable stacktraces in the ReST calls.</li>
+<li><code class="docutils literal notranslate"><span class="pre">stateful_aclicmp_timeout</span></code>: Defines the timeout in seconds for stateful ACLs that are of type ICMP. Supported in Virtual Cloud Services (VCS) only.</li>
 <li><code class="docutils literal notranslate"><span class="pre">stateful_acl_non_tcp_timeout</span></code>: Defines the timeout in seconds for stateful ACLs that are not of type TCP.</li>
 <li><code class="docutils literal notranslate"><span class="pre">stateful_acltcp_timeout</span></code>: Defines the timeout in seconds for stateful ACLs that are of type TCP.</li>
 <li><code class="docutils literal notranslate"><span class="pre">static_wan_service_purge_time</span></code>: Timer in seconds for an unreacheable static WAN Services to be deleted.</li>
