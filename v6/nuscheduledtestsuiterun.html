@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.7
+                20.10.8
               </div>
             
           
@@ -251,6 +251,7 @@
 <li class="toctree-l1"><a class="reference internal" href="numultinicvport.html">numultinicvport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunatmapentry.html">nunatmapentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfgateway.html">nunetconfgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfglobalconfiguration.html">nunetconfglobalconfiguration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfmanager.html">nunetconfmanager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfprofile.html">nunetconfprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfsession.html">nunetconfsession</a></li>
@@ -317,6 +318,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nurole.html">nurole</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroleentry.html">nuroleentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicy.html">nuroutingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuroutingpolicyassociation.html">nuroutingpolicyassociation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicybinding.html">nuroutingpolicybinding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationgroup.html">nusaasapplicationgroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationtype.html">nusaasapplicationtype</a></li>
@@ -765,10 +767,11 @@
 <li><code class="docutils literal notranslate"><span class="pre">vlan_id</span></code>: VLAN ID of the interface in the namespace on NSG.</li>
 <li><code class="docutils literal notranslate"><span class="pre">domain_name</span></code>: Domain name within which the source vPort being tested resides.</li>
 <li><code class="docutils literal notranslate"><span class="pre">zone_name</span></code>: Zone name within which the source vPort being tested resides.</li>
+<li><code class="docutils literal notranslate"><span class="pre">source_ip</span></code>: The IP address that will be assigned to the interface in namespace on NSG and used by the ICMP Echo test as the source IP. This is an optional field, if not provided the interface in namespace is assigned an IP from the DHCP pool.</li>
 <li><code class="docutils literal notranslate"><span class="pre">operation_status</span></code>: The status of the test operation request received by the NSG agent.</li>
 <li><code class="docutils literal notranslate"><span class="pre">vport_port_name</span></code>: The access port of the VPort against which the test suite is executed.</li>
 <li><code class="docutils literal notranslate"><span class="pre">vport_vlan_id</span></code>: The VLAN ID of the VPort against which the test suite is executed.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_scheduled_test_suite_id</span></code>: The ID of the Scheduled Test Suite from which this instance of run was created.</li>
+<li><code class="docutils literal notranslate"><span class="pre">associated_scheduled_test_suite_id</span></code> (<strong>Mandatory</strong>): The ID of the Scheduled Test Suite from which this instance of run was created.</li>
 <li><code class="docutils literal notranslate"><span class="pre">associated_scheduled_test_suite_name</span></code>: Name of the Scheduled Test Suite from which this run was created.</li>
 <li><code class="docutils literal notranslate"><span class="pre">subnet_name</span></code>: Subnet name within which the source vPort being tested resides.</li>
 <li><code class="docutils literal notranslate"><span class="pre">system_id</span></code>: System ID of the NSG against which the tests are to be executed.</li>

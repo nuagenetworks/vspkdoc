@@ -18,7 +18,7 @@ Attributes
 
 - ``last_updated_date``: Time stamp when this object was last updated.
 
-- ``native_vlan``: Default Native VLAN to carry untagged traffic on the ports of the gateways using this template. Applicable for Cisco 9K only. Possible values are 1-3967.
+- ``native_vlan``: Default Native VLAN to carry untagged traffic on the ports of the gateways using this template. Applicable for third-party Netconf Gateways only. Possible values are 1-3967.
 
 - ``personality`` (**Mandatory**): Personality of the Gateway, cannot be changed after creation.
 

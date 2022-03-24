@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.7
+                20.10.8
               </div>
             
           
@@ -251,6 +251,7 @@
 <li class="toctree-l1"><a class="reference internal" href="numultinicvport.html">numultinicvport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunatmapentry.html">nunatmapentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfgateway.html">nunetconfgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfglobalconfiguration.html">nunetconfglobalconfiguration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfmanager.html">nunetconfmanager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfprofile.html">nunetconfprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfsession.html">nunetconfsession</a></li>
@@ -322,6 +323,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nurole.html">nurole</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroleentry.html">nuroleentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicy.html">nuroutingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuroutingpolicyassociation.html">nuroutingpolicyassociation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicybinding.html">nuroutingpolicybinding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationgroup.html">nusaasapplicationgroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationtype.html">nusaasapplicationtype</a></li>
@@ -758,7 +760,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">name</span></code> (<strong>Mandatory</strong>): Name of the Port</li>
 <li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
 <li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">native_vlan</span></code>: Native VLAN to carry untagged traffic on this port. Applicable for Access Ports on Cisco 9K only. Possible values are 1-3967.</li>
+<li><code class="docutils literal notranslate"><span class="pre">native_vlan</span></code>: Native VLAN to carry untagged traffic on this port. Applicable for Access Ports on third-party Netconf Gateways only. Possible values are 1-3967.</li>
 <li><code class="docutils literal notranslate"><span class="pre">template_id</span></code>: The ID of the template that this Port was created from</li>
 <li><code class="docutils literal notranslate"><span class="pre">permitted_action</span></code>: The permitted  action to USE/EXTEND  this Gateway.</li>
 <li><code class="docutils literal notranslate"><span class="pre">description</span></code>: A description of the Port</li>
@@ -766,7 +768,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
 <li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
 <li><code class="docutils literal notranslate"><span class="pre">port_type</span></code> (<strong>Mandatory</strong>): Type of the Port. Possible values are ACCESS, NETWORK, MANAGEMENT.</li>
-<li><code class="docutils literal notranslate"><span class="pre">routed</span></code>: Indicates if this Port is a routed interface. Applicable for Access Ports on Cisco 9K only.</li>
+<li><code class="docutils literal notranslate"><span class="pre">routed</span></code>: Indicates if this Port is a routed interface. Applicable for Access Ports on third-party Netconf Gateways only.</li>
 <li><code class="docutils literal notranslate"><span class="pre">operational_state</span></code>: Represents Operational State of the Port. Possible values are INIT, UP, DOWN.</li>
 <li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
 <li><code class="docutils literal notranslate"><span class="pre">is_resilient</span></code>: States if this port instance is resilient (redundant).  An example would be a Multi-Chassis LAG port.</li>

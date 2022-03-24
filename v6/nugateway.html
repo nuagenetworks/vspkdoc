@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.7
+                20.10.8
               </div>
             
           
@@ -256,6 +256,7 @@
 <li class="toctree-l1"><a class="reference internal" href="numultinicvport.html">numultinicvport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunatmapentry.html">nunatmapentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfgateway.html">nunetconfgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfglobalconfiguration.html">nunetconfglobalconfiguration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfmanager.html">nunetconfmanager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfprofile.html">nunetconfprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfsession.html">nunetconfsession</a></li>
@@ -322,6 +323,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nurole.html">nurole</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroleentry.html">nuroleentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicy.html">nuroutingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuroutingpolicyassociation.html">nuroutingpolicyassociation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicybinding.html">nuroutingpolicybinding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationgroup.html">nusaasapplicationgroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationtype.html">nusaasapplicationtype</a></li>
@@ -773,7 +775,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">gateway_connected</span></code>: A boolean flag indicating the status of the gateway.</li>
 <li><code class="docutils literal notranslate"><span class="pre">gateway_model</span></code>: The model string of the gateway. Applicable to netconf managed gateways</li>
 <li><code class="docutils literal notranslate"><span class="pre">gateway_version</span></code>: The Gateway Software Version as reported during bootstrapping.</li>
-<li><code class="docutils literal notranslate"><span class="pre">native_vlan</span></code>: Default Native VLAN to carry untagged traffic on the ports of this gateway. Applicable for Cisco 9K only. Possible values are 1-3967.</li>
+<li><code class="docutils literal notranslate"><span class="pre">native_vlan</span></code>: Default Native VLAN to carry untagged traffic on the ports of this gateway. Applicable for third-party Netconf Gateways only. Possible values are 1-3967.</li>
 <li><code class="docutils literal notranslate"><span class="pre">redundancy_group_id</span></code>: The Redundancy Gateway Group associated with this Gateway Instance. This is a read only attribute</li>
 <li><code class="docutils literal notranslate"><span class="pre">peer</span></code>: The System ID of the peer gateway associated with this Gateway instance when it is discovered by the network manager (VSD) as being redundant.</li>
 <li><code class="docutils literal notranslate"><span class="pre">template_id</span></code>: The ID of the template that this Gateway was created from. This should be set when instantiating a Gateway</li>
@@ -906,6 +908,7 @@
 <li><a class="reference internal" href="nuenterprise.html#nuenterprise"><span class="std std-ref">nuenterprise.NUEnterprise</span></a></li>
 <li><a class="reference internal" href="nuredundancygroup.html#nuredundancygroup"><span class="std std-ref">nuredundancygroup.NURedundancyGroup</span></a></li>
 <li><a class="reference internal" href="nupolicyobjectgroup.html#nupolicyobjectgroup"><span class="std std-ref">nupolicyobjectgroup.NUPolicyObjectGroup</span></a></li>
+<li><a class="reference internal" href="nusubnet.html#nusubnet"><span class="std std-ref">nusubnet.NUSubnet</span></a></li>
 <li><a class="reference internal" href="nudomain.html#nudomain"><span class="std std-ref">nudomain.NUDomain</span></a></li>
 <li><a class="reference internal" href="nul2domain.html#nul2domain"><span class="std std-ref">nul2domain.NUL2Domain</span></a></li>
 <li><a class="reference internal" href="nume.html#nume"><span class="std std-ref">nume.NUMe</span></a></li>

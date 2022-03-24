@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.7
+                20.10.8
               </div>
             
           
@@ -251,6 +251,7 @@
 <li class="toctree-l1"><a class="reference internal" href="numultinicvport.html">numultinicvport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunatmapentry.html">nunatmapentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfgateway.html">nunetconfgateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nunetconfglobalconfiguration.html">nunetconfglobalconfiguration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfmanager.html">nunetconfmanager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfprofile.html">nunetconfprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nunetconfsession.html">nunetconfsession</a></li>
@@ -317,6 +318,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nurole.html">nurole</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroleentry.html">nuroleentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicy.html">nuroutingpolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuroutingpolicyassociation.html">nuroutingpolicyassociation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuroutingpolicybinding.html">nuroutingpolicybinding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationgroup.html">nusaasapplicationgroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusaasapplicationtype.html">nusaasapplicationtype</a></li>
@@ -833,6 +835,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">netconf7x50_routing_policy_validation_enabled</span></code>: Indicates if Routing Policy Definition validation is enabled for Netconf 7x50.</li>
 <li><code class="docutils literal notranslate"><span class="pre">key_server_monitor_enabled</span></code>: Enable the keyserver debug monitor (ie. ksmon command)</li>
 <li><code class="docutils literal notranslate"><span class="pre">key_server_vsd_data_synchronization_interval</span></code>: KeyServer time in seconds between full resyncs of VSD data (just in case of missed events)</li>
+<li><code class="docutils literal notranslate"><span class="pre">keystore_password</span></code>: Password to access vsd key store for enabling es security.</li>
 <li><code class="docutils literal notranslate"><span class="pre">offset_customer_id</span></code>: Customer ID offset, this value has to be set before JBoss starts, following its starting, any change of value will be ignored. This is a system wide value.</li>
 <li><code class="docutils literal notranslate"><span class="pre">offset_service_id</span></code>: Service ID offset, this value has to be set before JBoss starts during the time of VSD installation, from thereon, any change of value will be ignored. This is a system wide value.</li>
 <li><code class="docutils literal notranslate"><span class="pre">threat_intelligence_enabled</span></code>: Enables IP based threat intelligence. This requires Flow Collection to be enabled.</li>
@@ -867,6 +870,8 @@
 <li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
 <li><code class="docutils literal notranslate"><span class="pre">domain_tunnel_type</span></code>: Default Domain Tunnel Type.</li>
 <li><code class="docutils literal notranslate"><span class="pre">google_maps_api_key</span></code>: Google Maps API Key used to display maps on Nuage UI applications</li>
+<li><code class="docutils literal notranslate"><span class="pre">loopback_intf_lower_limit</span></code> (<strong>Mandatory</strong>): Lower limit of the domain Loopback Interface for gateways of type HWVTEP.</li>
+<li><code class="docutils literal notranslate"><span class="pre">loopback_intf_upper_limit</span></code> (<strong>Mandatory</strong>): Upper limit of the domain Loopback Interface for gateways of type HWVTEP.</li>
 <li><code class="docutils literal notranslate"><span class="pre">post_processor_threads_count</span></code>: Post processor thread count.</li>
 <li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
 <li><code class="docutils literal notranslate"><span class="pre">group_key_default_sek_generation_interval</span></code>: Group Key Encryption Profile Default SEK Generation Interval in seconds.</li>
@@ -888,6 +893,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">group_key_minimum_seed_generation_interval</span></code>: Group Key Encryption Profile Default Seed Generation Interval in seconds.</li>
 <li><code class="docutils literal notranslate"><span class="pre">group_key_minimum_seed_lifetime</span></code>: Group Key Encryption Profile Default Seed Lifetime in seconds.</li>
 <li><code class="docutils literal notranslate"><span class="pre">group_key_minimum_traffic_encryption_key_lifetime</span></code>: Group Key Encryption Profile Minimum TEK Lifetime in seconds.</li>
+<li><code class="docutils literal notranslate"><span class="pre">es_security_enabled</span></code>: Indicates if VSD is communicating with elasticsearch over a secure channel using https.</li>
 <li><code class="docutils literal notranslate"><span class="pre">nsg_bootstrap_endpoint</span></code>: NSG Bootstrap Endpoint</li>
 <li><code class="docutils literal notranslate"><span class="pre">nsg_config_endpoint</span></code>: NSG Config Endpoint</li>
 <li><code class="docutils literal notranslate"><span class="pre">nsg_local_ui_url</span></code>: The bootstrapping UI URL on NSGateway. The URL will be redirected on NSG to its localhost so that the bootstrapping server on the NSGateway may handle the request.</li>
