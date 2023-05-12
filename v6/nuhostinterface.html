@@ -13,40 +13,40 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="nuhsc" href="nuhsc.html" />
-    <link rel="prev" title="nugroupkeyencryptionprofile" href="nugroupkeyencryptionprofile.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="../index.html"/>
+        <link rel="next" title="nuhsc" href="nuhsc.html"/>
+        <link rel="prev" title="nugroupkeyencryptionprofile" href="nugroupkeyencryptionprofile.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -81,10 +81,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 </ul>
@@ -177,6 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -342,6 +340,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnettemplate.html">nusubnettemplate</a></li>
@@ -694,54 +693,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>nuhostinterface</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>nuhostinterface</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/v6/nuhostinterface.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/v6/nuhostinterface.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -758,31 +737,31 @@
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">mac</span></code>: MAC address of the  interface, cannot be modified after creation.</li>
-<li><code class="docutils literal notranslate"><span class="pre">ip_address</span></code>: IP address of the  interface</li>
-<li><code class="docutils literal notranslate"><span class="pre">vport_id</span></code>: ID of the vport that the interface is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">vport_name</span></code>: Name of the vport that the VM is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">ipv6_address</span></code>: IPv6 address of the  interface</li>
-<li><code class="docutils literal notranslate"><span class="pre">ipv6_gateway</span></code>: IPV6 Gateway of the subnet that the host is connected to</li>
-<li><code class="docutils literal notranslate"><span class="pre">name</span></code>: Device name associated with this interface</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">gateway</span></code>: Gateway of the subnet that the VM is connected to</li>
-<li><code class="docutils literal notranslate"><span class="pre">netmask</span></code>: Netmask of the subnet that the VM is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">network_name</span></code>: Name of the network that the VM is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">tier_id</span></code>: ID of the tier that the interface is attached to.</li>
-<li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
-<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
-<li><code class="docutils literal notranslate"><span class="pre">policy_decision_id</span></code>: The policy decision ID for this particular  interface</li>
-<li><code class="docutils literal notranslate"><span class="pre">domain_id</span></code>: ID of the domain that the VM is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">domain_name</span></code>: Name of the domain that the VM is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">zone_id</span></code>: ID of the zone that the interface is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">zone_name</span></code>: Name of the zone that the VM is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
-<li><code class="docutils literal notranslate"><span class="pre">attached_network_id</span></code>: ID of the l2 domain or Subnet that the VM is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">attached_network_type</span></code>: l2 domain or Subnet that the interface is attached to</li>
-<li><code class="docutils literal notranslate"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
+<li><code class="docutils literal"><span class="pre">mac</span></code>: MAC address of the  interface, cannot be modified after creation.</li>
+<li><code class="docutils literal"><span class="pre">ip_address</span></code>: IP address of the  interface</li>
+<li><code class="docutils literal"><span class="pre">vport_id</span></code>: ID of the vport that the interface is attached to</li>
+<li><code class="docutils literal"><span class="pre">vport_name</span></code>: Name of the vport that the VM is attached to</li>
+<li><code class="docutils literal"><span class="pre">ipv6_address</span></code>: IPv6 address of the  interface</li>
+<li><code class="docutils literal"><span class="pre">ipv6_gateway</span></code>: IPV6 Gateway of the subnet that the host is connected to</li>
+<li><code class="docutils literal"><span class="pre">name</span></code>: Device name associated with this interface</li>
+<li><code class="docutils literal"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
+<li><code class="docutils literal"><span class="pre">gateway</span></code>: Gateway of the subnet that the VM is connected to</li>
+<li><code class="docutils literal"><span class="pre">netmask</span></code>: Netmask of the subnet that the VM is attached to</li>
+<li><code class="docutils literal"><span class="pre">network_name</span></code>: Name of the network that the VM is attached to</li>
+<li><code class="docutils literal"><span class="pre">tier_id</span></code>: ID of the tier that the interface is attached to.</li>
+<li><code class="docutils literal"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
+<li><code class="docutils literal"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
+<li><code class="docutils literal"><span class="pre">policy_decision_id</span></code>: The policy decision ID for this particular  interface</li>
+<li><code class="docutils literal"><span class="pre">domain_id</span></code>: ID of the domain that the VM is attached to</li>
+<li><code class="docutils literal"><span class="pre">domain_name</span></code>: Name of the domain that the VM is attached to</li>
+<li><code class="docutils literal"><span class="pre">zone_id</span></code>: ID of the zone that the interface is attached to</li>
+<li><code class="docutils literal"><span class="pre">zone_name</span></code>: Name of the zone that the VM is attached to</li>
+<li><code class="docutils literal"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
+<li><code class="docutils literal"><span class="pre">attached_network_id</span></code>: ID of the l2 domain or Subnet that the VM is attached to</li>
+<li><code class="docutils literal"><span class="pre">attached_network_type</span></code>: l2 domain or Subnet that the interface is attached to</li>
+<li><code class="docutils literal"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
+<li><code class="docutils literal"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 </ul>
 </div>
 <div class="section" id="children">
@@ -797,46 +776,46 @@
 <td><strong>fetcher</strong></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nutca.html#nutca"><span class="std std-ref">nutca.NUTCA</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">tcas</span></code></td>
+<td><code class="docutils literal"><span class="pre">tcas</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuredirectiontarget.html#nuredirectiontarget"><span class="std std-ref">nuredirectiontarget.NURedirectionTarget</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">redirection_targets</span></code></td>
+<td><code class="docutils literal"><span class="pre">redirection_targets</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupermission.html#nupermission"><span class="std std-ref">nupermission.NUPermission</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">permissions</span></code></td>
+<td><code class="docutils literal"><span class="pre">permissions</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nudhcpoption.html#nudhcpoption"><span class="std std-ref">nudhcpoption.NUDHCPOption</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">dhcp_options</span></code></td>
+<td><code class="docutils literal"><span class="pre">dhcp_options</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nudhcpv6option.html#nudhcpv6option"><span class="std std-ref">nudhcpv6option.NUDHCPv6Option</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">dhcpv6_options</span></code></td>
+<td><code class="docutils literal"><span class="pre">dhcpv6_options</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">global_metadatas</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nupolicydecision.html#nupolicydecision"><span class="std std-ref">nupolicydecision.NUPolicyDecision</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">policy_decisions</span></code></td>
+<td><code class="docutils literal"><span class="pre">policy_decisions</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupolicygroup.html#nupolicygroup"><span class="std std-ref">nupolicygroup.NUPolicyGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">policy_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">policy_groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuqos.html#nuqos"><span class="std std-ref">nuqos.NUQOS</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">qoss</span></code></td>
+<td><code class="docutils literal"><span class="pre">qoss</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nustaticroute.html#nustaticroute"><span class="std std-ref">nustaticroute.NUStaticRoute</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">static_routes</span></code></td>
+<td><code class="docutils literal"><span class="pre">static_routes</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nustatistics.html#nustatistics"><span class="std std-ref">nustatistics.NUStatistics</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">statistics</span></code></td>
+<td><code class="docutils literal"><span class="pre">statistics</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="numulticastchannelmap.html#numulticastchannelmap"><span class="std std-ref">numulticastchannelmap.NUMultiCastChannelMap</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">multi_cast_channel_maps</span></code></td>
+<td><code class="docutils literal"><span class="pre">multi_cast_channel_maps</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nueventlog.html#nueventlog"><span class="std std-ref">nueventlog.NUEventLog</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">event_logs</span></code></td>
+<td><code class="docutils literal"><span class="pre">event_logs</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -844,27 +823,26 @@
 <div class="section" id="parents">
 <h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="nuvport.html#nuvport"><span class="std std-ref">nuvport.NUVPort</span></a></li>
-<li><a class="reference internal" href="nudomain.html#nudomain"><span class="std std-ref">nudomain.NUDomain</span></a></li>
-<li><a class="reference internal" href="nul2domain.html#nul2domain"><span class="std std-ref">nul2domain.NUL2Domain</span></a></li>
-<li><a class="reference internal" href="nume.html#nume"><span class="std std-ref">nume.NUMe</span></a></li>
 <li><a class="reference internal" href="nuaggregateddomain.html#nuaggregateddomain"><span class="std std-ref">nuaggregateddomain.NUAggregatedDomain</span></a></li>
+<li><a class="reference internal" href="nume.html#nume"><span class="std std-ref">nume.NUMe</span></a></li>
+<li><a class="reference internal" href="nudomain.html#nudomain"><span class="std std-ref">nudomain.NUDomain</span></a></li>
+<li><a class="reference internal" href="nuvport.html#nuvport"><span class="std std-ref">nuvport.NUVPort</span></a></li>
+<li><a class="reference internal" href="nul2domain.html#nul2domain"><span class="std std-ref">nul2domain.NUL2Domain</span></a></li>
 </ul>
 </div>
 </div>
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="nuhsc.html" class="btn btn-neutral float-right" title="nuhsc" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="nuhsc.html" class="btn btn-neutral float-right" title="nuhsc" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="nugroupkeyencryptionprofile.html" class="btn btn-neutral float-left" title="nugroupkeyencryptionprofile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="nugroupkeyencryptionprofile.html" class="btn btn-neutral" title="nugroupkeyencryptionprofile" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -873,7 +851,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -889,15 +867,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>

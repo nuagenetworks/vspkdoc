@@ -13,40 +13,40 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="nuuplinkconnection" href="nuuplinkconnection.html" />
-    <link rel="prev" title="nuunderlay" href="nuunderlay.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="../index.html"/>
+        <link rel="next" title="nuuplinkconnection" href="nuuplinkconnection.html"/>
+        <link rel="prev" title="nuunderlay" href="nuunderlay.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -81,10 +81,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 </ul>
@@ -177,6 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -337,6 +335,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnettemplate.html">nusubnettemplate</a></li>
@@ -360,6 +359,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nuunderlay.html">nuunderlay</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">nuunderlaytest</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#attributes">Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#children">Children</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#parents">Parents</a></li>
 </ul>
 </li>
@@ -693,54 +693,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>nuunderlaytest</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>nuunderlaytest</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/v6/nuunderlaytest.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/v6/nuunderlaytest.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -757,25 +737,42 @@
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">name</span></code>: The name of the test</li>
-<li><code class="docutils literal notranslate"><span class="pre">test_result</span></code>: The result of the test</li>
-<li><code class="docutils literal notranslate"><span class="pre">underlay_test_server</span></code>: The Underlay Test Server this test was executed against</li>
-<li><code class="docutils literal notranslate"><span class="pre">underlay_test_type</span></code>: Type of Test</li>
-<li><code class="docutils literal notranslate"><span class="pre">create_only</span></code>: Create the test only, do not trigger the command. Used for loading existing results</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_data_path_id</span></code>: The associated data path ID</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_ns_gateway_id</span></code>: The ID of the associated NSGateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_ns_gateway_name</span></code>: The name of the associated NSGateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_system_id</span></code>: The associated System ID</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_test_suite_run_id</span></code>: The ID of the associated Test Suite Run</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_uplink_connection_id</span></code>: The uplink connection ID that this underlay test will be triggered on. This can be null in order to use any uplink</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_uplink_interface</span></code>: The interface name of the associated uplink in port.vlan format</li>
-<li><code class="docutils literal notranslate"><span class="pre">start_date_time</span></code>: The start date time of the test</li>
-<li><code class="docutils literal notranslate"><span class="pre">stop_date_time</span></code>: The stop date time of the test</li>
-<li><code class="docutils literal notranslate"><span class="pre">run_bandwidth_test</span></code>: Bandwidth test results enable verification of minimal requirements for NSG operations and is not indicative of the maximum throughput possible on an uplink.</li>
-<li><code class="docutils literal notranslate"><span class="pre">run_connectivity_test</span></code>: Flag to run the connectivity test</li>
-<li><code class="docutils literal notranslate"><span class="pre">run_mtu_discovery_test</span></code>: Flag to run the MTU Discovery test</li>
-<li><code class="docutils literal notranslate"><span class="pre">duration</span></code>: The test duration in seconds</li>
+<li><code class="docutils literal"><span class="pre">name</span></code>: The name of the test</li>
+<li><code class="docutils literal"><span class="pre">test_result</span></code>: The result of the test</li>
+<li><code class="docutils literal"><span class="pre">underlay_test_server</span></code>: The Underlay Test Server this test was executed against</li>
+<li><code class="docutils literal"><span class="pre">underlay_test_type</span></code>: Type of Test</li>
+<li><code class="docutils literal"><span class="pre">create_only</span></code>: Create the test only, do not trigger the command. Used for loading existing results</li>
+<li><code class="docutils literal"><span class="pre">associated_data_path_id</span></code>: The associated data path ID</li>
+<li><code class="docutils literal"><span class="pre">associated_ns_gateway_id</span></code>: The ID of the associated NSGateway</li>
+<li><code class="docutils literal"><span class="pre">associated_ns_gateway_name</span></code>: The name of the associated NSGateway</li>
+<li><code class="docutils literal"><span class="pre">associated_system_id</span></code>: The associated System ID</li>
+<li><code class="docutils literal"><span class="pre">associated_test_suite_run_id</span></code>: The ID of the associated Test Suite Run</li>
+<li><code class="docutils literal"><span class="pre">associated_uplink_connection_id</span></code>: The uplink connection ID that this underlay test will be triggered on. This can be null in order to use any uplink</li>
+<li><code class="docutils literal"><span class="pre">associated_uplink_interface</span></code>: The interface name of the associated uplink in port.vlan format</li>
+<li><code class="docutils literal"><span class="pre">start_date_time</span></code>: The start date time of the test</li>
+<li><code class="docutils literal"><span class="pre">stop_date_time</span></code>: The stop date time of the test</li>
+<li><code class="docutils literal"><span class="pre">run_bandwidth_test</span></code>: Bandwidth test results enable verification of minimal requirements for NSG operations and is not indicative of the maximum throughput possible on an uplink.</li>
+<li><code class="docutils literal"><span class="pre">run_connectivity_test</span></code>: Flag to run the connectivity test</li>
+<li><code class="docutils literal"><span class="pre">run_mtu_discovery_test</span></code>: Flag to run the MTU Discovery test</li>
+<li><code class="docutils literal"><span class="pre">duration</span></code>: The test duration in seconds</li>
 </ul>
+</div>
+<div class="section" id="children">
+<h2>Children<a class="headerlink" href="#children" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="62%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>class</strong></td>
+<td><strong>fetcher</strong></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="nutestrun.html#nutestrun"><span class="std std-ref">nutestrun.NUTestRun</span></a></td>
+<td><code class="docutils literal"><span class="pre">test_runs</span></code></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="parents">
 <h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
@@ -788,16 +785,15 @@
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="nuuplinkconnection.html" class="btn btn-neutral float-right" title="nuuplinkconnection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="nuuplinkconnection.html" class="btn btn-neutral float-right" title="nuuplinkconnection" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="nuunderlay.html" class="btn btn-neutral float-left" title="nuunderlay" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="nuunderlay.html" class="btn btn-neutral" title="nuunderlay" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -806,7 +802,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -822,15 +818,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>

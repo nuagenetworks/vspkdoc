@@ -13,40 +13,40 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="nulicense" href="nulicense.html" />
-    <link rel="prev" title="nul7applicationsignature" href="nul7applicationsignature.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="../index.html"/>
+        <link rel="next" title="nulicense" href="nulicense.html"/>
+        <link rel="prev" title="nul7applicationsignature" href="nul7applicationsignature.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -81,10 +81,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 </ul>
@@ -177,6 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -342,6 +340,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnettemplate.html">nusubnettemplate</a></li>
@@ -694,54 +693,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>nuldapconfiguration</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>nuldapconfiguration</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/v6/nuldapconfiguration.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/v6/nuldapconfiguration.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -758,27 +737,29 @@
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">ssl_enabled</span></code>: Enable SSL for communication with the LDAP server</li>
-<li><code class="docutils literal notranslate"><span class="pre">password</span></code>: This attribute is a mandatory field for LDAP authorization. Password that will be used to verify the integrity of groups and users in LDAP server for the enterprise.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">accept_all_certificates</span></code>: Accept all certificates from the LDAP server</li>
-<li><code class="docutils literal notranslate"><span class="pre">certificate</span></code>: The certificate to authenticate with the LDAP server</li>
-<li><code class="docutils literal notranslate"><span class="pre">server</span></code> (<strong>Mandatory</strong>): The LDAP server IP or FQDN</li>
-<li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
-<li><code class="docutils literal notranslate"><span class="pre">enabled</span></code>: To enable LDAP authentication for an enterprise, set this attribute to true. If enabled is set to false, authorizationEnabled attribute is ignored and LDAP is not used for authentication as well as authorization. The relationship between enabled and authorizationEnabled attributes is as follows, enabled = true, authorizationEnabled = false, LDAP is used only for Authentication enabled = true, authorizationEnabled = true, LDAP is used for both authentication and authorization. enabled = false, authorizationEnabled = true, LDAP is not used. enabled = false, authorizationEnabled = false, LDAP is not used.</li>
-<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
-<li><code class="docutils literal notranslate"><span class="pre">port</span></code> (<strong>Mandatory</strong>): Port to be used for the LDAP server</li>
-<li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
-<li><code class="docutils literal notranslate"><span class="pre">group_dn</span></code>: This attribute is a mandatory field for LDAP authorization. When LDAP is used for authorization for an enterprise, the group DN will be used to get the list of VSD specific groups in LDAP server for the enterprise. For example, OU=VSDGroups,DC=company,DC=com</li>
-<li><code class="docutils literal notranslate"><span class="pre">group_name_prefix</span></code>: If this is specified, Prefix+Pre-definedGroupName will be used to look for users.</li>
-<li><code class="docutils literal notranslate"><span class="pre">group_name_suffix</span></code>: If this is specified, Pre-definedGroupName+Suffix will be used to look for users.</li>
-<li><code class="docutils literal notranslate"><span class="pre">user_dn_template</span></code>: The DN template to be used for authentication. The template needs to have a string _USERID_ in it. This will be replaced by  the userId of the user who makes the REST API call. For example, template UID=_USERID_,OU=company,DC=com will converted to  UID=admin,OU=company,DC=com and this will be used as DN for LDAP authentication.</li>
-<li><code class="docutils literal notranslate"><span class="pre">user_name_attribute</span></code>: This is an optional field. This is a LDAP property. If specified, it will be used as the VSD username per organization.</li>
-<li><code class="docutils literal notranslate"><span class="pre">authorization_enabled</span></code>: To enable LDAP authorization for an enterprise, both authorizationEnabled and enabled attributes must be set to true. If enabled attribute is not set, this attribute is ignored. The relationship between enabled and authorizationEnabled attributes is as follows, enabled = true, authorizationEnabled = false, LDAP is used only for Authentication. enabled = true, authorizationEnabled = true, LDAP is used for both authentication and authorization. enabled = false, authorizationEnabled = true, LDAP is not used. enabled = false, authorizationEnabled = false, LDAP is not used.</li>
-<li><code class="docutils literal notranslate"><span class="pre">authorizing_user_dn</span></code>: This attribute is a mandatory field for LDAP authorization. When LDAP is used for authorization for an enterprise, the user DN that will be used to verify the integrity of groups and users in LDAP server for the enterprise. For example, CN=groupAdmin,OU=VSD_USERS,OU=Personal,OU=Domain Users,DC=company,DC=com</li>
-<li><code class="docutils literal notranslate"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
+<li><code class="docutils literal"><span class="pre">ssl_enabled</span></code>: Enable SSL for communication with the LDAP server</li>
+<li><code class="docutils literal"><span class="pre">password</span></code>: This attribute is a mandatory field for LDAP authorization. Password that will be used to verify the integrity of groups and users in LDAP server for the enterprise.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
+<li><code class="docutils literal"><span class="pre">accept_all_certificates</span></code>: Accept all certificates from the LDAP server</li>
+<li><code class="docutils literal"><span class="pre">certificate</span></code>: The certificate to authenticate with the LDAP server</li>
+<li><code class="docutils literal"><span class="pre">server</span></code> (<strong>Mandatory</strong>): The LDAP server IP or FQDN</li>
+<li><code class="docutils literal"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
+<li><code class="docutils literal"><span class="pre">enabled</span></code>: To enable LDAP authentication for an enterprise, set this attribute to true. If enabled is set to false, authorizationEnabled attribute is ignored and LDAP is not used for authentication as well as authorization. The relationship between enabled and authorizationEnabled attributes is as follows, enabled = true, authorizationEnabled = false, LDAP is used only for Authentication enabled = true, authorizationEnabled = true, LDAP is used for both authentication and authorization. enabled = false, authorizationEnabled = true, LDAP is not used. enabled = false, authorizationEnabled = false, LDAP is not used.</li>
+<li><code class="docutils literal"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
+<li><code class="docutils literal"><span class="pre">domain</span></code>: This attribute is optional but must be unique per enterprise. Setting this value allows the enterprise to uniquely identify the LDAP instance using FQDN notation, which can then be used during authentication. For example &#8220;<a class="reference external" href="mailto:user1&#37;&#52;&#48;example&#46;net">user1<span>&#64;</span>example<span>&#46;</span>net</a>&#8220;</li>
+<li><code class="docutils literal"><span class="pre">port</span></code> (<strong>Mandatory</strong>): Port to be used for the LDAP server</li>
+<li><code class="docutils literal"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
+<li><code class="docutils literal"><span class="pre">group_dn</span></code>: This attribute is a mandatory field for LDAP authorization. When LDAP is used for authorization for an enterprise, the group DN will be used to get the list of VSD specific groups in LDAP server for the enterprise. For example, OU=VSDGroups,DC=company,DC=com</li>
+<li><code class="docutils literal"><span class="pre">group_name_prefix</span></code>: If this is specified, Prefix+Pre-definedGroupName will be used to look for users.</li>
+<li><code class="docutils literal"><span class="pre">group_name_suffix</span></code>: If this is specified, Pre-definedGroupName+Suffix will be used to look for users.</li>
+<li><code class="docutils literal"><span class="pre">user_dn_template</span></code>: The DN template to be used for authentication. The template needs to have a string _USERID_ in it. This will be replaced by  the userId of the user who makes the REST API call. For example, template UID=_USERID_,OU=company,DC=com will converted to  UID=admin,OU=company,DC=com and this will be used as DN for LDAP authentication.</li>
+<li><code class="docutils literal"><span class="pre">user_name_attribute</span></code>: This is an optional field. This is a LDAP property. If specified, it will be used as the VSD username per organization.</li>
+<li><code class="docutils literal"><span class="pre">authorization_enabled</span></code>: To enable LDAP authorization for an enterprise, both authorizationEnabled and enabled attributes must be set to true. If enabled attribute is not set, this attribute is ignored. The relationship between enabled and authorizationEnabled attributes is as follows, enabled = true, authorizationEnabled = false, LDAP is used only for Authentication. enabled = true, authorizationEnabled = true, LDAP is used for both authentication and authorization. enabled = false, authorizationEnabled = true, LDAP is not used. enabled = false, authorizationEnabled = false, LDAP is not used.</li>
+<li><code class="docutils literal"><span class="pre">authorizing_user_dn</span></code>: This attribute is a mandatory field for LDAP authorization. When LDAP is used for authorization for an enterprise, the user DN that will be used to verify the integrity of groups and users in LDAP server for the enterprise. For example, CN=groupAdmin,OU=VSD_USERS,OU=Personal,OU=Domain Users,DC=company,DC=com</li>
+<li><code class="docutils literal"><span class="pre">everybody_group_enabled</span></code>: An optional field indicating whether to use the LDAP Everybody group for mapping membership to the Everybody group in VSD. Value defaults to true if not specified. Please set to false to igrnore the Everybody group in LDAP.</li>
+<li><code class="docutils literal"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
+<li><code class="docutils literal"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 </ul>
 </div>
 <div class="section" id="children">
@@ -793,13 +774,13 @@
 <td><strong>fetcher</strong></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupermission.html#nupermission"><span class="std std-ref">nupermission.NUPermission</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">permissions</span></code></td>
+<td><code class="docutils literal"><span class="pre">permissions</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">global_metadatas</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -814,16 +795,15 @@
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="nulicense.html" class="btn btn-neutral float-right" title="nulicense" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="nulicense.html" class="btn btn-neutral float-right" title="nulicense" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="nul7applicationsignature.html" class="btn btn-neutral float-left" title="nul7applicationsignature" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="nul7applicationsignature.html" class="btn btn-neutral" title="nul7applicationsignature" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -832,7 +812,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -848,15 +828,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>

@@ -13,40 +13,40 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="nuenterprisenetwork" href="nuenterprisenetwork.html" />
-    <link rel="prev" title="nuegressqospolicy" href="nuegressqospolicy.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="../index.html"/>
+        <link rel="next" title="nuenterprisenetwork" href="nuenterprisenetwork.html"/>
+        <link rel="prev" title="nuegressqospolicy" href="nuegressqospolicy.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -81,10 +81,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 </ul>
@@ -182,6 +179,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -342,6 +340,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnettemplate.html">nusubnettemplate</a></li>
@@ -694,54 +693,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>nuenterprise</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>nuenterprise</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/v6/nuenterprise.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/v6/nuenterprise.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -758,50 +737,51 @@
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">ldap_authorization_enabled</span></code>: Read-only flag - indicates if LDAP is used for authorization for the enterprise. For detailed explanation, see definition in LDAPConfiguration class</li>
-<li><code class="docutils literal notranslate"><span class="pre">ldap_enabled</span></code>: Read-only flag - indicates if LDAP is used for authentication for the enterprise. For detailed explanation, see definition in LDAPConfiguration class</li>
-<li><code class="docutils literal notranslate"><span class="pre">bgp_enabled</span></code>: Read-only flag to display if BGP is enabled for this enterprise</li>
-<li><code class="docutils literal notranslate"><span class="pre">dhcp_lease_interval</span></code>: DHCP Lease Interval (in hrs) to be used by an enterprise.</li>
-<li><code class="docutils literal notranslate"><span class="pre">vnf_management_enabled</span></code>: Read-only flag to display if VNF management is enabled for this enterprise</li>
-<li><code class="docutils literal notranslate"><span class="pre">name</span></code> (<strong>Mandatory</strong>): The unique name of the enterprise.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">web_filter_enabled</span></code>: Read only flag to display if Web Filtering is enabled for this enterprise</li>
-<li><code class="docutils literal notranslate"><span class="pre">receive_multi_cast_list_id</span></code>: Read-only Id of the auto generated receive multicast list associated with this enterprise profile</li>
-<li><code class="docutils literal notranslate"><span class="pre">send_multi_cast_list_id</span></code>: Read-only Id of the auto generated send multicast list associated with this enterprise profile</li>
-<li><code class="docutils literal notranslate"><span class="pre">description</span></code>: A description of the enterprise</li>
-<li><code class="docutils literal notranslate"><span class="pre">shared_enterprise</span></code>: This flag indicates whether this is a Shared Infrastructure Enterprise or not. Its a read-only attribute and it cannot be set by anybody.</li>
-<li><code class="docutils literal notranslate"><span class="pre">threat_intelligence_enabled</span></code>: Determines whether or not threat intelligence is enabled</li>
-<li><code class="docutils literal notranslate"><span class="pre">threat_prevention_management_enabled</span></code>: Threat Prevention Management enabled for enterprise</li>
-<li><code class="docutils literal notranslate"><span class="pre">dictionary_version</span></code>: L7 Application Type version</li>
-<li><code class="docutils literal notranslate"><span class="pre">virtual_firewall_rules_enabled</span></code>: Read-only flag that indicates if virtual firewall rules are allowed.</li>
-<li><code class="docutils literal notranslate"><span class="pre">allow_advanced_qos_configuration</span></code>: Controls whether this enterprise has access to advanced QoS settings</li>
-<li><code class="docutils literal notranslate"><span class="pre">allow_gateway_management</span></code>: This flag indicates if the enterprise/organization can manage gateways. If yes then it can create gateway templates, instantiate them etc.</li>
-<li><code class="docutils literal notranslate"><span class="pre">allow_trusted_forwarding_class</span></code>: Controls whether QoS policies and templates created under this enterprise set the trusted flag to true</li>
-<li><code class="docutils literal notranslate"><span class="pre">allowed_forwarding_classes</span></code>: Allowed Forwarding Classes for this enterprise. Possible values are NONE, A, B, C, D, E, F, G, H, .</li>
-<li><code class="docutils literal notranslate"><span class="pre">allowed_forwarding_mode</span></code>: Enum to set allowed controller-less mode</li>
-<li><code class="docutils literal notranslate"><span class="pre">floating_ips_quota</span></code>: Quota set for the number of floating IPs to be used by an enterprise.</li>
-<li><code class="docutils literal notranslate"><span class="pre">floating_ips_used</span></code>: Number of floating IPs used by the enterprise from the assigned floatingIPsQuota</li>
-<li><code class="docutils literal notranslate"><span class="pre">blocked_page_text</span></code>: The text for blocked page html which gets displayed to the end-users when they reach a website that is blocked by Web Filtering ACL. User can possibly include very basic html tags like &lt;p&gt;, &lt;ul&gt; etc. in order to fomat the text displayed to the end-users.</li>
-<li><code class="docutils literal notranslate"><span class="pre">flow_collection_enabled</span></code>: Determines whether or not flow collection is enabled.</li>
-<li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
-<li><code class="docutils literal notranslate"><span class="pre">enable_application_performance_management</span></code>: This flag indicates if the DPI can be enabled for this enterpriseenterprise/organization.</li>
-<li><code class="docutils literal notranslate"><span class="pre">encryption_management_mode</span></code>: Read-only encryption management mode of the associated profile</li>
-<li><code class="docutils literal notranslate"><span class="pre">enterprise_profile_id</span></code>: Enterprise profile id for this enterprise</li>
-<li><code class="docutils literal notranslate"><span class="pre">enterprise_type</span></code>: Type of Enterprise. SHARED, AUDIT, NORMAL, CSP, SYSTEM</li>
-<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
-<li><code class="docutils literal notranslate"><span class="pre">local_as</span></code>: Local autonomous system for the enterprise</li>
-<li><code class="docutils literal notranslate"><span class="pre">forwarding_class</span></code>: Represents the List of forwarding classes and their load balancing capability.</li>
-<li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
-<li><code class="docutils literal notranslate"><span class="pre">use_global_mac</span></code>: Determines whether Global Gateway MAC is enabled or not Enterprise level.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_enterprise_security_id</span></code>: Read-only Id of the associated group key encryption profile</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_group_key_encryption_profile_id</span></code>: Read-only Id of the associated group key encryption profile</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_key_server_monitor_id</span></code>: Read-only Id of the associated keyserver monitor</li>
-<li><code class="docutils literal notranslate"><span class="pre">customer_id</span></code>: CustomerID that is used by VSC to identify this enterprise. This can be configured by root user.</li>
-<li><code class="docutils literal notranslate"><span class="pre">avatar_data</span></code>: URL to the avatar data associated with the enterprise. If the avatarType is URL then value of avatarData should an URL of the image. If the avatarType BASE64 then avatarData should be BASE64 encoded value of the image</li>
-<li><code class="docutils literal notranslate"><span class="pre">avatar_type</span></code>: Avatar type - URL or BASE64 Possible values are URL, BASE64, COMPUTEDURL, .</li>
-<li><code class="docutils literal notranslate"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
+<li><code class="docutils literal"><span class="pre">ldap_authorization_enabled</span></code>: Read-only flag - indicates if LDAP is used for authorization for the enterprise. For detailed explanation, see definition in LDAPConfiguration class</li>
+<li><code class="docutils literal"><span class="pre">ldap_enabled</span></code>: Read-only flag - indicates if LDAP is used for authentication for the enterprise. For detailed explanation, see definition in LDAPConfiguration class</li>
+<li><code class="docutils literal"><span class="pre">bgp_enabled</span></code>: Read-only flag to display if BGP is enabled for this enterprise</li>
+<li><code class="docutils literal"><span class="pre">dhcp_lease_interval</span></code>: DHCP Lease Interval (in hrs) to be used by an enterprise.</li>
+<li><code class="docutils literal"><span class="pre">vnf_management_enabled</span></code>: Read-only flag to display if VNF management is enabled for this enterprise</li>
+<li><code class="docutils literal"><span class="pre">name</span></code> (<strong>Mandatory</strong>): The unique name of the enterprise.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
+<li><code class="docutils literal"><span class="pre">web_filter_enabled</span></code>: Read only flag to display if Web Filtering is enabled for this enterprise</li>
+<li><code class="docutils literal"><span class="pre">receive_multi_cast_list_id</span></code>: Read-only Id of the auto generated receive multicast list associated with this enterprise profile</li>
+<li><code class="docutils literal"><span class="pre">send_multi_cast_list_id</span></code>: Read-only Id of the auto generated send multicast list associated with this enterprise profile</li>
+<li><code class="docutils literal"><span class="pre">description</span></code>: A description of the enterprise</li>
+<li><code class="docutils literal"><span class="pre">shared_enterprise</span></code>: This flag indicates whether this is a Shared Infrastructure Enterprise or not. Its a read-only attribute and it cannot be set by anybody.</li>
+<li><code class="docutils literal"><span class="pre">threat_intelligence_enabled</span></code>: Determines whether or not threat intelligence is enabled</li>
+<li><code class="docutils literal"><span class="pre">threat_prevention_management_enabled</span></code>: Threat Prevention Management enabled for enterprise</li>
+<li><code class="docutils literal"><span class="pre">dictionary_version</span></code>: L7 Application Type version</li>
+<li><code class="docutils literal"><span class="pre">virtual_firewall_rules_enabled</span></code>: Read-only flag that indicates if virtual firewall rules are allowed.</li>
+<li><code class="docutils literal"><span class="pre">allow_advanced_qos_configuration</span></code>: Controls whether this enterprise has access to advanced QoS settings</li>
+<li><code class="docutils literal"><span class="pre">allow_gateway_management</span></code>: This flag indicates if the enterprise/organization can manage gateways. If yes then it can create gateway templates, instantiate them etc.</li>
+<li><code class="docutils literal"><span class="pre">allow_trusted_forwarding_class</span></code>: Controls whether QoS policies and templates created under this enterprise set the trusted flag to true</li>
+<li><code class="docutils literal"><span class="pre">allowed_forwarding_classes</span></code>: Allowed Forwarding Classes for this enterprise. Possible values are NONE, A, B, C, D, E, F, G, H, .</li>
+<li><code class="docutils literal"><span class="pre">allowed_forwarding_mode</span></code>: Enum to set allowed controller-less mode</li>
+<li><code class="docutils literal"><span class="pre">floating_ips_quota</span></code>: Quota set for the number of floating IPs to be used by an enterprise.</li>
+<li><code class="docutils literal"><span class="pre">floating_ips_used</span></code>: Number of floating IPs used by the enterprise from the assigned floatingIPsQuota</li>
+<li><code class="docutils literal"><span class="pre">blocked_page_text</span></code>: The text for blocked page html which gets displayed to the end-users when they reach a website that is blocked by Web Filtering ACL. User can possibly include very basic html tags like &lt;p&gt;, &lt;ul&gt; etc. in order to fomat the text displayed to the end-users.</li>
+<li><code class="docutils literal"><span class="pre">flow_collection_enabled</span></code>: Determines whether or not flow collection is enabled.</li>
+<li><code class="docutils literal"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
+<li><code class="docutils literal"><span class="pre">enable_application_performance_management</span></code>: This flag indicates if the DPI can be enabled for this enterpriseenterprise/organization.</li>
+<li><code class="docutils literal"><span class="pre">encryption_management_mode</span></code>: Read-only encryption management mode of the associated profile</li>
+<li><code class="docutils literal"><span class="pre">enterprise_profile_id</span></code>: Enterprise profile id for this enterprise</li>
+<li><code class="docutils literal"><span class="pre">enterprise_type</span></code>: Type of Enterprise. SHARED, AUDIT, NORMAL, CSP, SYSTEM</li>
+<li><code class="docutils literal"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
+<li><code class="docutils literal"><span class="pre">local_as</span></code>: Local autonomous system for the enterprise</li>
+<li><code class="docutils literal"><span class="pre">forwarding_class</span></code>: Represents the List of forwarding classes and their load balancing capability.</li>
+<li><code class="docutils literal"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
+<li><code class="docutils literal"><span class="pre">use_global_mac</span></code>: Determines whether Global Gateway MAC is enabled or not Enterprise level.</li>
+<li><code class="docutils literal"><span class="pre">associated_enterprise_security_id</span></code>: Read-only Id of the associated group key encryption profile</li>
+<li><code class="docutils literal"><span class="pre">associated_group_key_encryption_profile_id</span></code>: Read-only Id of the associated group key encryption profile</li>
+<li><code class="docutils literal"><span class="pre">associated_key_server_monitor_id</span></code>: Read-only Id of the associated keyserver monitor</li>
+<li><code class="docutils literal"><span class="pre">stats_profile_id</span></code>: Statistics Profile to which this enterprise is associated to.</li>
+<li><code class="docutils literal"><span class="pre">customer_id</span></code>: CustomerID that is used by VSC to identify this enterprise. This can be configured by root user.</li>
+<li><code class="docutils literal"><span class="pre">avatar_data</span></code>: URL to the avatar data associated with the enterprise. If the avatarType is URL then value of avatarData should an URL of the image. If the avatarType BASE64 then avatarData should be BASE64 encoded value of the image</li>
+<li><code class="docutils literal"><span class="pre">avatar_type</span></code>: Avatar type - URL or BASE64 Possible values are URL, BASE64, COMPUTEDURL, .</li>
+<li><code class="docutils literal"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
+<li><code class="docutils literal"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 </ul>
 </div>
 <div class="section" id="children">
@@ -816,274 +796,274 @@
 <td><strong>fetcher</strong></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nul2domain.html#nul2domain"><span class="std std-ref">nul2domain.NUL2Domain</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l2_domains</span></code></td>
+<td><code class="docutils literal"><span class="pre">l2_domains</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nul2domaintemplate.html#nul2domaintemplate"><span class="std std-ref">nul2domaintemplate.NUL2DomainTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l2_domain_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">l2_domain_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nul4service.html#nul4service"><span class="std std-ref">nul4service.NUL4Service</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l4_services</span></code></td>
+<td><code class="docutils literal"><span class="pre">l4_services</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nul4servicegroup.html#nul4servicegroup"><span class="std std-ref">nul4servicegroup.NUL4ServiceGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l4_service_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">l4_service_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nul7applicationsignature.html#nul7applicationsignature"><span class="std std-ref">nul7applicationsignature.NUL7applicationsignature</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l7applicationsignatures</span></code></td>
+<td><code class="docutils literal"><span class="pre">l7applicationsignatures</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nusaasapplicationgroup.html#nusaasapplicationgroup"><span class="std std-ref">nusaasapplicationgroup.NUSaaSApplicationGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">saa_s_application_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">saa_s_application_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nusaasapplicationtype.html#nusaasapplicationtype"><span class="std std-ref">nusaasapplicationtype.NUSaaSApplicationType</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">saa_s_application_types</span></code></td>
+<td><code class="docutils literal"><span class="pre">saa_s_application_types</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nusapegressqosprofile.html#nusapegressqosprofile"><span class="std std-ref">nusapegressqosprofile.NUSAPEgressQoSProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">sap_egress_qo_s_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">sap_egress_qo_s_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nusapingressqosprofile.html#nusapingressqosprofile"><span class="std std-ref">nusapingressqosprofile.NUSAPIngressQoSProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">sap_ingress_qo_s_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">sap_ingress_qo_s_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nucaptiveportalprofile.html#nucaptiveportalprofile"><span class="std std-ref">nucaptiveportalprofile.NUCaptivePortalProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">captive_portal_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">captive_portal_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuratelimiter.html#nuratelimiter"><span class="std std-ref">nuratelimiter.NURateLimiter</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">rate_limiters</span></code></td>
+<td><code class="docutils literal"><span class="pre">rate_limiters</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nugateway.html#nugateway"><span class="std std-ref">nugateway.NUGateway</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">gateways</span></code></td>
+<td><code class="docutils literal"><span class="pre">gateways</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nugatewayslocation.html#nugatewayslocation"><span class="std std-ref">nugatewayslocation.NUGatewaysLocation</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">gateways_locations</span></code></td>
+<td><code class="docutils literal"><span class="pre">gateways_locations</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nugatewaytemplate.html#nugatewaytemplate"><span class="std std-ref">nugatewaytemplate.NUGatewayTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">gateway_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">gateway_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupatnatpool.html#nupatnatpool"><span class="std std-ref">nupatnatpool.NUPATNATPool</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">patnat_pools</span></code></td>
+<td><code class="docutils literal"><span class="pre">patnat_pools</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuscheduledtestsuite.html#nuscheduledtestsuite"><span class="std std-ref">nuscheduledtestsuite.NUScheduledTestSuite</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">scheduled_test_suites</span></code></td>
+<td><code class="docutils literal"><span class="pre">scheduled_test_suites</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuicmpechotestdefinition.html#nuicmpechotestdefinition"><span class="std std-ref">nuicmpechotestdefinition.NUICMPEchoTestDefinition</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">icmp_echo_test_definitions</span></code></td>
+<td><code class="docutils literal"><span class="pre">icmp_echo_test_definitions</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuldapconfiguration.html#nuldapconfiguration"><span class="std std-ref">nuldapconfiguration.NULDAPConfiguration</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ldap_configurations</span></code></td>
+<td><code class="docutils literal"><span class="pre">ldap_configurations</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuidpprofile.html#nuidpprofile"><span class="std std-ref">nuidpprofile.NUIDPProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">idp_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">idp_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuwebcategory.html#nuwebcategory"><span class="std std-ref">nuwebcategory.NUWebCategory</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">web_categories</span></code></td>
+<td><code class="docutils literal"><span class="pre">web_categories</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuwebdomainname.html#nuwebdomainname"><span class="std std-ref">nuwebdomainname.NUWebDomainName</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">web_domain_names</span></code></td>
+<td><code class="docutils literal"><span class="pre">web_domain_names</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuredundancygroup.html#nuredundancygroup"><span class="std std-ref">nuredundancygroup.NURedundancyGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">redundancy_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">redundancy_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nudeploymentfailure.html#nudeploymentfailure"><span class="std std-ref">nudeploymentfailure.NUDeploymentFailure</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">deployment_failures</span></code></td>
+<td><code class="docutils literal"><span class="pre">deployment_failures</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuperformancemonitor.html#nuperformancemonitor"><span class="std std-ref">nuperformancemonitor.NUPerformanceMonitor</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">performance_monitors</span></code></td>
+<td><code class="docutils literal"><span class="pre">performance_monitors</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupermission.html#nupermission"><span class="std std-ref">nupermission.NUPermission</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">permissions</span></code></td>
+<td><code class="docutils literal"><span class="pre">permissions</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nutestdefinition.html#nutestdefinition"><span class="std std-ref">nutestdefinition.NUTestDefinition</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">test_definitions</span></code></td>
+<td><code class="docutils literal"><span class="pre">test_definitions</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nutestsuite.html#nutestsuite"><span class="std std-ref">nutestsuite.NUTestSuite</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">test_suites</span></code></td>
+<td><code class="docutils literal"><span class="pre">test_suites</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunetconfprofile.html#nunetconfprofile"><span class="std std-ref">nunetconfprofile.NUNetconfProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">netconf_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">netconf_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nunetworkmacrogroup.html#nunetworkmacrogroup"><span class="std std-ref">nunetworkmacrogroup.NUNetworkMacroGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">network_macro_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">network_macro_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunetworkperformancemeasurement.html#nunetworkperformancemeasurement"><span class="std std-ref">nunetworkperformancemeasurement.NUNetworkPerformanceMeasurement</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">network_performance_measurements</span></code></td>
+<td><code class="docutils literal"><span class="pre">network_performance_measurements</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nukeyservermonitor.html#nukeyservermonitor"><span class="std std-ref">nukeyservermonitor.NUKeyServerMonitor</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">key_server_monitors</span></code></td>
+<td><code class="docutils literal"><span class="pre">key_server_monitors</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuzfbrequest.html#nuzfbrequest"><span class="std std-ref">nuzfbrequest.NUZFBRequest</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">zfb_requests</span></code></td>
+<td><code class="docutils literal"><span class="pre">zfb_requests</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nubgpprofile.html#nubgpprofile"><span class="std std-ref">nubgpprofile.NUBGPProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">bgp_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">bgp_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuegressprofile.html#nuegressprofile"><span class="std std-ref">nuegressprofile.NUEgressProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">egress_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">egress_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuegressqospolicy.html#nuegressqospolicy"><span class="std std-ref">nuegressqospolicy.NUEgressQOSPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">egress_qos_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">egress_qos_policies</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nusharednetworkresource.html#nusharednetworkresource"><span class="std std-ref">nusharednetworkresource.NUSharedNetworkResource</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">shared_network_resources</span></code></td>
+<td><code class="docutils literal"><span class="pre">shared_network_resources</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nufirewallacl.html#nufirewallacl"><span class="std std-ref">nufirewallacl.NUFirewallAcl</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">firewall_acls</span></code></td>
+<td><code class="docutils literal"><span class="pre">firewall_acls</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nufirewallrule.html#nufirewallrule"><span class="std std-ref">nufirewallrule.NUFirewallRule</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">firewall_rules</span></code></td>
+<td><code class="docutils literal"><span class="pre">firewall_rules</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuikecertificate.html#nuikecertificate"><span class="std std-ref">nuikecertificate.NUIKECertificate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ike_certificates</span></code></td>
+<td><code class="docutils literal"><span class="pre">ike_certificates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuikeencryptionprofile.html#nuikeencryptionprofile"><span class="std std-ref">nuikeencryptionprofile.NUIKEEncryptionprofile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ike_encryptionprofiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">ike_encryptionprofiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuikegateway.html#nuikegateway"><span class="std std-ref">nuikegateway.NUIKEGateway</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ike_gateways</span></code></td>
+<td><code class="docutils literal"><span class="pre">ike_gateways</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuikegatewayprofile.html#nuikegatewayprofile"><span class="std std-ref">nuikegatewayprofile.NUIKEGatewayProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ike_gateway_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">ike_gateway_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuikepsk.html#nuikepsk"><span class="std std-ref">nuikepsk.NUIKEPSK</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ikepsks</span></code></td>
+<td><code class="docutils literal"><span class="pre">ikepsks</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nualarm.html#nualarm"><span class="std std-ref">nualarm.NUAlarm</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">alarms</span></code></td>
+<td><code class="docutils literal"><span class="pre">alarms</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuallalarm.html#nuallalarm"><span class="std std-ref">nuallalarm.NUAllAlarm</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">all_alarms</span></code></td>
+<td><code class="docutils literal"><span class="pre">all_alarms</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">global_metadatas</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuvm.html#nuvm"><span class="std std-ref">nuvm.NUVM</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vms</span></code></td>
+<td><code class="docutils literal"><span class="pre">vms</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuvnf.html#nuvnf"><span class="std std-ref">nuvnf.NUVNF</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vnfs</span></code></td>
+<td><code class="docutils literal"><span class="pre">vnfs</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuvnfmetadata.html#nuvnfmetadata"><span class="std std-ref">nuvnfmetadata.NUVNFMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vnf_metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">vnf_metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuvnfthresholdpolicy.html#nuvnfthresholdpolicy"><span class="std std-ref">nuvnfthresholdpolicy.NUVNFThresholdPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vnf_threshold_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">vnf_threshold_policies</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuingressprofile.html#nuingressprofile"><span class="std std-ref">nuingressprofile.NUIngressProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ingress_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">ingress_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuingressqospolicy.html#nuingressqospolicy"><span class="std std-ref">nuingressqospolicy.NUIngressQOSPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ingress_qos_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">ingress_qos_policies</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nugnmiprofile.html#nugnmiprofile"><span class="std std-ref">nugnmiprofile.NUGNMIProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">gnmi_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">gnmi_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuenterprisenetwork.html#nuenterprisenetwork"><span class="std std-ref">nuenterprisenetwork.NUEnterpriseNetwork</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">enterprise_networks</span></code></td>
+<td><code class="docutils literal"><span class="pre">enterprise_networks</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuenterprisesecurity.html#nuenterprisesecurity"><span class="std std-ref">nuenterprisesecurity.NUEnterpriseSecurity</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">enterprise_securities</span></code></td>
+<td><code class="docutils literal"><span class="pre">enterprise_securities</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nujob.html#nujob"><span class="std std-ref">nujob.NUJob</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">jobs</span></code></td>
+<td><code class="docutils literal"><span class="pre">jobs</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nurole.html#nurole"><span class="std std-ref">nurole.NURole</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">roles</span></code></td>
+<td><code class="docutils literal"><span class="pre">roles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupolicygroupcategory.html#nupolicygroupcategory"><span class="std std-ref">nupolicygroupcategory.NUPolicyGroupCategory</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">policy_group_categories</span></code></td>
+<td><code class="docutils literal"><span class="pre">policy_group_categories</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nupolicyobjectgroup.html#nupolicyobjectgroup"><span class="std std-ref">nupolicyobjectgroup.NUPolicyObjectGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">policy_object_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">policy_object_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nudomain.html#nudomain"><span class="std std-ref">nudomain.NUDomain</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">domains</span></code></td>
+<td><code class="docutils literal"><span class="pre">domains</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nudomainkindsummary.html#nudomainkindsummary"><span class="std std-ref">nudomainkindsummary.NUDomainKindSummary</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">domain_kind_summaries</span></code></td>
+<td><code class="docutils literal"><span class="pre">domain_kind_summaries</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nudomaintemplate.html#nudomaintemplate"><span class="std std-ref">nudomaintemplate.NUDomainTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">domain_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">domain_templates</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nucontainer.html#nucontainer"><span class="std std-ref">nucontainer.NUContainer</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">containers</span></code></td>
+<td><code class="docutils literal"><span class="pre">containers</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nucosremarkingpolicytable.html#nucosremarkingpolicytable"><span class="std std-ref">nucosremarkingpolicytable.NUCOSRemarkingPolicyTable</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">cos_remarking_policy_tables</span></code></td>
+<td><code class="docutils literal"><span class="pre">cos_remarking_policy_tables</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuroutingpolicy.html#nuroutingpolicy"><span class="std std-ref">nuroutingpolicy.NURoutingPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">routing_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">routing_policies</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuipfilterprofile.html#nuipfilterprofile"><span class="std std-ref">nuipfilterprofile.NUIPFilterProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ip_filter_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">ip_filter_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuapplication.html#nuapplication"><span class="std std-ref">nuapplication.NUApplication</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">applications</span></code></td>
+<td><code class="docutils literal"><span class="pre">applications</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuapplicationperformancemanagement.html#nuapplicationperformancemanagement"><span class="std std-ref">nuapplicationperformancemanagement.NUApplicationperformancemanagement</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">applicationperformancemanagements</span></code></td>
+<td><code class="docutils literal"><span class="pre">applicationperformancemanagements</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuipv6filterprofile.html#nuipv6filterprofile"><span class="std std-ref">nuipv6filterprofile.NUIPv6FilterProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ipv6_filter_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">ipv6_filter_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nugroup.html#nugroup"><span class="std std-ref">nugroup.NUGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nugroupkeyencryptionprofile.html#nugroupkeyencryptionprofile"><span class="std std-ref">nugroupkeyencryptionprofile.NUGroupKeyEncryptionProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">group_key_encryption_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">group_key_encryption_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nutrunk.html#nutrunk"><span class="std std-ref">nutrunk.NUTrunk</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">trunks</span></code></td>
+<td><code class="docutils literal"><span class="pre">trunks</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nudscpforwardingclasstable.html#nudscpforwardingclasstable"><span class="std std-ref">nudscpforwardingclasstable.NUDSCPForwardingClassTable</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">dscp_forwarding_class_tables</span></code></td>
+<td><code class="docutils literal"><span class="pre">dscp_forwarding_class_tables</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nudscpremarkingpolicytable.html#nudscpremarkingpolicytable"><span class="std std-ref">nudscpremarkingpolicytable.NUDSCPRemarkingPolicyTable</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">dscp_remarking_policy_tables</span></code></td>
+<td><code class="docutils literal"><span class="pre">dscp_remarking_policy_tables</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuuser.html#nuuser"><span class="std std-ref">nuuser.NUUser</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">users</span></code></td>
+<td><code class="docutils literal"><span class="pre">users</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunsgateway.html#nunsgateway"><span class="std std-ref">nunsgateway.NUNSGateway</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateways</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateways</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nunsgatewayscount.html#nunsgatewayscount"><span class="std std-ref">nunsgatewayscount.NUNSGatewaysCount</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateways_counts</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateways_counts</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunsgatewaysummary.html#nunsgatewaysummary"><span class="std std-ref">nunsgatewaysummary.NUNSGatewaySummary</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateway_summaries</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateway_summaries</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nunsgatewaytemplate.html#nunsgatewaytemplate"><span class="std std-ref">nunsgatewaytemplate.NUNSGatewayTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateway_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateway_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunsggroup.html#nunsggroup"><span class="std std-ref">nunsggroup.NUNSGGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">nsg_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">nsg_groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nunsredundantgatewaygroup.html#nunsredundantgatewaygroup"><span class="std std-ref">nunsredundantgatewaygroup.NUNSRedundantGatewayGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_redundant_gateway_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_redundant_gateway_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuethernetsegmentgwgroup.html#nuethernetsegmentgwgroup"><span class="std std-ref">nuethernetsegmentgwgroup.NUEthernetSegmentGWGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ethernet_segment_gw_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">ethernet_segment_gw_groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nupublicnetworkmacro.html#nupublicnetworkmacro"><span class="std std-ref">nupublicnetworkmacro.NUPublicNetworkMacro</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">public_network_macros</span></code></td>
+<td><code class="docutils literal"><span class="pre">public_network_macros</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="numulticastlist.html#numulticastlist"><span class="std std-ref">numulticastlist.NUMultiCastList</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">multi_cast_lists</span></code></td>
+<td><code class="docutils literal"><span class="pre">multi_cast_lists</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuavatar.html#nuavatar"><span class="std std-ref">nuavatar.NUAvatar</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">avatars</span></code></td>
+<td><code class="docutils literal"><span class="pre">avatars</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nueventlog.html#nueventlog"><span class="std std-ref">nueventlog.NUEventLog</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">event_logs</span></code></td>
+<td><code class="docutils literal"><span class="pre">event_logs</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuoverlaymanagementprofile.html#nuoverlaymanagementprofile"><span class="std std-ref">nuoverlaymanagementprofile.NUOverlayManagementProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">overlay_management_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">overlay_management_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nusyslogdestination.html#nusyslogdestination"><span class="std std-ref">nusyslogdestination.NUSyslogDestination</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">syslog_destinations</span></code></td>
+<td><code class="docutils literal"><span class="pre">syslog_destinations</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuazurecloud.html#nuazurecloud"><span class="std std-ref">nuazurecloud.NUAzureCloud</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">azure_clouds</span></code></td>
+<td><code class="docutils literal"><span class="pre">azure_clouds</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -1091,24 +1071,24 @@
 <div class="section" id="parents">
 <h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="nuenterpriseprofile.html#nuenterpriseprofile"><span class="std std-ref">nuenterpriseprofile.NUEnterpriseProfile</span></a></li>
 <li><a class="reference internal" href="nume.html#nume"><span class="std std-ref">nume.NUMe</span></a></li>
+<li><a class="reference internal" href="nustatisticsprofile.html#nustatisticsprofile"><span class="std std-ref">nustatisticsprofile.NUStatisticsprofile</span></a></li>
+<li><a class="reference internal" href="nuenterpriseprofile.html#nuenterpriseprofile"><span class="std std-ref">nuenterpriseprofile.NUEnterpriseProfile</span></a></li>
 </ul>
 </div>
 </div>
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="nuenterprisenetwork.html" class="btn btn-neutral float-right" title="nuenterprisenetwork" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="nuenterprisenetwork.html" class="btn btn-neutral float-right" title="nuenterprisenetwork" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="nuegressqospolicy.html" class="btn btn-neutral float-left" title="nuegressqospolicy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="nuegressqospolicy.html" class="btn btn-neutral" title="nuegressqospolicy" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1117,7 +1097,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -1133,15 +1113,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>

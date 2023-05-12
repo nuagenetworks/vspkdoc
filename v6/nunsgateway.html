@@ -13,40 +13,40 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="nunsgatewaymonitor" href="nunsgatewaymonitor.html" />
-    <link rel="prev" title="nunexthop" href="nunexthop.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="../index.html"/>
+        <link rel="next" title="nunsgatewaymonitor" href="nunsgatewaymonitor.html"/>
+        <link rel="prev" title="nunexthop" href="nunexthop.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -81,10 +81,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 </ul>
@@ -177,6 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -342,6 +340,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnettemplate.html">nusubnettemplate</a></li>
@@ -694,54 +693,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>nunsgateway</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>nunsgateway</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/v6/nunsgateway.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/v6/nunsgateway.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -758,77 +737,78 @@
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">mac_address</span></code>: MAC Address of the NSG</li>
-<li><code class="docutils literal notranslate"><span class="pre">aar_application_release_date</span></code>: Release Date of the AAR Application</li>
-<li><code class="docutils literal notranslate"><span class="pre">aar_application_version</span></code>: The AAR Application Version</li>
-<li><code class="docutils literal notranslate"><span class="pre">nat_traversal_enabled</span></code>: This attribute is deprecated in version 4.0.</li>
-<li><code class="docutils literal notranslate"><span class="pre">tcpmss_enabled</span></code>: Boolean flag to indicate whether MSS on TCP is enabled or not</li>
-<li><code class="docutils literal notranslate"><span class="pre">tcp_maximum_segment_size</span></code>: Maximum Segment Size for TCP(min = 576, max = 7812).</li>
-<li><code class="docutils literal notranslate"><span class="pre">zfb_match_attribute</span></code>: The Zero Factor Bootstrapping (ZFB) Attribute that should be used to match the gateway on when it tries to bootstrap.</li>
-<li><code class="docutils literal notranslate"><span class="pre">zfb_match_value</span></code>: The Zero Factor Bootstrapping (ZFB) value that needs to match with the gateway during the bootstrap attempt. This value needs to match with the ZFB Match Attribute.</li>
-<li><code class="docutils literal notranslate"><span class="pre">sgt_propagation_enabled</span></code>: Indicates if Security Group Tag Propagation is enabled on Network Accelerated NSG and Network Accelerated UBR with HUB or HUB and DUC function(s).</li>
-<li><code class="docutils literal notranslate"><span class="pre">bios_release_date</span></code>: Release Date of the NSG BiOS</li>
-<li><code class="docutils literal notranslate"><span class="pre">bios_version</span></code>: NSG BIOS Version</li>
-<li><code class="docutils literal notranslate"><span class="pre">sku</span></code>: The part number of the NSG</li>
-<li><code class="docutils literal notranslate"><span class="pre">tpm_status</span></code>: TPM Status of the NSG based on the information received by the device during bootstrapping or upgrade.</li>
-<li><code class="docutils literal notranslate"><span class="pre">tpm_version</span></code>: TPM (Trusted Platform Module) version as reported by the NSG.</li>
-<li><code class="docutils literal notranslate"><span class="pre">cpu_core_allocation</span></code>: Current CPU allocation for network accelerated gateways.  Displays total number of cores and those isolated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">cpu_type</span></code>: The NSG Processor Type as reported during bootstrapping.</li>
-<li><code class="docutils literal notranslate"><span class="pre">vsdaar_application_version</span></code>: Version of the latest imported Application Signatures.</li>
-<li><code class="docutils literal notranslate"><span class="pre">nsg_version</span></code>: The NSG Version (software) as reported during bootstrapping or following an upgrade.</li>
-<li><code class="docutils literal notranslate"><span class="pre">ssh_service</span></code>: Indicates if SSH Service is enabled/disabled on a NSG. The value configured for this attribute is used only when instanceSSHOverride is allowed on the associated Gateway Template.</li>
-<li><code class="docutils literal notranslate"><span class="pre">uuid</span></code>: The Redhat UUID of the NSG</li>
-<li><code class="docutils literal notranslate"><span class="pre">name</span></code> (<strong>Mandatory</strong>): Name of the Gateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">family</span></code>: The NSG Family type.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_configuration_reload_timestamp</span></code>: Time stamp of the last known configuration update of the NSG.  This timestamp gets updated when a bootstrap is successful or when a configuration reload request triggered by VSD is successful.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">datapath_id</span></code>: Identifier of the Gateway, based on the systemId</li>
-<li><code class="docutils literal notranslate"><span class="pre">gateway_config_raw_version</span></code>: Release version of NSG, which is used to determine the feature capabilties of NSG.</li>
-<li><code class="docutils literal notranslate"><span class="pre">gateway_config_version</span></code>: Interpreted version of NSG, which is used to determine the feature capabilities of NSG.</li>
-<li><code class="docutils literal notranslate"><span class="pre">gateway_connected</span></code>: Indicates status of this gateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">redundancy_group_id</span></code>: The Redundancy Gateway Group associated with this Gateway Instance. This is a read only attribute</li>
-<li><code class="docutils literal notranslate"><span class="pre">template_id</span></code> (<strong>Mandatory</strong>): The ID of the template that this Gateway was created from. This should be set when instantiating a Gateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">pending</span></code>: Indicates that this gateway is pending state or state. When in pending state it cannot be modified from REST.</li>
-<li><code class="docutils literal notranslate"><span class="pre">serial_number</span></code>: The NSG’s serial number</li>
-<li><code class="docutils literal notranslate"><span class="pre">derived_ssh_service_state</span></code>: Indicates the SSH Service state on a NSG. This value is derived based on the SSHService configuration on the NSG and the associated Gateway Template.</li>
-<li><code class="docutils literal notranslate"><span class="pre">permitted_action</span></code>: The permitted  action to USE/EXTEND  this Gateway.</li>
-<li><code class="docutils literal notranslate"><span class="pre">personality</span></code>: Personality of the Gateway - NSG, cannot be changed after creation.</li>
-<li><code class="docutils literal notranslate"><span class="pre">cert_validity_days</span></code>: The number of days for which the NSG’s certificate is valid.</li>
-<li><code class="docutils literal notranslate"><span class="pre">description</span></code>: A description of the Gateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">network_acceleration</span></code>: Attribute that enables or disables Network Acceleration (DPDK) on the NSGateway instance.  Changing the value of this field will cause the device to restart at the next configuration reload.</li>
-<li><code class="docutils literal notranslate"><span class="pre">threat_prevention_enabled</span></code>: Indicates if Threat Prevention capability enabled on NSG.</li>
-<li><code class="docutils literal notranslate"><span class="pre">libraries</span></code>: Transient representation of the same property on NSGInfo.</li>
-<li><code class="docutils literal notranslate"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
-<li><code class="docutils literal notranslate"><span class="pre">inherited_ssh_service_state</span></code>: Indicates the SSH Service state which is configured on the associated template instance.</li>
-<li><code class="docutils literal notranslate"><span class="pre">enterprise_id</span></code>: The enterprise associated with this Gateway. This is a read only attribute</li>
-<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
-<li><code class="docutils literal notranslate"><span class="pre">location_id</span></code>: The NSGateway’s Location. NOTE: this is a read only property, it can only be set through the location object</li>
-<li><code class="docutils literal notranslate"><span class="pre">configuration_reload_state</span></code>: Status resulting from a manually triggered configuration reload operation on an NSG.  This value only reflects the state for a manual action requested by the operator, not the automatic periodic configuration reload triggered by the NSG itself.</li>
-<li><code class="docutils literal notranslate"><span class="pre">configuration_status</span></code>: NSG Configuration status represents the NSG update state following a query by the NSG to get the latest version of the infraconfig.json file.  This status will be updated following a Bootstrap request or a Configuration Reload.  Success means that the NSG was able to apply the changes included in the latest infraconfig.json file.  A Failure response will be returned if the NSG was unable to apply the changes; this is normally accompanied with a rollback of the NSG to the previous configuration.</li>
-<li><code class="docutils literal notranslate"><span class="pre">configure_load_balancing</span></code>: Describes whether the load balancing behavior used for Fc’s in inherited from enterprise or disabled.</li>
-<li><code class="docutils literal notranslate"><span class="pre">control_traffic_cos_value</span></code>: CoS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7</li>
-<li><code class="docutils literal notranslate"><span class="pre">control_traffic_dscp_value</span></code>: DSCP Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 63</li>
-<li><code class="docutils literal notranslate"><span class="pre">bootstrap_id</span></code>: The bootstrap details associated with this NSGateway. NOTE: This is a read only property, it can only be set during creation of an NSG.</li>
-<li><code class="docutils literal notranslate"><span class="pre">bootstrap_status</span></code>: The bootstrap status of this NSGateway. NOTE: This is a read only property.</li>
-<li><code class="docutils literal notranslate"><span class="pre">operation_mode</span></code>: Operation mode of NSGateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">operation_status</span></code>: Operation Status of NSGateway</li>
-<li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
-<li><code class="docutils literal notranslate"><span class="pre">product_name</span></code>: NSG Product Name as reported during bootstrapping.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_gateway_security_id</span></code>: Read only ID of the associated gateway security object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_gateway_security_profile_id</span></code>: Read only ID of the associated gateway security profile object</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_nsg_info_id</span></code>: Read only ID of the associated NSG info object</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_nsg_migration_profile_id</span></code>: The ID of the migration profile associated to this NSG.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_nsg_upgrade_profile_id</span></code>: The UUID of the NSG Upgrade Profile associated to this NSG instance.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_overlay_management_profile_id</span></code>: The ID of the associated Overlay Management Profile</li>
-<li><code class="docutils literal notranslate"><span class="pre">huge_page_setting</span></code>: The size and number of huge pages for an NSG that is running in network accelerated mode.  Hugepage values states the portion of memory reserved for network accelerated services.</li>
-<li><code class="docutils literal notranslate"><span class="pre">functions</span></code>: List of supported functions. This is only relevant for NSG-UBR and will be set to UBR by default in case an NSG-UBR is created. For a regular NSG, this will be set to null.</li>
-<li><code class="docutils literal notranslate"><span class="pre">tunnel_shaping</span></code>: Indicates if the UBR will perform tunnel shaping to the NSG when a tunnel shaper is associated to the NSG.</li>
-<li><code class="docutils literal notranslate"><span class="pre">auto_disc_gateway_id</span></code>: The Auto Discovered Gateway associated with this Gateway Instance</li>
-<li><code class="docutils literal notranslate"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
-<li><code class="docutils literal notranslate"><span class="pre">syslog_level</span></code>: The minimal logging level of the messages the NSG will be reporting to the external syslog server that has been configured on the Infrastructure Gateway Profile.</li>
-<li><code class="docutils literal notranslate"><span class="pre">system_id</span></code>: Identifier of the Gateway, cannot be modified after creation</li>
+<li><code class="docutils literal"><span class="pre">mac_address</span></code>: MAC Address of the NSG</li>
+<li><code class="docutils literal"><span class="pre">aar_application_release_date</span></code>: Release Date of the AAR Application</li>
+<li><code class="docutils literal"><span class="pre">aar_application_version</span></code>: The AAR Application Version</li>
+<li><code class="docutils literal"><span class="pre">nat_traversal_enabled</span></code>: This attribute is deprecated in version 4.0.</li>
+<li><code class="docutils literal"><span class="pre">tcpmss_enabled</span></code>: Boolean flag to indicate whether MSS on TCP is enabled or not</li>
+<li><code class="docutils literal"><span class="pre">tcp_maximum_segment_size</span></code>: Maximum Segment Size for TCP(min = 576, max = 7812).</li>
+<li><code class="docutils literal"><span class="pre">zfb_match_attribute</span></code>: The Zero Factor Bootstrapping (ZFB) Attribute that should be used to match the gateway on when it tries to bootstrap.</li>
+<li><code class="docutils literal"><span class="pre">zfb_match_value</span></code>: The Zero Factor Bootstrapping (ZFB) value that needs to match with the gateway during the bootstrap attempt. This value needs to match with the ZFB Match Attribute.</li>
+<li><code class="docutils literal"><span class="pre">sgt_propagation_enabled</span></code>: Indicates if Security Group Tag Propagation is enabled on Network Accelerated NSG and Network Accelerated UBR with HUB or HUB and DUC function(s).</li>
+<li><code class="docutils literal"><span class="pre">bios_release_date</span></code>: Release Date of the NSG BiOS</li>
+<li><code class="docutils literal"><span class="pre">bios_version</span></code>: NSG BIOS Version</li>
+<li><code class="docutils literal"><span class="pre">sku</span></code>: The part number of the NSG</li>
+<li><code class="docutils literal"><span class="pre">tpm_status</span></code>: TPM Status of the NSG based on the information received by the device during bootstrapping or upgrade.</li>
+<li><code class="docutils literal"><span class="pre">tpm_version</span></code>: TPM (Trusted Platform Module) version as reported by the NSG.</li>
+<li><code class="docutils literal"><span class="pre">cpu_core_allocation</span></code>: Current CPU allocation for network accelerated gateways.  Displays total number of cores and those isolated.</li>
+<li><code class="docutils literal"><span class="pre">cpu_type</span></code>: The NSG Processor Type as reported during bootstrapping.</li>
+<li><code class="docutils literal"><span class="pre">vsdaar_application_version</span></code>: Version of the latest imported Application Signatures.</li>
+<li><code class="docutils literal"><span class="pre">nsg_version</span></code>: The NSG Version (software) as reported during bootstrapping or following an upgrade.</li>
+<li><code class="docutils literal"><span class="pre">ssh_service</span></code>: Indicates if SSH Service is enabled/disabled on a NSG. The value configured for this attribute is used only when instanceSSHOverride is allowed on the associated Gateway Template.</li>
+<li><code class="docutils literal"><span class="pre">uuid</span></code>: The Redhat UUID of the NSG</li>
+<li><code class="docutils literal"><span class="pre">name</span></code> (<strong>Mandatory</strong>): Name of the Gateway</li>
+<li><code class="docutils literal"><span class="pre">family</span></code>: The NSG Family type.</li>
+<li><code class="docutils literal"><span class="pre">last_configuration_reload_timestamp</span></code>: Time stamp of the last known configuration update of the NSG.  This timestamp gets updated when a bootstrap is successful or when a configuration reload request triggered by VSD is successful.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
+<li><code class="docutils literal"><span class="pre">datapath_id</span></code>: Identifier of the Gateway, based on the systemId</li>
+<li><code class="docutils literal"><span class="pre">gateway_config_raw_version</span></code>: Release version of NSG, which is used to determine the feature capabilties of NSG.</li>
+<li><code class="docutils literal"><span class="pre">gateway_config_version</span></code>: Interpreted version of NSG, which is used to determine the feature capabilities of NSG.</li>
+<li><code class="docutils literal"><span class="pre">gateway_connected</span></code>: Indicates status of this gateway</li>
+<li><code class="docutils literal"><span class="pre">redundancy_group_id</span></code>: The Redundancy Gateway Group associated with this Gateway Instance. This is a read only attribute</li>
+<li><code class="docutils literal"><span class="pre">template_id</span></code> (<strong>Mandatory</strong>): The ID of the template that this Gateway was created from. This should be set when instantiating a Gateway</li>
+<li><code class="docutils literal"><span class="pre">pending</span></code>: Indicates that this gateway is pending state or state. When in pending state it cannot be modified from REST.</li>
+<li><code class="docutils literal"><span class="pre">serial_number</span></code>: The NSG&#8217;s serial number</li>
+<li><code class="docutils literal"><span class="pre">derived_ssh_service_state</span></code>: Indicates the SSH Service state on a NSG. This value is derived based on the SSHService configuration on the NSG and the associated Gateway Template.</li>
+<li><code class="docutils literal"><span class="pre">permitted_action</span></code>: The permitted  action to USE/EXTEND  this Gateway.</li>
+<li><code class="docutils literal"><span class="pre">personality</span></code>: Personality of the Gateway - NSG, cannot be changed after creation.</li>
+<li><code class="docutils literal"><span class="pre">cert_validity_days</span></code>: The number of days for which the NSG&#8217;s certificate is valid.</li>
+<li><code class="docutils literal"><span class="pre">description</span></code>: A description of the Gateway</li>
+<li><code class="docutils literal"><span class="pre">network_acceleration</span></code>: Attribute that enables or disables Network Acceleration (DPDK) on the NSGateway instance.  Changing the value of this field will cause the device to restart at the next configuration reload.</li>
+<li><code class="docutils literal"><span class="pre">threat_prevention_enabled</span></code>: Indicates if Threat Prevention capability enabled on NSG.</li>
+<li><code class="docutils literal"><span class="pre">libraries</span></code>: Transient representation of the same property on NSGInfo.</li>
+<li><code class="docutils literal"><span class="pre">embedded_metadata</span></code>: Metadata objects associated with this entity. This will contain a list of Metadata objects if the API request is made using the special flag to enable the embedded Metadata feature. Only a maximum of Metadata objects is returned based on the value set in the system configuration.</li>
+<li><code class="docutils literal"><span class="pre">inherited_ssh_service_state</span></code>: Indicates the SSH Service state which is configured on the associated template instance.</li>
+<li><code class="docutils literal"><span class="pre">enterprise_id</span></code>: The enterprise associated with this Gateway. This is a read only attribute</li>
+<li><code class="docutils literal"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
+<li><code class="docutils literal"><span class="pre">location_id</span></code>: The NSGateway&#8217;s Location. NOTE: this is a read only property, it can only be set through the location object</li>
+<li><code class="docutils literal"><span class="pre">configuration_reload_state</span></code>: Status resulting from a manually triggered configuration reload operation on an NSG.  This value only reflects the state for a manual action requested by the operator, not the automatic periodic configuration reload triggered by the NSG itself.</li>
+<li><code class="docutils literal"><span class="pre">configuration_status</span></code>: NSG Configuration status represents the NSG update state following a query by the NSG to get the latest version of the infraconfig.json file.  This status will be updated following a Bootstrap request or a Configuration Reload.  Success means that the NSG was able to apply the changes included in the latest infraconfig.json file.  A Failure response will be returned if the NSG was unable to apply the changes; this is normally accompanied with a rollback of the NSG to the previous configuration.</li>
+<li><code class="docutils literal"><span class="pre">configure_load_balancing</span></code>: Describes whether the load balancing behavior used for Fc&#8217;s in inherited from enterprise or disabled.</li>
+<li><code class="docutils literal"><span class="pre">control_traffic_cos_value</span></code>: CoS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7</li>
+<li><code class="docutils literal"><span class="pre">control_traffic_dscp_value</span></code>: DSCP Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 63</li>
+<li><code class="docutils literal"><span class="pre">bootstrap_id</span></code>: The bootstrap details associated with this NSGateway. NOTE: This is a read only property, it can only be set during creation of an NSG.</li>
+<li><code class="docutils literal"><span class="pre">bootstrap_status</span></code>: The bootstrap status of this NSGateway. NOTE: This is a read only property.</li>
+<li><code class="docutils literal"><span class="pre">operation_mode</span></code>: Operation mode of NSGateway</li>
+<li><code class="docutils literal"><span class="pre">operation_status</span></code>: Operation Status of NSGateway</li>
+<li><code class="docutils literal"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
+<li><code class="docutils literal"><span class="pre">product_name</span></code>: NSG Product Name as reported during bootstrapping.</li>
+<li><code class="docutils literal"><span class="pre">associated_gateway_security_id</span></code>: Read only ID of the associated gateway security object.</li>
+<li><code class="docutils literal"><span class="pre">associated_gateway_security_profile_id</span></code>: Read only ID of the associated gateway security profile object</li>
+<li><code class="docutils literal"><span class="pre">associated_nsg_info_id</span></code>: Read only ID of the associated NSG info object</li>
+<li><code class="docutils literal"><span class="pre">associated_nsg_migration_profile_id</span></code>: The ID of the migration profile associated to this NSG.</li>
+<li><code class="docutils literal"><span class="pre">associated_nsg_upgrade_profile_id</span></code>: The UUID of the NSG Upgrade Profile associated to this NSG instance.</li>
+<li><code class="docutils literal"><span class="pre">associated_overlay_management_profile_id</span></code>: The ID of the associated Overlay Management Profile</li>
+<li><code class="docutils literal"><span class="pre">stats_profile_id</span></code>: Statistics Profile to which this NSGateway is associated to.</li>
+<li><code class="docutils literal"><span class="pre">huge_page_setting</span></code>: The size and number of huge pages for an NSG that is running in network accelerated mode.  Hugepage values states the portion of memory reserved for network accelerated services.</li>
+<li><code class="docutils literal"><span class="pre">functions</span></code>: List of supported functions. This is only relevant for NSG-UBR and will be set to UBR by default in case an NSG-UBR is created. For a regular NSG, this will be set to null.</li>
+<li><code class="docutils literal"><span class="pre">tunnel_shaping</span></code>: Indicates if the UBR will perform tunnel shaping to the NSG when a tunnel shaper is associated to the NSG.</li>
+<li><code class="docutils literal"><span class="pre">auto_disc_gateway_id</span></code>: The Auto Discovered Gateway associated with this Gateway Instance</li>
+<li><code class="docutils literal"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
+<li><code class="docutils literal"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
+<li><code class="docutils literal"><span class="pre">syslog_level</span></code>: The minimal logging level of the messages the NSG will be reporting to the external syslog server that has been configured on the Infrastructure Gateway Profile.</li>
+<li><code class="docutils literal"><span class="pre">system_id</span></code>: Identifier of the Gateway, cannot be modified after creation</li>
 </ul>
 </div>
 <div class="section" id="children">
@@ -843,91 +823,91 @@
 <td><strong>fetcher</strong></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupatch.html#nupatch"><span class="std std-ref">nupatch.NUPatch</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">patchs</span></code></td>
+<td><code class="docutils literal"><span class="pre">patchs</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nugatewaysecurity.html#nugatewaysecurity"><span class="std std-ref">nugatewaysecurity.NUGatewaySecurity</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">gateway_securities</span></code></td>
+<td><code class="docutils literal"><span class="pre">gateway_securities</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupatnatpool.html#nupatnatpool"><span class="std std-ref">nupatnatpool.NUPATNATPool</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">patnat_pools</span></code></td>
+<td><code class="docutils literal"><span class="pre">patnat_pools</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuddnsconfig.html#nuddnsconfig"><span class="std std-ref">nuddnsconfig.NUDdnsconfig</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ddnsconfigs</span></code></td>
+<td><code class="docutils literal"><span class="pre">ddnsconfigs</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nupermission.html#nupermission"><span class="std std-ref">nupermission.NUPermission</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">permissions</span></code></td>
+<td><code class="docutils literal"><span class="pre">permissions</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuthreatpreventioninfo.html#nuthreatpreventioninfo"><span class="std std-ref">nuthreatpreventioninfo.NUThreatPreventionInfo</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">threat_prevention_infos</span></code></td>
+<td><code class="docutils literal"><span class="pre">threat_prevention_infos</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuwirelessport.html#nuwirelessport"><span class="std std-ref">nuwirelessport.NUWirelessPort</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">wireless_ports</span></code></td>
+<td><code class="docutils literal"><span class="pre">wireless_ports</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuvirtualuplink.html#nuvirtualuplink"><span class="std std-ref">nuvirtualuplink.NUVirtualUplink</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">virtual_uplinks</span></code></td>
+<td><code class="docutils literal"><span class="pre">virtual_uplinks</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nualarm.html#nualarm"><span class="std std-ref">nualarm.NUAlarm</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">alarms</span></code></td>
+<td><code class="docutils literal"><span class="pre">alarms</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">global_metadatas</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuunderlaytest.html#nuunderlaytest"><span class="std std-ref">nuunderlaytest.NUUnderlayTest</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">underlay_tests</span></code></td>
+<td><code class="docutils literal"><span class="pre">underlay_tests</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuvnf.html#nuvnf"><span class="std std-ref">nuvnf.NUVNF</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vnfs</span></code></td>
+<td><code class="docutils literal"><span class="pre">vnfs</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuinfrastructureconfig.html#nuinfrastructureconfig"><span class="std std-ref">nuinfrastructureconfig.NUInfrastructureConfig</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">infrastructure_configs</span></code></td>
+<td><code class="docutils literal"><span class="pre">infrastructure_configs</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nuenterprisepermission.html#nuenterprisepermission"><span class="std std-ref">nuenterprisepermission.NUEnterprisePermission</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">enterprise_permissions</span></code></td>
+<td><code class="docutils literal"><span class="pre">enterprise_permissions</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nujob.html#nujob"><span class="std std-ref">nujob.NUJob</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">jobs</span></code></td>
+<td><code class="docutils literal"><span class="pre">jobs</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nulocation.html#nulocation"><span class="std std-ref">nulocation.NULocation</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">locations</span></code></td>
+<td><code class="docutils literal"><span class="pre">locations</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nucommand.html#nucommand"><span class="std std-ref">nucommand.NUCommand</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">commands</span></code></td>
+<td><code class="docutils literal"><span class="pre">commands</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nubootstrap.html#nubootstrap"><span class="std std-ref">nubootstrap.NUBootstrap</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">bootstraps</span></code></td>
+<td><code class="docutils literal"><span class="pre">bootstraps</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nubootstrapactivation.html#nubootstrapactivation"><span class="std std-ref">nubootstrapactivation.NUBootstrapActivation</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">bootstrap_activations</span></code></td>
+<td><code class="docutils literal"><span class="pre">bootstrap_activations</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunsportinfo.html#nunsportinfo"><span class="std std-ref">nunsportinfo.NUNSPortInfo</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_port_infos</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_port_infos</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nuuplinkconnection.html#nuuplinkconnection"><span class="std std-ref">nuuplinkconnection.NUUplinkConnection</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">uplink_connections</span></code></td>
+<td><code class="docutils literal"><span class="pre">uplink_connections</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunsgatewaymonitor.html#nunsgatewaymonitor"><span class="std std-ref">nunsgatewaymonitor.NUNSGatewayMonitor</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateway_monitors</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateway_monitors</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nunsgatewaysummary.html#nunsgatewaysummary"><span class="std std-ref">nunsgatewaysummary.NUNSGatewaySummary</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateway_summaries</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateway_summaries</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nunsginfo.html#nunsginfo"><span class="std std-ref">nunsginfo.NUNSGInfo</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">nsg_infos</span></code></td>
+<td><code class="docutils literal"><span class="pre">nsg_infos</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nunsport.html#nunsport"><span class="std std-ref">nunsport.NUNSPort</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_ports</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_ports</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nusubnet.html#nusubnet"><span class="std std-ref">nusubnet.NUSubnet</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">subnets</span></code></td>
+<td><code class="docutils literal"><span class="pre">subnets</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="nusupplementalinfraconfig.html#nusupplementalinfraconfig"><span class="std std-ref">nusupplementalinfraconfig.NUSupplementalInfraConfig</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">supplemental_infra_configs</span></code></td>
+<td><code class="docutils literal"><span class="pre">supplemental_infra_configs</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="nueventlog.html#nueventlog"><span class="std std-ref">nueventlog.NUEventLog</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">event_logs</span></code></td>
+<td><code class="docutils literal"><span class="pre">event_logs</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -935,28 +915,28 @@
 <div class="section" id="parents">
 <h2>Parents<a class="headerlink" href="#parents" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="nuenterprise.html#nuenterprise"><span class="std std-ref">nuenterprise.NUEnterprise</span></a></li>
+<li><a class="reference internal" href="nupolicyobjectgroup.html#nupolicyobjectgroup"><span class="std std-ref">nupolicyobjectgroup.NUPolicyObjectGroup</span></a></li>
 <li><a class="reference internal" href="nunsredundantgatewaygroup.html#nunsredundantgatewaygroup"><span class="std std-ref">nunsredundantgatewaygroup.NUNSRedundantGatewayGroup</span></a></li>
 <li><a class="reference internal" href="nuducgroup.html#nuducgroup"><span class="std std-ref">nuducgroup.NUDUCGroup</span></a></li>
-<li><a class="reference internal" href="nunsggroup.html#nunsggroup"><span class="std std-ref">nunsggroup.NUNSGGroup</span></a></li>
-<li><a class="reference internal" href="nupolicyobjectgroup.html#nupolicyobjectgroup"><span class="std std-ref">nupolicyobjectgroup.NUPolicyObjectGroup</span></a></li>
 <li><a class="reference internal" href="nume.html#nume"><span class="std std-ref">nume.NUMe</span></a></li>
+<li><a class="reference internal" href="nustatisticsprofile.html#nustatisticsprofile"><span class="std std-ref">nustatisticsprofile.NUStatisticsprofile</span></a></li>
+<li><a class="reference internal" href="nunsggroup.html#nunsggroup"><span class="std std-ref">nunsggroup.NUNSGGroup</span></a></li>
+<li><a class="reference internal" href="nuenterprise.html#nuenterprise"><span class="std std-ref">nuenterprise.NUEnterprise</span></a></li>
 </ul>
 </div>
 </div>
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="nunsgatewaymonitor.html" class="btn btn-neutral float-right" title="nunsgatewaymonitor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="nunsgatewaymonitor.html" class="btn btn-neutral float-right" title="nunsgatewaymonitor" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="nunexthop.html" class="btn btn-neutral float-left" title="nunexthop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="nunexthop.html" class="btn btn-neutral" title="nunexthop" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -965,7 +945,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -981,15 +961,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>

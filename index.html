@@ -13,39 +13,39 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Quickstart" href="quickstart.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="#"/>
+        <link rel="next" title="Quickstart" href="quickstart.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -80,10 +80,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
 </ul>
@@ -176,6 +173,7 @@
 <li class="toctree-l1"><a class="reference internal" href="v6/nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="v6/nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -336,6 +334,7 @@
 <li class="toctree-l1"><a class="reference internal" href="v6/nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="v6/nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nusubnettemplate.html">nusubnettemplate</a></li>
@@ -688,54 +687,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="#">Docs</a> &raquo;</li>
-        
-      <li>VSPK Documentation</li>
-    
-    
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>VSPK Documentation</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -743,8 +722,8 @@
             
   <div class="section" id="vspk-documentation">
 <h1>VSPK Documentation<a class="headerlink" href="#vspk-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Quickstart</span></p>
+<div class="toctree-wrapper compound" id="quickstart">
+<p class="caption"><span class="caption-text">Quickstart</span><a class="headerlink" href="#quickstart" title="Permalink to this toctree">¶</a></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="quickstart.html#installation">Installation</a></li>
@@ -765,8 +744,8 @@
 </li>
 </ul>
 </div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">v6 reference</span></p>
+<div class="toctree-wrapper compound" id="v6-reference">
+<p class="caption"><span class="caption-text">v6 reference</span><a class="headerlink" href="#v6-reference" title="Permalink to this toctree">¶</a></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuaddressmap.html">nuaddressmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuaddressrange.html">nuaddressrange</a></li>
@@ -855,6 +834,7 @@
 <li class="toctree-l1"><a class="reference internal" href="v6/nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="v6/nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -1015,6 +995,7 @@
 <li class="toctree-l1"><a class="reference internal" href="v6/nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="v6/nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v6/nusubnettemplate.html">nusubnettemplate</a></li>
@@ -1090,8 +1071,8 @@
 <li class="toctree-l1"><a class="reference internal" href="v6/nuzonetemplate.html">nuzonetemplate</a></li>
 </ul>
 </div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">v5_0 reference</span></p>
+<div class="toctree-wrapper compound" id="v5-0-reference">
+<p class="caption"><span class="caption-text">v5_0 reference</span><a class="headerlink" href="#v5-0-reference" title="Permalink to this toctree">¶</a></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="v5_0/nuaddressmap.html">nuaddressmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="v5_0/nuaddressrange.html">nuaddressrange</a></li>
@@ -1364,13 +1345,12 @@
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="quickstart.html" class="btn btn-neutral float-right" title="Quickstart" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="quickstart.html" class="btn btn-neutral float-right" title="Quickstart" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -1380,7 +1360,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -1396,15 +1376,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>

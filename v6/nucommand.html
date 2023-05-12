@@ -13,40 +13,40 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="nuconnectionendpoint" href="nuconnectionendpoint.html" />
-    <link rel="prev" title="nucloudmgmtsystem" href="nucloudmgmtsystem.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="../index.html"/>
+        <link rel="next" title="nuconnectionendpoint" href="nuconnectionendpoint.html"/>
+        <link rel="prev" title="nucloudmgmtsystem" href="nucloudmgmtsystem.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -81,10 +81,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 </ul>
@@ -181,6 +178,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -341,6 +339,7 @@
 <li class="toctree-l1"><a class="reference internal" href="nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nusubnettemplate.html">nusubnettemplate</a></li>
@@ -693,54 +692,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>nucommand</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>nucommand</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/v6/nucommand.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/v6/nucommand.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -753,29 +732,29 @@
 <code class="descname">nucommand.NUCommand(bambou.nurest_object.NUMetaRESTObject,):</code></dt>
 <dd></dd></dl>
 
-<p>A Command represents an operation that needs to be executed on an entity (NSG, Gateway, …) which requires little processing by VSD, but may result in a long activity on the external entity.  An example would be to trigger an action on VSD so that a Gateway download a new image.  VSDs handling of the request is limited to generating a message to be sent to the device on which the download process is expected.  The device then acts on the request and proceeds with the download…  That may be a long process.  The commands API is similar to the Jobs API with regards to triggering operations on objects.</p>
+<p>A Command represents an operation that needs to be executed on an entity (NSG, Gateway, ...) which requires little processing by VSD, but may result in a long activity on the external entity.  An example would be to trigger an action on VSD so that a Gateway download a new image.  VSDs handling of the request is limited to generating a message to be sent to the device on which the download process is expected.  The device then acts on the request and proceeds with the download...  That may be a long process.  The commands API is similar to the Jobs API with regards to triggering operations on objects.</p>
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">detail</span></code>: Details about the command execution as reported directly from the NSG independent of status codes.</li>
-<li><code class="docutils literal notranslate"><span class="pre">detailed_status</span></code>: A string representing the detailed status of the operation that was triggered by the execution of the Command instance.</li>
-<li><code class="docutils literal notranslate"><span class="pre">detailed_status_code</span></code>: A numerical code mapping to a list of detailed statuses that can apply to a Command instance.</li>
-<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
-<li><code class="docutils literal notranslate"><span class="pre">command</span></code> (<strong>Mandatory</strong>): Specifies the type of command that is stated for execution on the system receiving the operation request.  A request for download, a request for upgrade, a request for revocation, …</li>
-<li><code class="docutils literal notranslate"><span class="pre">command_information</span></code>: Informative details on what command is to be executed.  It complements the commandType attribute.  An example of a value could be a URL, a version number, a UUID of another object, …</li>
-<li><code class="docutils literal notranslate"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
-<li><code class="docutils literal notranslate"><span class="pre">progress</span></code>: JSON string detailing the progress of the command execution on Gateway.</li>
-<li><code class="docutils literal notranslate"><span class="pre">assoc_entity_type</span></code>: Managed Object Type of the entity on which this Command is associated.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_param</span></code>: Parameters to be supplied for execution of this command. This should be the ID of the object supplying parameters.</li>
-<li><code class="docutils literal notranslate"><span class="pre">associated_param_type</span></code>: Type of the object which supplies parameters for this command. For NSG_APPLY_PATCH command this should be NSG_PATCH_PROFILE. For NSG_DELETE_PATCH it should be PATCH</li>
-<li><code class="docutils literal notranslate"><span class="pre">status</span></code>: The status of the Command from a VSD perspective.</li>
-<li><code class="docutils literal notranslate"><span class="pre">full_command</span></code>: Full command including parameters that is to be executed.</li>
-<li><code class="docutils literal notranslate"><span class="pre">summary</span></code>: A generated summary for the action giving some general context on the command executed.</li>
-<li><code class="docutils literal notranslate"><span class="pre">override</span></code>: Operator specified action which overrides the normal life cycle of a command.</li>
-<li><code class="docutils literal notranslate"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
+<li><code class="docutils literal"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
+<li><code class="docutils literal"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
+<li><code class="docutils literal"><span class="pre">detail</span></code>: Details about the command execution as reported directly from the NSG independent of status codes.</li>
+<li><code class="docutils literal"><span class="pre">detailed_status</span></code>: A string representing the detailed status of the operation that was triggered by the execution of the Command instance.</li>
+<li><code class="docutils literal"><span class="pre">detailed_status_code</span></code>: A numerical code mapping to a list of detailed statuses that can apply to a Command instance.</li>
+<li><code class="docutils literal"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
+<li><code class="docutils literal"><span class="pre">command</span></code> (<strong>Mandatory</strong>): Specifies the type of command that is stated for execution on the system receiving the operation request.  A request for download, a request for upgrade, a request for revocation, ...</li>
+<li><code class="docutils literal"><span class="pre">command_information</span></code>: Informative details on what command is to be executed.  It complements the commandType attribute.  An example of a value could be a URL, a version number, a UUID of another object, ...</li>
+<li><code class="docutils literal"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
+<li><code class="docutils literal"><span class="pre">progress</span></code>: JSON string detailing the progress of the command execution on Gateway.</li>
+<li><code class="docutils literal"><span class="pre">assoc_entity_type</span></code>: Managed Object Type of the entity on which this Command is associated.</li>
+<li><code class="docutils literal"><span class="pre">associated_param</span></code>: Parameters to be supplied for execution of this command. This should be the ID of the object supplying parameters.</li>
+<li><code class="docutils literal"><span class="pre">associated_param_type</span></code>: Type of the object which supplies parameters for this command. For NSG_APPLY_PATCH command this should be NSG_PATCH_PROFILE. For NSG_DELETE_PATCH it should be PATCH</li>
+<li><code class="docutils literal"><span class="pre">status</span></code>: The status of the Command from a VSD perspective.</li>
+<li><code class="docutils literal"><span class="pre">full_command</span></code>: Full command including parameters that is to be executed.</li>
+<li><code class="docutils literal"><span class="pre">summary</span></code>: A generated summary for the action giving some general context on the command executed.</li>
+<li><code class="docutils literal"><span class="pre">override</span></code>: Operator specified action which overrides the normal life cycle of a command.</li>
+<li><code class="docutils literal"><span class="pre">owner</span></code>: Identifies the user that has created this object.</li>
+<li><code class="docutils literal"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 </ul>
 </div>
 <div class="section" id="parents">
@@ -789,16 +768,15 @@
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="nuconnectionendpoint.html" class="btn btn-neutral float-right" title="nuconnectionendpoint" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="nuconnectionendpoint.html" class="btn btn-neutral float-right" title="nuconnectionendpoint" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="nucloudmgmtsystem.html" class="btn btn-neutral float-left" title="nucloudmgmtsystem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="nucloudmgmtsystem.html" class="btn btn-neutral" title="nucloudmgmtsystem" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -807,7 +785,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -823,15 +801,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>

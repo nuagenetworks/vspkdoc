@@ -13,40 +13,40 @@
 
   
   
-  
+
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
     
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="numetadata" href="numetadata.html" />
-    <link rel="prev" title="numacfilterprofile" href="numacfilterprofile.html" /> 
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="VSPK 1 documentation" href="../index.html"/>
+        <link rel="next" title="numetadata" href="numetadata.html"/>
+        <link rel="prev" title="numacfilterprofile" href="numacfilterprofile.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                20.10.10
+                6.0.1
               </div>
             
           
@@ -81,10 +81,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Quickstart</span></p>
+                <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
 </ul>
@@ -177,6 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../v6/nufirewallacl.html">nufirewallacl</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nufirewallrule.html">nufirewallrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nufloatingip.html">nufloatingip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v6/nuflowstatisticsaggregationrule.html">nuflowstatisticsaggregationrule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nuforwardingclass.html">nuforwardingclass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nuforwardingpathlist.html">nuforwardingpathlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nuforwardingpathlistentry.html">nuforwardingpathlistentry</a></li>
@@ -337,6 +335,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../v6/nustaticroute.html">nustaticroute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nustatistics.html">nustatistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nustatisticspolicy.html">nustatisticspolicy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../v6/nustatisticsprofile.html">nustatisticsprofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nustatscollectorinfo.html">nustatscollectorinfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nusubnet.html">nusubnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../v6/nusubnettemplate.html">nusubnettemplate</a></li>
@@ -693,54 +692,34 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">VSPK</a>
-        
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">VSPK</a>
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>nume</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>nume</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/v5_0/nume.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/v5_0/nume.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -757,27 +736,27 @@
 <div class="section" id="attributes">
 <h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">aar_flow_stats_interval</span></code>: AAR flow stats frequency</li>
-<li><code class="docutils literal notranslate"><span class="pre">aar_probe_stats_interval</span></code>: AAR Probe stats frequency</li>
-<li><code class="docutils literal notranslate"><span class="pre">vss_stats_interval</span></code>: VSS flow stats frequency</li>
-<li><code class="docutils literal notranslate"><span class="pre">password</span></code> (<strong>Mandatory</strong>): User password in clear text. Password cannot be a single character asterisk (*)</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_name</span></code> (<strong>Mandatory</strong>): Last name of the user</li>
-<li><code class="docutils literal notranslate"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
-<li><code class="docutils literal notranslate"><span class="pre">first_name</span></code> (<strong>Mandatory</strong>): First name of the user</li>
-<li><code class="docutils literal notranslate"><span class="pre">disabled</span></code>: Status of the user account; true=disabled, false=not disabled; default value = false</li>
-<li><code class="docutils literal notranslate"><span class="pre">elastic_search_address</span></code>: elastic search address</li>
-<li><code class="docutils literal notranslate"><span class="pre">flow_collection_enabled</span></code>: Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires ‘statisticsEnabled’.</li>
-<li><code class="docutils literal notranslate"><span class="pre">email</span></code> (<strong>Mandatory</strong>): Email address of the user</li>
-<li><code class="docutils literal notranslate"><span class="pre">enterprise_id</span></code>: Identifier of the enterprise.</li>
-<li><code class="docutils literal notranslate"><span class="pre">enterprise_name</span></code>: Name of the enterprise.</li>
-<li><code class="docutils literal notranslate"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
-<li><code class="docutils literal notranslate"><span class="pre">mobile_number</span></code>: Mobile Number of the user</li>
-<li><code class="docutils literal notranslate"><span class="pre">role</span></code>: Role of the user.</li>
-<li><code class="docutils literal notranslate"><span class="pre">user_name</span></code> (<strong>Mandatory</strong>): Unique Username of the user. Valid characters are alphabets, numbers and hyphen( - ).</li>
-<li><code class="docutils literal notranslate"><span class="pre">statistics_enabled</span></code>: This flag is used to indicate if statistics is enabled in the system. CSProot is expected to activate this through the enable statistics script.</li>
-<li><code class="docutils literal notranslate"><span class="pre">avatar_data</span></code>: URL to the avatar data associated with the enterprise. If the avatarType is URL then value of avatarData should an URL of the image. If the avatarType BASE64 then avatarData should be BASE64 encoded value of the image</li>
-<li><code class="docutils literal notranslate"><span class="pre">avatar_type</span></code>: Avatar type.</li>
-<li><code class="docutils literal notranslate"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
+<li><code class="docutils literal"><span class="pre">aar_flow_stats_interval</span></code>: AAR flow stats frequency</li>
+<li><code class="docutils literal"><span class="pre">aar_probe_stats_interval</span></code>: AAR Probe stats frequency</li>
+<li><code class="docutils literal"><span class="pre">vss_stats_interval</span></code>: VSS flow stats frequency</li>
+<li><code class="docutils literal"><span class="pre">password</span></code> (<strong>Mandatory</strong>): User password in clear text. Password cannot be a single character asterisk (*)</li>
+<li><code class="docutils literal"><span class="pre">last_name</span></code> (<strong>Mandatory</strong>): Last name of the user</li>
+<li><code class="docutils literal"><span class="pre">last_updated_by</span></code>: ID of the user who last updated the object.</li>
+<li><code class="docutils literal"><span class="pre">first_name</span></code> (<strong>Mandatory</strong>): First name of the user</li>
+<li><code class="docutils literal"><span class="pre">disabled</span></code>: Status of the user account; true=disabled, false=not disabled; default value = false</li>
+<li><code class="docutils literal"><span class="pre">elastic_search_address</span></code>: elastic search address</li>
+<li><code class="docutils literal"><span class="pre">flow_collection_enabled</span></code>: Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires &#8216;statisticsEnabled&#8217;.</li>
+<li><code class="docutils literal"><span class="pre">email</span></code> (<strong>Mandatory</strong>): Email address of the user</li>
+<li><code class="docutils literal"><span class="pre">enterprise_id</span></code>: Identifier of the enterprise.</li>
+<li><code class="docutils literal"><span class="pre">enterprise_name</span></code>: Name of the enterprise.</li>
+<li><code class="docutils literal"><span class="pre">entity_scope</span></code>: Specify if scope of entity is Data center or Enterprise level</li>
+<li><code class="docutils literal"><span class="pre">mobile_number</span></code>: Mobile Number of the user</li>
+<li><code class="docutils literal"><span class="pre">role</span></code>: Role of the user.</li>
+<li><code class="docutils literal"><span class="pre">user_name</span></code> (<strong>Mandatory</strong>): Unique Username of the user. Valid characters are alphabets, numbers and hyphen( - ).</li>
+<li><code class="docutils literal"><span class="pre">statistics_enabled</span></code>: This flag is used to indicate if statistics is enabled in the system. CSProot is expected to activate this through the enable statistics script.</li>
+<li><code class="docutils literal"><span class="pre">avatar_data</span></code>: URL to the avatar data associated with the enterprise. If the avatarType is URL then value of avatarData should an URL of the image. If the avatarType BASE64 then avatarData should be BASE64 encoded value of the image</li>
+<li><code class="docutils literal"><span class="pre">avatar_type</span></code>: Avatar type.</li>
+<li><code class="docutils literal"><span class="pre">external_id</span></code>: External object ID. Used for integration with third party systems</li>
 </ul>
 </div>
 <div class="section" id="children">
@@ -792,289 +771,289 @@
 <td><strong>fetcher</strong></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nul2domain.html#nul2domain"><span class="std std-ref">nul2domain.NUL2Domain</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l2_domains</span></code></td>
+<td><code class="docutils literal"><span class="pre">l2_domains</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nul4service.html#nul4service"><span class="std std-ref">nul4service.NUL4Service</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l4_services</span></code></td>
+<td><code class="docutils literal"><span class="pre">l4_services</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nul7applicationsignature.html#nul7applicationsignature"><span class="std std-ref">nul7applicationsignature.NUL7applicationsignature</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">l7applicationsignatures</span></code></td>
+<td><code class="docutils literal"><span class="pre">l7applicationsignatures</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nusaasapplicationtype.html#nusaasapplicationtype"><span class="std std-ref">nusaasapplicationtype.NUSaaSApplicationType</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">saa_s_application_types</span></code></td>
+<td><code class="docutils literal"><span class="pre">saa_s_application_types</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvcentereamconfig.html#nuvcentereamconfig"><span class="std std-ref">nuvcentereamconfig.NUVCenterEAMConfig</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vcenter_eam_configs</span></code></td>
+<td><code class="docutils literal"><span class="pre">vcenter_eam_configs</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuratelimiter.html#nuratelimiter"><span class="std std-ref">nuratelimiter.NURateLimiter</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">rate_limiters</span></code></td>
+<td><code class="docutils literal"><span class="pre">rate_limiters</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nugateway.html#nugateway"><span class="std std-ref">nugateway.NUGateway</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">gateways</span></code></td>
+<td><code class="docutils literal"><span class="pre">gateways</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nugatewaytemplate.html#nugatewaytemplate"><span class="std std-ref">nugatewaytemplate.NUGatewayTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">gateway_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">gateway_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nupatmapper.html#nupatmapper"><span class="std std-ref">nupatmapper.NUPATMapper</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">pat_mappers</span></code></td>
+<td><code class="docutils literal"><span class="pre">pat_mappers</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nupatnatpool.html#nupatnatpool"><span class="std std-ref">nupatnatpool.NUPATNATPool</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">patnat_pools</span></code></td>
+<td><code class="docutils literal"><span class="pre">patnat_pools</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nutca.html#nutca"><span class="std std-ref">nutca.NUTCA</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">tcas</span></code></td>
+<td><code class="docutils literal"><span class="pre">tcas</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuvcenter.html#nuvcenter"><span class="std std-ref">nuvcenter.NUVCenter</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vcenters</span></code></td>
+<td><code class="docutils literal"><span class="pre">vcenters</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvcenterhypervisor.html#nuvcenterhypervisor"><span class="std std-ref">nuvcenterhypervisor.NUVCenterHypervisor</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vcenter_hypervisors</span></code></td>
+<td><code class="docutils literal"><span class="pre">vcenter_hypervisors</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuredirectiontarget.html#nuredirectiontarget"><span class="std std-ref">nuredirectiontarget.NURedirectionTarget</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">redirection_targets</span></code></td>
+<td><code class="docutils literal"><span class="pre">redirection_targets</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuredundancygroup.html#nuredundancygroup"><span class="std std-ref">nuredundancygroup.NURedundancyGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">redundancy_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">redundancy_groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuperformancemonitor.html#nuperformancemonitor"><span class="std std-ref">nuperformancemonitor.NUPerformanceMonitor</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">performance_monitors</span></code></td>
+<td><code class="docutils literal"><span class="pre">performance_monitors</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nucertificate.html#nucertificate"><span class="std std-ref">nucertificate.NUCertificate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">certificates</span></code></td>
+<td><code class="docutils literal"><span class="pre">certificates</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/numetadata.html#numetadata"><span class="std std-ref">numetadata.NUMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nunetconfprofile.html#nunetconfprofile"><span class="std std-ref">nunetconfprofile.NUNetconfProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">netconf_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">netconf_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nunetworklayout.html#nunetworklayout"><span class="std std-ref">nunetworklayout.NUNetworkLayout</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">network_layouts</span></code></td>
+<td><code class="docutils literal"><span class="pre">network_layouts</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nunetworkperformancemeasurement.html#nunetworkperformancemeasurement"><span class="std std-ref">nunetworkperformancemeasurement.NUNetworkPerformanceMeasurement</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">network_performance_measurements</span></code></td>
+<td><code class="docutils literal"><span class="pre">network_performance_measurements</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nukeyservermember.html#nukeyservermember"><span class="std std-ref">nukeyservermember.NUKeyServerMember</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">key_server_members</span></code></td>
+<td><code class="docutils literal"><span class="pre">key_server_members</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuzfbautoassignment.html#nuzfbautoassignment"><span class="std std-ref">nuzfbautoassignment.NUZFBAutoAssignment</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">zfb_auto_assignments</span></code></td>
+<td><code class="docutils literal"><span class="pre">zfb_auto_assignments</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuzfbrequest.html#nuzfbrequest"><span class="std std-ref">nuzfbrequest.NUZFBRequest</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">zfb_requests</span></code></td>
+<td><code class="docutils literal"><span class="pre">zfb_requests</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nubgpneighbor.html#nubgpneighbor"><span class="std std-ref">nubgpneighbor.NUBGPNeighbor</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">bgp_neighbors</span></code></td>
+<td><code class="docutils literal"><span class="pre">bgp_neighbors</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nubgpprofile.html#nubgpprofile"><span class="std std-ref">nubgpprofile.NUBGPProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">bgp_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">bgp_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuegressaclentrytemplate.html#nuegressaclentrytemplate"><span class="std std-ref">nuegressaclentrytemplate.NUEgressACLEntryTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">egress_acl_entry_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">egress_acl_entry_templates</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuegressacltemplate.html#nuegressacltemplate"><span class="std std-ref">nuegressacltemplate.NUEgressACLTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">egress_acl_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">egress_acl_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuegressadvfwdentrytemplate.html#nuegressadvfwdentrytemplate"><span class="std std-ref">nuegressadvfwdentrytemplate.NUEgressAdvFwdEntryTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">egress_adv_fwd_entry_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">egress_adv_fwd_entry_templates</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nudomainfipacltemplate.html#nudomainfipacltemplate"><span class="std std-ref">nudomainfipacltemplate.NUDomainFIPAclTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">domain_fip_acl_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">domain_fip_acl_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuegressqospolicy.html#nuegressqospolicy"><span class="std std-ref">nuegressqospolicy.NUEgressQOSPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">egress_qos_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">egress_qos_policies</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nusharednetworkresource.html#nusharednetworkresource"><span class="std std-ref">nusharednetworkresource.NUSharedNetworkResource</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">shared_network_resources</span></code></td>
+<td><code class="docutils literal"><span class="pre">shared_network_resources</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nulicense.html#nulicense"><span class="std std-ref">nulicense.NULicense</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">licenses</span></code></td>
+<td><code class="docutils literal"><span class="pre">licenses</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nulicensestatus.html#nulicensestatus"><span class="std std-ref">nulicensestatus.NULicenseStatus</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">license_status</span></code></td>
+<td><code class="docutils literal"><span class="pre">license_status</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/numirrordestination.html#numirrordestination"><span class="std std-ref">numirrordestination.NUMirrorDestination</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">mirror_destinations</span></code></td>
+<td><code class="docutils literal"><span class="pre">mirror_destinations</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuvirtualfirewallpolicy.html#nuvirtualfirewallpolicy"><span class="std std-ref">nuvirtualfirewallpolicy.NUVirtualFirewallPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">virtual_firewall_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">virtual_firewall_policies</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvirtualfirewallrule.html#nuvirtualfirewallrule"><span class="std std-ref">nuvirtualfirewallrule.NUVirtualFirewallRule</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">virtual_firewall_rules</span></code></td>
+<td><code class="docutils literal"><span class="pre">virtual_firewall_rules</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nusiteinfo.html#nusiteinfo"><span class="std std-ref">nusiteinfo.NUSiteInfo</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">site_infos</span></code></td>
+<td><code class="docutils literal"><span class="pre">site_infos</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuallgateway.html#nuallgateway"><span class="std std-ref">nuallgateway.NUAllGateway</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">all_gateways</span></code></td>
+<td><code class="docutils literal"><span class="pre">all_gateways</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuallredundancygroup.html#nuallredundancygroup"><span class="std std-ref">nuallredundancygroup.NUAllRedundancyGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">all_redundancy_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">all_redundancy_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nufloatingip.html#nufloatingip"><span class="std std-ref">nufloatingip.NUFloatingIp</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">floating_ips</span></code></td>
+<td><code class="docutils literal"><span class="pre">floating_ips</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuglobalmetadata.html#nuglobalmetadata"><span class="std std-ref">nuglobalmetadata.NUGlobalMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">global_metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">global_metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvm.html#nuvm"><span class="std std-ref">nuvm.NUVM</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vms</span></code></td>
+<td><code class="docutils literal"><span class="pre">vms</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuvminterface.html#nuvminterface"><span class="std std-ref">nuvminterface.NUVMInterface</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vm_interfaces</span></code></td>
+<td><code class="docutils literal"><span class="pre">vm_interfaces</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nucloudmgmtsystem.html#nucloudmgmtsystem"><span class="std std-ref">nucloudmgmtsystem.NUCloudMgmtSystem</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">cloud_mgmt_systems</span></code></td>
+<td><code class="docutils literal"><span class="pre">cloud_mgmt_systems</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuunderlay.html#nuunderlay"><span class="std std-ref">nuunderlay.NUUnderlay</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">underlays</span></code></td>
+<td><code class="docutils literal"><span class="pre">underlays</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvnfcatalog.html#nuvnfcatalog"><span class="std std-ref">nuvnfcatalog.NUVNFCatalog</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vnf_catalogs</span></code></td>
+<td><code class="docutils literal"><span class="pre">vnf_catalogs</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuvnfmetadata.html#nuvnfmetadata"><span class="std std-ref">nuvnfmetadata.NUVNFMetadata</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vnf_metadatas</span></code></td>
+<td><code class="docutils literal"><span class="pre">vnf_metadatas</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuinfrastructureaccessprofile.html#nuinfrastructureaccessprofile"><span class="std std-ref">nuinfrastructureaccessprofile.NUInfrastructureAccessProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">infrastructure_access_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">infrastructure_access_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuinfrastructureevdfprofile.html#nuinfrastructureevdfprofile"><span class="std std-ref">nuinfrastructureevdfprofile.NUInfrastructureEVDFProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">infrastructure_evdf_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">infrastructure_evdf_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuinfrastructuregatewayprofile.html#nuinfrastructuregatewayprofile"><span class="std std-ref">nuinfrastructuregatewayprofile.NUInfrastructureGatewayProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">infrastructure_gateway_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">infrastructure_gateway_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuinfrastructurevscprofile.html#nuinfrastructurevscprofile"><span class="std std-ref">nuinfrastructurevscprofile.NUInfrastructureVscProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">infrastructure_vsc_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">infrastructure_vsc_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvnfthresholdpolicy.html#nuvnfthresholdpolicy"><span class="std std-ref">nuvnfthresholdpolicy.NUVNFThresholdPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vnf_threshold_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">vnf_threshold_policies</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuingressaclentrytemplate.html#nuingressaclentrytemplate"><span class="std std-ref">nuingressaclentrytemplate.NUIngressACLEntryTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ingress_acl_entry_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">ingress_acl_entry_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuingressacltemplate.html#nuingressacltemplate"><span class="std std-ref">nuingressacltemplate.NUIngressACLTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ingress_acl_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">ingress_acl_templates</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuingressadvfwdentrytemplate.html#nuingressadvfwdentrytemplate"><span class="std std-ref">nuingressadvfwdentrytemplate.NUIngressAdvFwdEntryTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ingress_adv_fwd_entry_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">ingress_adv_fwd_entry_templates</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuingressqospolicy.html#nuingressqospolicy"><span class="std std-ref">nuingressqospolicy.NUIngressQOSPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ingress_qos_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">ingress_qos_policies</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuenterprise.html#nuenterprise"><span class="std std-ref">nuenterprise.NUEnterprise</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">enterprises</span></code></td>
+<td><code class="docutils literal"><span class="pre">enterprises</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuenterpriseprofile.html#nuenterpriseprofile"><span class="std std-ref">nuenterpriseprofile.NUEnterpriseProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">enterprise_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">enterprise_profiles</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nujob.html#nujob"><span class="std std-ref">nujob.NUJob</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">jobs</span></code></td>
+<td><code class="docutils literal"><span class="pre">jobs</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nupolicygroup.html#nupolicygroup"><span class="std std-ref">nupolicygroup.NUPolicyGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">policy_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">policy_groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nupolicyobjectgroup.html#nupolicyobjectgroup"><span class="std std-ref">nupolicyobjectgroup.NUPolicyObjectGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">policy_object_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">policy_object_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nudomain.html#nudomain"><span class="std std-ref">nudomain.NUDomain</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">domains</span></code></td>
+<td><code class="docutils literal"><span class="pre">domains</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nucommand.html#nucommand"><span class="std std-ref">nucommand.NUCommand</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">commands</span></code></td>
+<td><code class="docutils literal"><span class="pre">commands</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuzone.html#nuzone"><span class="std std-ref">nuzone.NUZone</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">zones</span></code></td>
+<td><code class="docutils literal"><span class="pre">zones</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nucontainer.html#nucontainer"><span class="std std-ref">nucontainer.NUContainer</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">containers</span></code></td>
+<td><code class="docutils literal"><span class="pre">containers</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nucontainerinterface.html#nucontainerinterface"><span class="std std-ref">nucontainerinterface.NUContainerInterface</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">container_interfaces</span></code></td>
+<td><code class="docutils literal"><span class="pre">container_interfaces</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuqospolicer.html#nuqospolicer"><span class="std std-ref">nuqospolicer.NUQosPolicer</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">qos_policers</span></code></td>
+<td><code class="docutils literal"><span class="pre">qos_policers</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nucosremarkingpolicytable.html#nucosremarkingpolicytable"><span class="std std-ref">nucosremarkingpolicytable.NUCOSRemarkingPolicyTable</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">cos_remarking_policy_tables</span></code></td>
+<td><code class="docutils literal"><span class="pre">cos_remarking_policy_tables</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuhostinterface.html#nuhostinterface"><span class="std std-ref">nuhostinterface.NUHostInterface</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">host_interfaces</span></code></td>
+<td><code class="docutils literal"><span class="pre">host_interfaces</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuroutingpolicy.html#nuroutingpolicy"><span class="std std-ref">nuroutingpolicy.NURoutingPolicy</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">routing_policies</span></code></td>
+<td><code class="docutils literal"><span class="pre">routing_policies</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuuplinkrd.html#nuuplinkrd"><span class="std std-ref">nuuplinkrd.NUUplinkRD</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">uplink_rds</span></code></td>
+<td><code class="docutils literal"><span class="pre">uplink_rds</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuapplication.html#nuapplication"><span class="std std-ref">nuapplication.NUApplication</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">applications</span></code></td>
+<td><code class="docutils literal"><span class="pre">applications</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuapplicationperformancemanagement.html#nuapplicationperformancemanagement"><span class="std std-ref">nuapplicationperformancemanagement.NUApplicationperformancemanagement</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">applicationperformancemanagements</span></code></td>
+<td><code class="docutils literal"><span class="pre">applicationperformancemanagements</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvrs.html#nuvrs"><span class="std std-ref">nuvrs.NUVRS</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vrss</span></code></td>
+<td><code class="docutils literal"><span class="pre">vrss</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuvcentervrsconfig.html#nuvcentervrsconfig"><span class="std std-ref">nuvcentervrsconfig.NUVCenterVRSConfig</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vcenter_vrs_configs</span></code></td>
+<td><code class="docutils literal"><span class="pre">vcenter_vrs_configs</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nudscpremarkingpolicytable.html#nudscpremarkingpolicytable"><span class="std std-ref">nudscpremarkingpolicytable.NUDSCPRemarkingPolicyTable</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">dscp_remarking_policy_tables</span></code></td>
+<td><code class="docutils literal"><span class="pre">dscp_remarking_policy_tables</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuuser.html#nuuser"><span class="std std-ref">nuuser.NUUser</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">users</span></code></td>
+<td><code class="docutils literal"><span class="pre">users</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuusercontext.html#nuusercontext"><span class="std std-ref">nuusercontext.NUUserContext</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">user_contexts</span></code></td>
+<td><code class="docutils literal"><span class="pre">user_contexts</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nunsgateway.html#nunsgateway"><span class="std std-ref">nunsgateway.NUNSGateway</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateways</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateways</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nunsgatewaytemplate.html#nunsgatewaytemplate"><span class="std std-ref">nunsgatewaytemplate.NUNSGatewayTemplate</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_gateway_templates</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_gateway_templates</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nunsggroup.html#nunsggroup"><span class="std std-ref">nunsggroup.NUNSGGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">nsg_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">nsg_groups</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nunsginfo.html#nunsginfo"><span class="std std-ref">nunsginfo.NUNSGInfo</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">nsg_infos</span></code></td>
+<td><code class="docutils literal"><span class="pre">nsg_infos</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nunsgpatchprofile.html#nunsgpatchprofile"><span class="std std-ref">nunsgpatchprofile.NUNSGPatchProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">nsg_patch_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">nsg_patch_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nunsredundantgatewaygroup.html#nunsredundantgatewaygroup"><span class="std std-ref">nunsredundantgatewaygroup.NUNSRedundantGatewayGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">ns_redundant_gateway_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">ns_redundant_gateway_groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nunsgupgradeprofile.html#nunsgupgradeprofile"><span class="std std-ref">nunsgupgradeprofile.NUNSGUpgradeProfile</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">nsg_upgrade_profiles</span></code></td>
+<td><code class="docutils literal"><span class="pre">nsg_upgrade_profiles</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuvsp.html#nuvsp"><span class="std std-ref">nuvsp.NUVSP</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">vsps</span></code></td>
+<td><code class="docutils literal"><span class="pre">vsps</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nustaticroute.html#nustaticroute"><span class="std std-ref">nustaticroute.NUStaticRoute</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">static_routes</span></code></td>
+<td><code class="docutils literal"><span class="pre">static_routes</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nustatscollectorinfo.html#nustatscollectorinfo"><span class="std std-ref">nustatscollectorinfo.NUStatsCollectorInfo</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">stats_collector_infos</span></code></td>
+<td><code class="docutils literal"><span class="pre">stats_collector_infos</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nusubnet.html#nusubnet"><span class="std std-ref">nusubnet.NUSubnet</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">subnets</span></code></td>
+<td><code class="docutils literal"><span class="pre">subnets</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuducgroup.html#nuducgroup"><span class="std std-ref">nuducgroup.NUDUCGroup</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">duc_groups</span></code></td>
+<td><code class="docutils literal"><span class="pre">duc_groups</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/numulticastchannelmap.html#numulticastchannelmap"><span class="std std-ref">numulticastchannelmap.NUMultiCastChannelMap</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">multi_cast_channel_maps</span></code></td>
+<td><code class="docutils literal"><span class="pre">multi_cast_channel_maps</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nuautodiscoveredgateway.html#nuautodiscoveredgateway"><span class="std std-ref">nuautodiscoveredgateway.NUAutoDiscoveredGateway</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">auto_discovered_gateways</span></code></td>
+<td><code class="docutils literal"><span class="pre">auto_discovered_gateways</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../v6/nuoverlaymirrordestination.html#nuoverlaymirrordestination"><span class="std std-ref">nuoverlaymirrordestination.NUOverlayMirrorDestination</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">overlay_mirror_destinations</span></code></td>
+<td><code class="docutils literal"><span class="pre">overlay_mirror_destinations</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../v6/nusystemconfig.html#nusystemconfig"><span class="std std-ref">nusystemconfig.NUSystemConfig</span></a></td>
-<td><code class="docutils literal notranslate"><span class="pre">system_configs</span></code></td>
+<td><code class="docutils literal"><span class="pre">system_configs</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -1083,16 +1062,15 @@
 
 
            </div>
-           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="numetadata.html" class="btn btn-neutral float-right" title="numetadata" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="numetadata.html" class="btn btn-neutral float-right" title="numetadata" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="numacfilterprofile.html" class="btn btn-neutral float-left" title="numacfilterprofile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="numacfilterprofile.html" class="btn btn-neutral" title="numacfilterprofile" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1101,7 +1079,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, Nuage Networks
+        &copy; Copyright 2016, Nuage Networks.
 
     </p>
   </div> 
@@ -1117,15 +1095,29 @@
   
 
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
    
 
 </body>
