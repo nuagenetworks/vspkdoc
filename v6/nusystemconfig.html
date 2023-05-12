@@ -812,6 +812,9 @@
 <li><code class="docutils literal"><span class="pre">secondary_as_number</span></code>: Autonomous System Number, used for secondary RT auto-generation.</li>
 <li><code class="docutils literal"><span class="pre">secondary_rt_lower_limit</span></code>: Secondary route target lower limit.</li>
 <li><code class="docutils literal"><span class="pre">secondary_rt_upper_limit</span></code>: Secondary route target upper limit.</li>
+<li><code class="docutils literal"><span class="pre">reflexive_aclicmp_timeout</span></code>: Defines the timeout in seconds for reflexive ACLs that are of type ICMP. Supported in Virtual Cloud Services (VCS) only.</li>
+<li><code class="docutils literal"><span class="pre">reflexive_acl_non_tcp_timeout</span></code>: Defines the timeout in seconds for reflexive ACLs that are not of type TCP.</li>
+<li><code class="docutils literal"><span class="pre">reflexive_acltcp_timeout</span></code>: Defines the timeout in seconds for reflexive ACLs that are of type TCP.</li>
 <li><code class="docutils literal"><span class="pre">denied_flow_collection_enabled</span></code>: When this option is selected, VSS will only store flows that are denied by security policy (implicit or explicit ACLs). This requires a valid VSS license and Flow Collection enabled.</li>
 <li><code class="docutils literal"><span class="pre">per_domain_vlan_id_enabled</span></code>: Determines whether per domain VLAN ID generation is required.</li>
 <li><code class="docutils literal"><span class="pre">service_id_upper_limit</span></code>: Service ID upper limit system wide value.</li>
@@ -859,6 +862,7 @@
 <li><code class="docutils literal"><span class="pre">loopback_intf_upper_limit</span></code> (<strong>Mandatory</strong>): Upper limit of the domain Loopback Interface for gateways of type HWVTEP.</li>
 <li><code class="docutils literal"><span class="pre">post_processor_threads_count</span></code>: Post processor thread count.</li>
 <li><code class="docutils literal"><span class="pre">creation_date</span></code>: Time stamp when this object was created.</li>
+<li><code class="docutils literal"><span class="pre">srl_yang_validation_enabled</span></code>: Indicates if IPv4 Filter, IPv6 Filter, QoS Profile, BGP Neighbor Session and Routing Policy Blob validation is enabled for SRL.</li>
 <li><code class="docutils literal"><span class="pre">group_key_default_sek_generation_interval</span></code>: Group Key Encryption Profile Default SEK Generation Interval in seconds.</li>
 <li><code class="docutils literal"><span class="pre">group_key_default_sek_lifetime</span></code>: Group Key Encryption Profile Default SEK Lifetime in seconds.</li>
 <li><code class="docutils literal"><span class="pre">group_key_default_sek_payload_encryption_algorithm</span></code>: Group Key Encryption Profile Default Sek Payload Encryption Algorithm.</li>

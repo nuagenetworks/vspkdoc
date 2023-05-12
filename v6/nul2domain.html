@@ -750,6 +750,7 @@
 <li><code class="docutils literal"><span class="pre">last_updated_date</span></code>: Time stamp when this object was last updated.</li>
 <li><code class="docutils literal"><span class="pre">gateway</span></code>: The IP address of the gateway of this l2 domain</li>
 <li><code class="docutils literal"><span class="pre">gateway_mac_address</span></code>: The MAC address of the Gateway.</li>
+<li><code class="docutils literal"><span class="pre">wbx_disable_mac_move</span></code>: Disable MAC Move on WBX nodes.</li>
 <li><code class="docutils literal"><span class="pre">address</span></code>: Network address of the L2Domain / L2Domain template defined.</li>
 <li><code class="docutils literal"><span class="pre">template_id</span></code>: The ID of the L2 Domain template that this L2 Domain object was derived from</li>
 <li><code class="docutils literal"><span class="pre">service_id</span></code>: The service ID used by the VSCs to identify this subnet</li>
@@ -779,6 +780,7 @@
 <li><code class="docutils literal"><span class="pre">associated_multicast_channel_map_id</span></code>: The ID of the Multi Cast Channel Map this L2Domain / L2Domain template template is associated with. This has to be set when  enableMultiCast is set to ENABLED</li>
 <li><code class="docutils literal"><span class="pre">associated_shared_network_resource_id</span></code>: The ID of the L2 Domain  that this L2 Domain object is pointing to</li>
 <li><code class="docutils literal"><span class="pre">associated_underlay_id</span></code>: The ID of the Underlay entity to which this L2 Domain is associated.</li>
+<li><code class="docutils literal"><span class="pre">stateful_mode</span></code>: This value indicates whether reflexive ACL is enabled or not for the L2Domain. It is &#8216;REFLEXIVE&#8217; if enabled, or &#8216;STATEFUL&#8217; if reflexive is disabled.</li>
 <li><code class="docutils literal"><span class="pre">stretched</span></code>: Indicates whether this domain is streched,if so remote VM resolutions will be allowed</li>
 <li><code class="docutils literal"><span class="pre">dual_stack_dynamic_ip_allocation</span></code>: This read-only value indicates whether dynamic address allocation is enabled or not at template. This will be applicable when L2 Domain is managed and in dual stack mode</li>
 <li><code class="docutils literal"><span class="pre">multicast</span></code>: Indicates multicast policy on L2Domain.</li>

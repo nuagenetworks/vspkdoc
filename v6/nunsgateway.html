@@ -742,7 +742,7 @@
 <li><code class="docutils literal"><span class="pre">aar_application_version</span></code>: The AAR Application Version</li>
 <li><code class="docutils literal"><span class="pre">nat_traversal_enabled</span></code>: This attribute is deprecated in version 4.0.</li>
 <li><code class="docutils literal"><span class="pre">tcpmss_enabled</span></code>: Boolean flag to indicate whether MSS on TCP is enabled or not</li>
-<li><code class="docutils literal"><span class="pre">tcp_maximum_segment_size</span></code>: Maximum Segment Size for TCP(min = 576, max = 7812).</li>
+<li><code class="docutils literal"><span class="pre">tcp_maximum_segment_size</span></code>: Maximum TCP segment size (min = 576, max = 7812); value 0 indicates the use of dynamically computed MSS.</li>
 <li><code class="docutils literal"><span class="pre">zfb_match_attribute</span></code>: The Zero Factor Bootstrapping (ZFB) Attribute that should be used to match the gateway on when it tries to bootstrap.</li>
 <li><code class="docutils literal"><span class="pre">zfb_match_value</span></code>: The Zero Factor Bootstrapping (ZFB) value that needs to match with the gateway during the bootstrap attempt. This value needs to match with the ZFB Match Attribute.</li>
 <li><code class="docutils literal"><span class="pre">sgt_propagation_enabled</span></code>: Indicates if Security Group Tag Propagation is enabled on Network Accelerated NSG and Network Accelerated UBR with HUB or HUB and DUC function(s).</li>
@@ -766,6 +766,7 @@
 <li><code class="docutils literal"><span class="pre">gateway_config_raw_version</span></code>: Release version of NSG, which is used to determine the feature capabilties of NSG.</li>
 <li><code class="docutils literal"><span class="pre">gateway_config_version</span></code>: Interpreted version of NSG, which is used to determine the feature capabilities of NSG.</li>
 <li><code class="docutils literal"><span class="pre">gateway_connected</span></code>: Indicates status of this gateway</li>
+<li><code class="docutils literal"><span class="pre">path_mtu_discovery</span></code>: Boolean flag to indicate whether Path MTU Discovery is enabled or not.</li>
 <li><code class="docutils literal"><span class="pre">redundancy_group_id</span></code>: The Redundancy Gateway Group associated with this Gateway Instance. This is a read only attribute</li>
 <li><code class="docutils literal"><span class="pre">template_id</span></code> (<strong>Mandatory</strong>): The ID of the template that this Gateway was created from. This should be set when instantiating a Gateway</li>
 <li><code class="docutils literal"><span class="pre">pending</span></code>: Indicates that this gateway is pending state or state. When in pending state it cannot be modified from REST.</li>
