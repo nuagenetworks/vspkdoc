@@ -20,6 +20,8 @@ Attributes
 
 - ``ecmp_count``: System Default Equal-cost multi-path routing count. Every Domain derives ECMP count from this value unless specifically set for the domain.
 
+- ``ldap_max_config``: Maximum number of LDAP configurations.
+
 - ``ldap_sync_interval``: LDAP Sync-Up task interval in seconds.
 
 - ``ldap_trust_store_certifcate``: Location of the truststore which is need to store LDAP server certificates. Default is cacerts located in java.home/lib/security/cacerts. Uncomment below setting if you need to use a different file
@@ -160,6 +162,12 @@ Attributes
 
 - ``secondary_rt_upper_limit``: Secondary route target upper limit.
 
+- ``reflexive_aclicmp_timeout``: Defines the timeout in seconds for reflexive ACLs that are of type ICMP. Supported in Virtual Cloud Services (VCS) only.
+
+- ``reflexive_acl_non_tcp_timeout``: Defines the timeout in seconds for reflexive ACLs that are not of type TCP.
+
+- ``reflexive_acltcp_timeout``: Defines the timeout in seconds for reflexive ACLs that are of type TCP.
+
 - ``denied_flow_collection_enabled``: When this option is selected, VSS will only store flows that are denied by security policy (implicit or explicit ACLs). This requires a valid VSS license and Flow Collection enabled.
 
 - ``per_domain_vlan_id_enabled``: Determines whether per domain VLAN ID generation is required.
@@ -218,6 +226,8 @@ Attributes
 
 - ``global_mac_address``: the MAC Address to use for those subnets that have the useGlobalMAC flag enabled.
 
+- ``global_network_macro_groups_enabled``: Indicates if global network macro groups is enabled.  When enabled, all network macro groups created in Platform Configuration will be available to all enterprises.
+
 - ``flow_collection_enabled``: Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires 'statisticsEnabled'.
 
 - ``flow_drop_timeout``: Timeout in seconds after which the traffic will be dropped, if the flow limit exceeds.
@@ -231,6 +241,8 @@ Attributes
 - ``inactive_timeout``: Defines the inactive timeout for the client. If the client is inactive for more than the timeout value, server clears off all the cached information regarding the client. This value should be greater than the maximum timeout for the event processor. Value is in milliseconds.
 
 - ``infrastructure_bgpas_number``: Autonomous System Number, Used for Infrastructure BGP PE_CE.
+
+- ``enhanced_security_enabled``: Indicates if Enhanced Security is enabled for Routing Protocols.
 
 - ``interface_id_lower_limit``: Lower limit for interface Id configured on SRLinux device.
 
@@ -249,6 +261,8 @@ Attributes
 - ``post_processor_threads_count``: Post processor thread count.
 
 - ``creation_date``: Time stamp when this object was created.
+
+- ``srl_yang_validation_enabled``: Indicates if IPv4 Filter, IPv6 Filter, QoS Profile, BGP Neighbor Session and Routing Policy Blob validation is enabled for SRL.
 
 - ``group_key_default_sek_generation_interval``: Group Key Encryption Profile Default SEK Generation Interval in seconds.
 

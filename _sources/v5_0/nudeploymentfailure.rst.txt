@@ -75,6 +75,8 @@ Parents
 
 - :ref:`nustaticroute.NUStaticRoute<nustaticroute>`
 
+- :ref:`nuingressprofile.NUIngressProfile<nuingressprofile>`
+
 - :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`
 
 - :ref:`nuegressprofile.NUEgressProfile<nuegressprofile>`
@@ -84,8 +86,6 @@ Parents
 - :ref:`nugateway.NUGateway<nugateway>`
 
 - :ref:`nul2domain.NUL2Domain<nul2domain>`
-
-- :ref:`nuingressprofile.NUIngressProfile<nuingressprofile>`
 
 - :ref:`nubgpneighbor.NUBGPNeighbor<nubgpneighbor>`
 

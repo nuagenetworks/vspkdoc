@@ -107,13 +107,15 @@ Parents
 
 - :ref:`nuzone.NUZone<nuzone>`
 
+- :ref:`nume.NUMe<nume>`
+
 - :ref:`nusubnettemplate.NUSubnetTemplate<nusubnettemplate>`
 
 - :ref:`nuvport.NUVPort<nuvport>`
 
 - :ref:`nusubnet.NUSubnet<nusubnet>`
 
-- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
+- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
 
 - :ref:`nudomain.NUDomain<nudomain>`
 
@@ -121,13 +123,11 @@ Parents
 
 - :ref:`nul2domain.NUL2Domain<nul2domain>`
 
-- :ref:`nume.NUMe<nume>`
-
 - :ref:`nuhostinterface.NUHostInterface<nuhostinterface>`
 
-- :ref:`nuzonetemplate.NUZoneTemplate<nuzonetemplate>`
-
 - :ref:`nuaggregateddomain.NUAggregatedDomain<nuaggregateddomain>`
+
+- :ref:`nul2domaintemplate.NUL2DomainTemplate<nul2domaintemplate>`
 
 - :ref:`nudomaintemplate.NUDomainTemplate<nudomaintemplate>`
 

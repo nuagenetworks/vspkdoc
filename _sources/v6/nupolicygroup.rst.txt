@@ -71,6 +71,8 @@ Parents
 
 - :ref:`nucontainerinterface.NUContainerInterface<nucontainerinterface>`
 
+- :ref:`nume.NUMe<nume>`
+
 - :ref:`nuvport.NUVPort<nuvport>`
 
 - :ref:`nupolicygroupcategory.NUPolicyGroupCategory<nupolicygroupcategory>`
@@ -82,8 +84,6 @@ Parents
 - :ref:`nubridgeinterface.NUBridgeInterface<nubridgeinterface>`
 
 - :ref:`nul2domain.NUL2Domain<nul2domain>`
-
-- :ref:`nume.NUMe<nume>`
 
 - :ref:`nuhostinterface.NUHostInterface<nuhostinterface>`
 

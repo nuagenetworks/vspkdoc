@@ -66,7 +66,7 @@ Parents
 
 - :ref:`nuenterprise.NUEnterprise<nuenterprise>`
 
-- :ref:`nugroup.NUGroup<nugroup>`
-
 - :ref:`nume.NUMe<nume>`
+
+- :ref:`nugroup.NUGroup<nugroup>`
 

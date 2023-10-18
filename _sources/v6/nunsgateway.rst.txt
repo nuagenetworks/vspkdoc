@@ -22,7 +22,7 @@ Attributes
 
 - ``tcpmss_enabled``: Boolean flag to indicate whether MSS on TCP is enabled or not
 
-- ``tcp_maximum_segment_size``: Maximum Segment Size for TCP(min = 576, max = 7812).
+- ``tcp_maximum_segment_size``: Maximum TCP segment size (min = 576, max = 7812); value 0 indicates the use of dynamically computed MSS.
 
 - ``zfb_match_attribute``: The Zero Factor Bootstrapping (ZFB) Attribute that should be used to match the gateway on when it tries to bootstrap.
 
@@ -52,6 +52,8 @@ Attributes
 
 - ``uuid``: The Redhat UUID of the NSG
 
+- ``saa_s_optimisation``: Boolean flag to indicate whether SaaS Optimisation is enabled or not.
+
 - ``name`` (**Mandatory**): Name of the Gateway
 
 - ``family``: The NSG Family type.
@@ -69,6 +71,8 @@ Attributes
 - ``gateway_config_version``: Interpreted version of NSG, which is used to determine the feature capabilities of NSG.
 
 - ``gateway_connected``: Indicates status of this gateway
+
+- ``path_mtu_discovery``: Boolean flag to indicate whether Path MTU Discovery is enabled or not.
 
 - ``redundancy_group_id``: The Redundancy Gateway Group associated with this Gateway Instance. This is a read only attribute
 
@@ -138,6 +142,8 @@ Attributes
 
 - ``associated_overlay_management_profile_id``: The ID of the associated Overlay Management Profile
 
+- ``stats_profile_id``: Statistics Profile to which this NSGateway is associated to.
+
 - ``huge_page_setting``: The size and number of huge pages for an NSG that is running in network accelerated mode.  Hugepage values states the portion of memory reserved for network accelerated services.
 
 - ``functions``: List of supported functions. This is only relevant for NSG-UBR and will be set to UBR by default in case an NSG-UBR is created. For a regular NSG, this will be set to null.
@@ -206,9 +212,11 @@ Parents
 
 - :ref:`nuducgroup.NUDUCGroup<nuducgroup>`
 
-- :ref:`nunsggroup.NUNSGGroup<nunsggroup>`
+- :ref:`nume.NUMe<nume>`
+
+- :ref:`nustatisticsprofile.NUStatisticsprofile<nustatisticsprofile>`
 
 - :ref:`nupolicyobjectgroup.NUPolicyObjectGroup<nupolicyobjectgroup>`
 
-- :ref:`nume.NUMe<nume>`
+- :ref:`nunsggroup.NUNSGGroup<nunsggroup>`
 

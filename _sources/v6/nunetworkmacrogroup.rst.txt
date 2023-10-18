@@ -59,5 +59,7 @@ Parents
 
 - :ref:`nuenterprisenetwork.NUEnterpriseNetwork<nuenterprisenetwork>`
 
+- :ref:`nume.NUMe<nume>`
+
 - :ref:`nudomain.NUDomain<nudomain>`
 

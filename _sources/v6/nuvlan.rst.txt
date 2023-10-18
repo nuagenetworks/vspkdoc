@@ -118,7 +118,7 @@ Parents
 
 - :ref:`nuredundantport.NURedundantPort<nuredundantport>`
 
-- :ref:`nunsport.NUNSPort<nunsport>`
-
 - :ref:`nuethernetsegmentgroup.NUEthernetSegmentGroup<nuethernetsegmentgroup>`
+
+- :ref:`nunsport.NUNSPort<nunsport>`
 

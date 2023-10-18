@@ -140,6 +140,8 @@ Attributes
 
 - ``creation_date``: Time stamp when this object was created.
 
+- ``is_secondary_fip_domain``: Flag to indicate whether this is a secondary FIP domain.
+
 - ``associated_bgp_profile_id``: None
 
 - ``associated_idp_profile_id``: The associated IDP Profile ID
@@ -151,6 +153,8 @@ Attributes
 - ``associated_shared_pat_mapper_id``: The ID of the PatMapper entity to which this SharedNetworkResource is associated to.
 
 - ``associated_underlay_id``: The ID of the Underlay entity to which this L3 Domain is associated.
+
+- ``stateful_mode``: This value indicates whether reflexive ACL is enabled or not for the Domain. It is 'REFLEXIVE' if enabled, or 'STATEFUL' if reflexive is disabled.
 
 - ``stretched``: Indicates whether this domain is stretched, if so, remote VM resolutions will be allowed
 
@@ -251,6 +255,8 @@ Parents
 
 - :ref:`nuenterprise.NUEnterprise<nuenterprise>`
 
+- :ref:`nume.NUMe<nume>`
+
 - :ref:`nufirewallacl.NUFirewallAcl<nufirewallacl>`
 
 - :ref:`nunetconfgateway.NUNetconfGateway<nunetconfgateway>`
@@ -258,8 +264,6 @@ Parents
 - :ref:`nudomain.NUDomain<nudomain>`
 
 - :ref:`nugateway.NUGateway<nugateway>`
-
-- :ref:`nume.NUMe<nume>`
 
 - :ref:`nuaggregateddomain.NUAggregatedDomain<nuaggregateddomain>`
 
